@@ -252,7 +252,7 @@ async function compressAudio(baseFolder) {
     const backupRoot = path.join(path.dirname(baseFolder), 'backup_assets_lossless');
     fs.ensureDirSync(backupRoot);
 
-    // On mappe tous les fichiers dans des Promises
+    // On mappe les fichiers en chunks de 20 pour Promise.all
     for (let i = 0; i < files.length; i += 20) {
         const chunk = files.slice(i, i + 20);
         await Promise.all(chunk.map(async (file) => {
@@ -261,27 +261,33 @@ async function compressAudio(baseFolder) {
                 const backupPath = path.join(backupRoot, rel);
                 fs.ensureDirSync(path.dirname(backupPath));
 
-                // 1) copy original file to backup (keep original)
-                // fs.copyFileSync(file, backupPath);
-
-                // 2) create FLAC lossless backup next to copied original with .flac extension
+                // 1) Backup FLAC lossless
                 const flacPath = backupPath.replace(/\.[^.]+$/, '.flac');
                 await ffmpegRun(file, flacPath, ['-vn', '-compression_level', '12']);
 
-                // 3) re-encode to optimized OGG for Minecraft
-                // On peut augmenter la compression VBR (q=2) pour réduire la taille sans perte notable
+                // 2) Déterminer si c'est une musique ou un effet
+                const isMusic = /music|bgm|ambient/i.test(file); // tu peux affiner le regex
+                const targetSampleRate = isMusic ? 44100 : 32000; // musique 44.1kHz, effets 32kHz
+
+                // 3) Ré-encoder en OGG optimisé avec resampling
                 const tempOut = file + '.tmp.ogg';
-                await ffmpegRun(file, tempOut, ['-vn', '-c:a', 'libvorbis', '-q:a', '2']); 
+                await ffmpegRun(file, tempOut, [
+                    '-vn',
+                    '-c:a', 'libvorbis',
+                    '-q:a', '2', // qualité VBR
+                    '-ar', targetSampleRate.toString()
+                ]);
 
                 fs.moveSync(tempOut, file, { overwrite: true });
 
-                console.log(`🔧 Compressed and backed-up: ${rel}`);
+                console.log(`🔧 Compressed and backed-up: ${rel} (${isMusic ? 'music' : 'effect'}, ${targetSampleRate}Hz)`);
             } catch (err) {
                 console.error(`⚠️ Erreur compression pour ${file}:`, err.message || err);
             }
         }));
     }
 }
+
 
 
 
