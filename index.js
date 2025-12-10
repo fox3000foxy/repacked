@@ -98,7 +98,7 @@ async function generateAtlases(textures, outputFolder) {
       rowHeight = Math.max(rowHeight, metadata.height);
 
       // 🔹 Supprimer l'image originale après l'ajout
-      fs.removeSync(file);
+    //   fs.removeSync(file);
     }
 
     atlas = atlas.composite(composites);
