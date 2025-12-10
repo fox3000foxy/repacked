@@ -6,7 +6,7 @@ const glob = require("glob");
 const crypto = require("crypto");
 
 const inputFolder = path.resolve("assets");       // dossier assets en entrée
-const outputFolder = path.resolve("output_pack/assets"); // dossier assets en sortie
+const outputFolder = path.resolve("assets"); // dossier assets en sortie
 
 // 🔹 Générer un hash pour déduplication
 async function hashImage(file) {
@@ -62,7 +62,7 @@ async function generateAtlases(textures, outputFolder) {
     fs.ensureDirSync(atlasDir);
 
     while (start < entries.length) {
-        const slice = entries.slice(start, start + 512); // max 512 textures par atlas
+        const slice = entries.slice(start, start + 2048); // max 2048 textures par atlas
         let x = 0, y = 0, rowHeight = 0;
 
         let atlas = sharp({
