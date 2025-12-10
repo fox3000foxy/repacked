@@ -4,9 +4,16 @@ const path = require("path");
 const sharp = require("sharp");
 const glob = require("glob");
 const crypto = require("crypto");
+const ffmpeg = require("fluent-ffmpeg");
+const ffmpegStatic = require("ffmpeg-static");
 
 const inputFolder = path.resolve("assets");       // dossier assets en entrée
 const outputFolder = path.resolve("assets"); // dossier assets en sortie
+
+// configure ffmpeg path
+if (ffmpegStatic) {
+  ffmpeg.setFfmpegPath(ffmpegStatic);
+}
 
 // 🔹 Générer un hash pour déduplication
 async function hashImage(file) {
@@ -215,21 +222,78 @@ async function rewriteModels(baseFolder, atlases) {
   }
 }
 
+// 🔹 Audio: collecte, sauvegarde lossless (FLAC) et réencodage OGG optimisé
+async function collectAudio(baseFolder) {
+  const audioFiles = glob.sync(`${baseFolder}/**/sounds/**/*.{ogg,wav,mp3,flac}`);
+  console.log(`🔍 Audio trouvés: ${audioFiles.length}`);
+  return audioFiles;
+}
+
+function ffmpegRun(input, output, extraOptions = []) {
+  return new Promise((resolve, reject) => {
+    const cmd = ffmpeg(input)
+      .output(output)
+      .outputOptions(extraOptions)
+      .on('end', () => resolve())
+      .on('error', (err) => reject(err));
+    cmd.run();
+  });
+}
+
+async function compressAudio(baseFolder) {
+  const files = await collectAudio(baseFolder);
+  if (files.length === 0) return;
+
+  const backupRoot = path.join(path.dirname(baseFolder), 'backup_assets_lossless');
+  for (const file of files) {
+    try {
+      const rel = path.relative(path.dirname(baseFolder), file).replace(/\\/g, '/');
+      const backupPath = path.join(backupRoot, rel);
+      const backupDir = path.dirname(backupPath);
+      fs.ensureDirSync(backupDir);
+
+      // 1) copy original file to backup (keep original)
+      fs.copyFileSync(file, backupPath);
+
+      // 2) create FLAC lossless backup next to copied original with .flac extension
+      const flacPath = backupPath.replace(/\.[^.]+$/, '.flac');
+      fs.ensureDirSync(path.dirname(flacPath));
+      // use max compression level for FLAC
+      await ffmpegRun(file, flacPath, ['-vn', '-compression_level', '12']);
+
+      // 3) re-encode to optimized OGG for Minecraft and overwrite original file
+      // Use libvorbis with moderate-high compression to reduce size while keeping quality
+      // Default quality set to 3 (VBR). Lower = smaller file. Adjust if needed.
+      const tempOut = file + '.tmp.ogg';
+      await ffmpegRun(file, tempOut, ['-vn', '-c:a', 'libvorbis', '-q:a', '3']);
+      fs.moveSync(tempOut, file, { overwrite: true });
+
+      console.log(`🔧 Compressed and backed-up: ${rel}`);
+    } catch (err) {
+      console.error(`⚠️ Erreur compression pour ${file}:`, err.message || err);
+    }
+  }
+}
+
+
 // 🔹 Main
 (async () => {
-  console.log("🔎 Collecte des textures et déduplication...");
-  const { textures, hashMap } = await collectTextures(inputFolder);
+//   console.log("🔎 Collecte des textures et déduplication...");
+//   const { textures, hashMap } = await collectTextures(inputFolder);
 
-  if (Object.keys(hashMap).length === 0) {
-    console.log("⚠️ Aucune texture unique à traiter. Vérifie le dossier ou les fichiers _portal.png.");
-    return;
-  }
+//   if (Object.keys(hashMap).length === 0) {
+//     console.log("⚠️ Aucune texture unique à traiter. Vérifie le dossier ou les fichiers _portal.png.");
+//     return;
+//   }
 
-  console.log("🖼️ Génération des atlas...");
-  const atlases = await generateAtlases(hashMap, outputFolder);
+//   console.log("🖼️ Génération des atlas...");
+//   const atlases = await generateAtlases(hashMap, outputFolder);
 
-  console.log("✏️ Réécriture des modèles JSON...");
-  await rewriteModels(inputFolder, atlases);
+//   console.log("✏️ Réécriture des modèles JSON...");
+//   await rewriteModels(inputFolder, atlases);
+
+  console.log("🔊 Compression audio (backup FLAC lossless + OGG optimisé)...");
+  await compressAudio(inputFolder);
 
   console.log("🎉 Optimisation terminée !");
 })();
