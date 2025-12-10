@@ -7,8 +7,8 @@ const crypto = require("crypto");
 const ffmpeg = require("fluent-ffmpeg");
 const ffmpegStatic = require("ffmpeg-static");
 
-const inputFolder = path.resolve("assets");       // dossier assets en entrée
-const outputFolder = path.resolve("assets"); // dossier assets en sortie
+const inputFolder = path.resolve("pack/assets");       // dossier assets en entrée
+const outputFolder = path.resolve("pack/assets"); // dossier assets en sortie
 
 // configure ffmpeg path
 if (ffmpegStatic) {
