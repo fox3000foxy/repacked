@@ -158,7 +158,7 @@ async function generateAtlases(hashMap, outputFolder) {
 
     // remove files that were placed
     for (const f of filesPlaced) {
-    //   try { fs.removeSync(f); } catch(e) { /* ignore */ }
+      try { fs.removeSync(f); } catch(e) { /* ignore */ }
     }
 
     console.log(`✅ Atlas créé: ${path.join(atlasDir, `atlas_${atlasIndex}.png`)} (${Object.keys(mapping).length} textures)`);
@@ -209,7 +209,7 @@ async function rewriteModels(baseFolder, atlases) {
     }
 
     if (replaced) {
-    //   await fs.writeJson(modelFile, json, { spaces: 2 });
+      await fs.writeJson(modelFile, json, { spaces: 2 });
       console.log(`✏️ Modèle mis à jour: ${modelFile}`);
     }
   }
