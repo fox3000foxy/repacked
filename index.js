@@ -331,8 +331,8 @@ async function compressAudio(baseFolder) {
   console.log("✏️ Réécriture des modèles JSON...");
   await rewriteModels(inputFolder, atlases);
 
-//   console.log("🔊 Compression audio (backup FLAC lossless + OGG optimisé)...");
-//   await compressAudio(inputFolder);
+  console.log("🔊 Compression audio (backup FLAC lossless + OGG optimisé)...");
+  await compressAudio(inputFolder);
 
   console.log("🎉 Optimisation terminée !");
 })();

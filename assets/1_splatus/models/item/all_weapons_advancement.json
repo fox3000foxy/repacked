@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "1_splatus:item/all_weapons_advancement"
-    }
-}
