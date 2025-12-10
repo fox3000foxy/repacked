@@ -1,6 +1,7 @@
 {
-    "parent": "incendium:item/trailblazer",
-    "textures": {
-        "layer0": "incendium:item/trailblazer/pulling_6"
-    }
+  "parent": "incendium:item/trailblazer",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 94
 }

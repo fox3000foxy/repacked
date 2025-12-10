@@ -1,6 +1,7 @@
 {
-    "parent": "incendium:item/multiplex",
-    "textures": {
-        "layer0": "incendium:item/multiplex/pulling_0"
-    }
+  "parent": "incendium:item/multiplex",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 17
 }

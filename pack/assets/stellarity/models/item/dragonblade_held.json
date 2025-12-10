@@ -1,4 +1,7 @@
 {
   "parent": "stellarity:item/parent/large_weapon",
-  "textures": { "layer0": "stellarity:item/dragonblade_held" }
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 1
 }

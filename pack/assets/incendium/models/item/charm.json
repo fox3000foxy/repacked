@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "incendium:item/charm"
-  }
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 341
 }

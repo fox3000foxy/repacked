@@ -1,6 +1,7 @@
 {
-    "parent": "item/diamond_axe",
-    "textures": {
-        "layer0": "incendium:item/blazing"
-    }
+  "parent": "item/diamond_axe",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 342
 }

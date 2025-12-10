@@ -1,6 +1,7 @@
 {
-    "parent": "incendium:item/firestorm",
-    "textures": {
-        "layer0": "incendium:item/firestorm/firework"
-    }
+  "parent": "incendium:item/firestorm",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 221
 }

@@ -1,6 +1,7 @@
 {
-    "parent": "item/iron_boots",
-    "textures": {
-        "layer0": "1_splatus:item/giant_boots_1"
-    }
+  "parent": "item/iron_boots",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 455
 }

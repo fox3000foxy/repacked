@@ -1,6 +1,7 @@
 {
-    "parent": "item/glowstone_dust",
-    "textures": {
-        "layer0": "1_splatus:item/corrupt"
-    }
+  "parent": "item/glowstone_dust",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 477
 }

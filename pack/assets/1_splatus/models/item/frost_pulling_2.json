@@ -1,7 +1,7 @@
 {
-    "parent": "item/bow",
-    "textures": {
-        "layer0": "1_splatus:item/frost_pulling_2"
-    }
-    
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 457
 }

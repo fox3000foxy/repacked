@@ -1,6 +1,7 @@
 {
-    "parent": "item/baked_potato",
-    "textures": {
-        "layer0": "1_splatus:item/deep_sea_squid_tentacle"
-    }
+  "parent": "item/baked_potato",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 469
 }

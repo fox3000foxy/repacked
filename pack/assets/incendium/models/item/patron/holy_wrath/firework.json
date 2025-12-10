@@ -1,6 +1,7 @@
 {
-    "parent": "incendium:item/patron/holy_wrath",
-    "textures": {
-        "layer0": "incendium:item/patron/holy_wrath/firework"
-    }
+  "parent": "incendium:item/patron/holy_wrath",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 221
 }

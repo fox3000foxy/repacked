@@ -1,7 +1,8 @@
 {
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "minecraft:item/iron_leggings",
-        "layer1": "minecraft:trims/items/leggings_trim_blaze"
-    }
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "atlases/atlas_1.png",
+    "layer1": "minecraft:trims/items/leggings_trim_blaze"
+  },
+  "custom_model_data": 392
 }

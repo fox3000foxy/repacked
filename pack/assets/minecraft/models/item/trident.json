@@ -1,14 +1,15 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/trident"
+    "layer0": "atlases/atlas_1.png"
   },
   "overrides": [
-  	    {
-            "predicate": {
-              "custom_model_data": 1450006
-            },
-            "model": "incendium:item/voltaic"
-        }
-    ]
+    {
+      "predicate": {
+        "custom_model_data": 1450006
+      },
+      "model": "incendium:item/voltaic"
+    }
+  ],
+  "custom_model_data": 210
 }

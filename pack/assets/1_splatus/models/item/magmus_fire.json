@@ -1,7 +1,7 @@
 {
-    "parent": "item/bow",
-    "textures": {
-        "layer0": "1_splatus:item/magmus_fire"
-    }
-    
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 128
 }

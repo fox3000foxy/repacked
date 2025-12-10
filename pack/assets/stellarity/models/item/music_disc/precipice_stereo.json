@@ -1,1 +1,7 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"stellarity:item/music_disc/precipice_stereo"}}
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 40
+}

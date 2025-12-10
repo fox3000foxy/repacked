@@ -2,7 +2,7 @@
   "parent": "builtin/entity",
   "gui_light": "front",
   "textures": {
-    "layer0": "incendium:item/radiation/shield"
+    "layer0": "atlases/atlas_1.png"
   },
   "display": {
     "thirdperson_righthand": {
@@ -124,5 +124,6 @@
         0.25
       ]
     }
-  }
+  },
+  "custom_model_data": 4
 }

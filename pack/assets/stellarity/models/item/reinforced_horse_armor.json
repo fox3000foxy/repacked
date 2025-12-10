@@ -1,4 +1,7 @@
 {
   "parent": "minecraft:item/generated",
-  "textures": { "layer0": "stellarity:item/reinforced_horse_armor" }
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 211
 }

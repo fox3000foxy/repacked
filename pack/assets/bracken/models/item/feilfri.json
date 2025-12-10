@@ -1,6 +1,7 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "item/feilfri"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 320
 }

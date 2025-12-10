@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "minecraft:item/iron_sword"
+    "layer0": "atlases/atlas_1.png"
   },
   "overrides": [
     {
@@ -22,10 +22,6 @@
       },
       "model": "1_splatus:item/end_excalibur_ready_loop"
     },
-    
-    
-    
-    
     {
       "predicate": {
         "custom_model_data": 47015
@@ -56,21 +52,18 @@
       },
       "model": "1_splatus:item/crucible/charged"
     },
-    
     {
       "predicate": {
         "custom_model_data": 47045
       },
       "model": "1_splatus:item/wave_caster"
     },
-    
     {
       "predicate": {
         "custom_model_data": 47046
       },
       "model": "1_splatus:item/moonlight_edge"
     },
-    
     {
       "predicate": {
         "custom_model_data": 47047
@@ -101,35 +94,30 @@
       },
       "model": "1_splatus:item/thorn_blossom_pink"
     },
-    
-    
-    
     {
       "predicate": {
         "custom_model_data": 47996
       },
       "model": "1_splatus:item/unused/galaxia"
-    }
-    ,
+    },
     {
       "predicate": {
         "custom_model_data": 47997
       },
       "model": "1_splatus:item/unused/spellbound_sword"
-    }
-    ,
+    },
     {
       "predicate": {
         "custom_model_data": 47998
       },
       "model": "1_splatus:item/all_weapons_advancement"
     },
-    
     {
       "predicate": {
         "custom_model_data": 47999
       },
       "model": "1_splatus:item/unused/delete"
     }
-  ]
+  ],
+  "custom_model_data": 389
 }

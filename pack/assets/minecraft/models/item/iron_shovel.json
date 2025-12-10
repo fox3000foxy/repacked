@@ -1,27 +1,27 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "minecraft:item/iron_shovel"
+    "layer0": "atlases/atlas_1.png"
   },
-"overrides": [
-  {
-    "predicate": {
-      "custom_model_data": 47018
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 47018
+      },
+      "model": "1_splatus:item/dagger"
     },
-    "model": "1_splatus:item/dagger"
-  },
-  {
-    "predicate": {
-      "custom_model_data": 47019
+    {
+      "predicate": {
+        "custom_model_data": 47019
+      },
+      "model": "1_splatus:item/dagger_gold"
     },
-    "model": "1_splatus:item/dagger_gold"
-  },
-  {
-    "predicate": {
-      "custom_model_data": 47020
-    },
-    "model": "1_splatus:item/dagger_diamond"
-  }
-  
-]
+    {
+      "predicate": {
+        "custom_model_data": 47020
+      },
+      "model": "1_splatus:item/dagger_diamond"
+    }
+  ],
+  "custom_model_data": 390
 }

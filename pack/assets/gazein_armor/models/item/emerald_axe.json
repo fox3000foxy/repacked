@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "gazein_armor:item/emerald_axe"
- }
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 402
 }

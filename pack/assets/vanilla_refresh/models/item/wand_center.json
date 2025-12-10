@@ -1,7 +1,8 @@
 {
-    "parent": "item/carrot_on_a_stick",
-    "textures": {
-        "layer0": "vanilla_refresh:item/wand",
-        "layer1": "vanilla_refresh:item/wand_icon/center"
-    }
+  "parent": "item/carrot_on_a_stick",
+  "textures": {
+    "layer0": "atlases/atlas_1.png",
+    "layer1": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 144
 }

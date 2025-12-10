@@ -1,6 +1,7 @@
 {
-    "parent": "item/iron_helmet",
-    "textures": {
-        "layer0": "1_splatus:item/blaze"
-    }
+  "parent": "item/iron_helmet",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 498
 }

@@ -1,6 +1,7 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "1_splatus:item/ice_staff"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 453
 }

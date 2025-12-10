@@ -1,6 +1,7 @@
 {
-    "parent": "item/snowball",
-    "textures": {
-        "layer0": "1_splatus:item/confetti_ball"
-    }
+  "parent": "item/snowball",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 478
 }

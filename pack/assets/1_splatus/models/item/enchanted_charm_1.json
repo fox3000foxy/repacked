@@ -1,6 +1,7 @@
 {
-    "parent": "item/enchanted_book",
-    "textures": {
-        "layer0": "1_splatus:item/enchanted_charm_1"
-    }
+  "parent": "item/enchanted_book",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 465
 }

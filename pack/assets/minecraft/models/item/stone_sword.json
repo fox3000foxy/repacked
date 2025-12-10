@@ -1,27 +1,22 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "minecraft:item/stone_sword"
+    "layer0": "atlases/atlas_1.png"
   },
-"overrides": [
-  {
-    "predicate": {
-      "custom_model_data": 27002
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 27002
+      },
+      "model": "1_splatus:item/windswept"
     },
-    "model": "1_splatus:item/windswept"
-},
-{
-  "predicate": {
-    "custom_model_data": 27003
-  },
-  "model": "1_splatus:item/withering_sword"
-},
-
-
-
-
-
-  {
+    {
+      "predicate": {
+        "custom_model_data": 27003
+      },
+      "model": "1_splatus:item/withering_sword"
+    },
+    {
       "predicate": {
         "custom_model_data": 47004
       },
@@ -54,14 +49,12 @@
     {
       "predicate": {
         "custom_model_data": 47020
-        
       },
       "model": "1_splatus:item/evokers_wrath"
     },
     {
       "predicate": {
         "custom_model_data": 47021
-        
       },
       "model": "1_splatus:item/evokers_wrath_ready"
     },
@@ -71,8 +64,6 @@
       },
       "model": "1_splatus:item/blazing_sword_soul_fire"
     }
-    
-    
-  
-]
+  ],
+  "custom_model_data": 369
 }

@@ -1,6 +1,7 @@
 {
-    "parent": "1_splatus:item/crucible_base",
-    "textures": {
-        "layer0": "1_splatus:item/crucible/blue"
-    }
+  "parent": "1_splatus:item/crucible_base",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 117
 }

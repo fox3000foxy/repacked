@@ -1,6 +1,7 @@
 {
-    "parent": "item/diamond_pickaxe",
-    "textures": {
-        "layer0": "incendium:item/hefty"
-    }
+  "parent": "item/diamond_pickaxe",
+  "textures": {
+    "layer0": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 338
 }

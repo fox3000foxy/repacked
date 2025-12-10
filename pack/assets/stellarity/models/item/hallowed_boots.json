@@ -1,1 +1,8 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"stellarity:item/hallowed_boots","layer1":"stellarity:item/hallowed_boots"}}
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "atlases/atlas_1.png",
+    "layer1": "atlases/atlas_1.png"
+  },
+  "custom_model_data": 228
+}
