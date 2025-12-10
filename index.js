@@ -29,7 +29,7 @@ async function collectTextures(baseFolder) {
   let maxFile = "";
 
   // 🔹 glob sur tous les sous-dossiers de textures
-  const files = glob.sync(`${baseFolder}/**/textures/**/*.png`);
+  const files = glob.sync(`${baseFolder}/**/textures/{item,custom_items}/*.png`);
   console.log(`🔍 Total PNG trouvés: ${files.length}`);
 
   for (const file of files) {
@@ -192,35 +192,54 @@ async function generateAtlases(hashMap, outputFolder) {
 
 
 // 🔹 Réécriture des modèles JSON pour pointer sur les atlas
+// 🔹 Réécriture des modèles JSON pour pointer sur les atlas (tous modèles)
 async function rewriteModels(baseFolder, atlases) {
-  const modelFiles = glob.sync(`${baseFolder}/**/models/item/**/*.json`);
-  
-  for (const modelFile of modelFiles) {
-    const json = await fs.readJson(modelFile);
+  const modelFiles = glob.sync(`${baseFolder}/**/models/**/*.json`);
 
-    if (!json.textures || !json.textures.layer0) continue;
+  // Fonction récursive pour remplacer toutes les textures dans l'objet JSON
+  function replaceTexturesInObject(obj) {
+    for (const key in obj) {
+      if (!obj.hasOwnProperty(key)) continue;
 
-    const texName = json.textures.layer0.replace(/^minecraft:/, "").replace(/^.*\//, ""); 
-    let replaced = false;
+      if (typeof obj[key] === 'string') {
+        // on cherche si c'est une texture
+        const texName = obj[key].replace(/^minecraft:/, '').replace(/^.*\//, ''); 
+        let replaced = false;
 
-    for (const atlas of atlases) {
-      for (const [name, data] of Object.entries(atlas)) {
-        if (name.endsWith(texName)) {
-          json.textures.layer0 = data.texture;
-          json.custom_model_data = data.custom_model_data;
-          replaced = true;
-          break;
+        for (const atlas of atlases) {
+          for (const [name, data] of Object.entries(atlas)) {
+            if (name.endsWith(texName)) {
+              obj[key] = data.texture;
+              // ajouter custom_model_data si c'est layer0 ou layer1 (items)
+              if (key.startsWith('layer')) {
+                obj.custom_model_data = data.custom_model_data;
+              }
+              replaced = true;
+              break;
+            }
+          }
+          if (replaced) break;
         }
-      }
-      if (replaced) break;
-    }
 
-    if (replaced) {
+      } else if (typeof obj[key] === 'object' && obj[key] !== null) {
+        // récursion pour sous-objets
+        replaceTexturesInObject(obj[key]);
+      }
+    }
+  }
+
+  for (const modelFile of modelFiles) {
+    try {
+      const json = await fs.readJson(modelFile);
+      replaceTexturesInObject(json);
       await fs.writeJson(modelFile, json, { spaces: 2 });
       console.log(`✏️ Modèle mis à jour: ${modelFile}`);
+    } catch (err) {
+      console.error(`⚠️ Impossible de traiter ${modelFile}: ${err.message}`);
     }
   }
 }
+
 
 // 🔹 Audio: collecte, sauvegarde lossless (FLAC) et réencodage OGG optimisé
 async function collectAudio(baseFolder) {
