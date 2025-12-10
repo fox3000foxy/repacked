@@ -246,38 +246,41 @@ function ffmpegRun(input, output, extraOptions = []) {
 }
 
 async function compressAudio(baseFolder) {
-  const files = await collectAudio(baseFolder);
-  if (files.length === 0) return;
+    const files = await collectAudio(baseFolder);
+    if (files.length === 0) return;
 
-  const backupRoot = path.join(path.dirname(baseFolder), 'backup_assets_lossless');
-  fs.ensureDirSync(backupRoot);
+    const backupRoot = path.join(path.dirname(baseFolder), 'backup_assets_lossless');
+    fs.ensureDirSync(backupRoot);
 
-  // On mappe tous les fichiers dans des Promises
-  await Promise.all(files.map(async (file) => {
-    try {
-      const rel = path.relative(path.dirname(baseFolder), file).replace(/\\/g, '/');
-      const backupPath = path.join(backupRoot, rel);
-      fs.ensureDirSync(path.dirname(backupPath));
+    // On mappe tous les fichiers dans des Promises
+    for (let i = 0; i < files.length; i += 20) {
+        const chunk = files.slice(i, i + 20);
+        await Promise.all(chunk.map(async (file) => {
+            try {
+                const rel = path.relative(path.dirname(baseFolder), file).replace(/\\/g, '/');
+                const backupPath = path.join(backupRoot, rel);
+                fs.ensureDirSync(path.dirname(backupPath));
 
-      // 1) copy original file to backup (keep original)
-      fs.copyFileSync(file, backupPath);
+                // 1) copy original file to backup (keep original)
+                // fs.copyFileSync(file, backupPath);
 
-      // 2) create FLAC lossless backup next to copied original with .flac extension
-      const flacPath = backupPath.replace(/\.[^.]+$/, '.flac');
-      await ffmpegRun(file, flacPath, ['-vn', '-compression_level', '12']);
+                // 2) create FLAC lossless backup next to copied original with .flac extension
+                const flacPath = backupPath.replace(/\.[^.]+$/, '.flac');
+                await ffmpegRun(file, flacPath, ['-vn', '-compression_level', '12']);
 
-      // 3) re-encode to optimized OGG for Minecraft
-      // On peut augmenter la compression VBR (q=2) pour réduire la taille sans perte notable
-      const tempOut = file + '.tmp.ogg';
-      await ffmpegRun(file, tempOut, ['-vn', '-c:a', 'libvorbis', '-q:a', '2']); 
+                // 3) re-encode to optimized OGG for Minecraft
+                // On peut augmenter la compression VBR (q=2) pour réduire la taille sans perte notable
+                const tempOut = file + '.tmp.ogg';
+                await ffmpegRun(file, tempOut, ['-vn', '-c:a', 'libvorbis', '-q:a', '2']); 
 
-      fs.moveSync(tempOut, file, { overwrite: true });
+                fs.moveSync(tempOut, file, { overwrite: true });
 
-      console.log(`🔧 Compressed and backed-up: ${rel}`);
-    } catch (err) {
-      console.error(`⚠️ Erreur compression pour ${file}:`, err.message || err);
+                console.log(`🔧 Compressed and backed-up: ${rel}`);
+            } catch (err) {
+                console.error(`⚠️ Erreur compression pour ${file}:`, err.message || err);
+            }
+        }));
     }
-  }));
 }
 
 
