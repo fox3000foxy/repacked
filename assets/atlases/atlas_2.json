@@ -1,0 +1,2850 @@
+{
+  "expansion/textures/vehicles/lunar_module/lunar_module": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 0,
+    "width": 512,
+    "height": 512,
+    "custom_model_data": 1
+  },
+  "expansion/textures/vehicles/buggy/moon_buggy": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 0,
+    "width": 512,
+    "height": 512,
+    "custom_model_data": 2
+  },
+  "expansion/textures/structures/portal": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 0,
+    "width": 512,
+    "height": 512,
+    "custom_model_data": 3
+  },
+  "bracken/textures/custom_items/random/unruly_compass": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1536,
+    "y": 0,
+    "width": 16,
+    "height": 512,
+    "custom_model_data": 4
+  },
+  "animated_java/textures/blueprint/rocket/black_filler": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1552,
+    "y": 0,
+    "width": 512,
+    "height": 512,
+    "custom_model_data": 5
+  },
+  "animated_java/textures/blueprint/mech_torso/mech": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2064,
+    "y": 0,
+    "width": 512,
+    "height": 512,
+    "custom_model_data": 6
+  },
+  "animated_java/textures/blueprint/buggy/buggy": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2576,
+    "y": 0,
+    "width": 512,
+    "height": 512,
+    "custom_model_data": 7
+  },
+  "expansion/textures/blocks/terraformer/terraformer_west": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3088,
+    "y": 0,
+    "width": 16,
+    "height": 464,
+    "custom_model_data": 8
+  },
+  "expansion/textures/blocks/terraformer/terraformer_east": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3088,
+    "y": 0,
+    "width": 16,
+    "height": 464,
+    "custom_model_data": 9
+  },
+  "stellarity/textures/item/kaleidoscope": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3104,
+    "y": 0,
+    "width": 16,
+    "height": 448,
+    "custom_model_data": 10
+  },
+  "stellarity/textures/item/dragonblade": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3120,
+    "y": 0,
+    "width": 16,
+    "height": 400,
+    "custom_model_data": 11
+  },
+  "expansion/textures/vehicles/mech_torso/gatling_gun": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3136,
+    "y": 0,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 12
+  },
+  "expansion/textures/vehicles/mech_torso/drill": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3392,
+    "y": 0,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 13
+  },
+  "animated_java/textures/blueprint/mech_torso/drill": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3392,
+    "y": 0,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 14
+  },
+  "expansion/textures/vehicles/mech/mech": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3648,
+    "y": 0,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 15
+  },
+  "expansion/textures/vehicles/bomber/bomber_landed": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 16
+  },
+  "expansion/textures/vehicles/bomber/bomber": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 17
+  },
+  "expansion/textures/vehicles/bomber/bomber_1": {
+    "texture": "atlases/atlas_2.png",
+    "x": 256,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 18
+  },
+  "expansion/textures/structures/assembler/assembler_item": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 19
+  },
+  "expansion/textures/structures/assembler/assembler_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 768,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 20
+  },
+  "expansion/textures/structures/assembler/assembler": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 21
+  },
+  "animated_java/textures/blueprint/assembler/assembler": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 22
+  },
+  "expansion/textures/guides/star_sky": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 23
+  },
+  "expansion/textures/guides/advancements/backgrounds/star_sky": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 24
+  },
+  "expansion/textures/guides/basic_guide/frontpage": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1536,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 25
+  },
+  "expansion/textures/guides/basic_guide/assembler_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1792,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 26
+  },
+  "expansion/textures/guides/basic_guide/recipes/spaceship_cockpit_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2048,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 27
+  },
+  "expansion/textures/guides/basic_guide/recipes/oxygen_filter_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2304,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 28
+  },
+  "expansion/textures/guides/basic_guide/recipes/monochrome_monitor_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2560,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 29
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk2_helmet_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2816,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 30
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk1_helmet_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3072,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 31
+  },
+  "expansion/textures/guides/basic_guide/recipes/fabricator_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3328,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 32
+  },
+  "expansion/textures/guides/basic_guide/recipes/enhancer_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3584,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 33
+  },
+  "expansion/textures/guides/basic_guide/recipes/arc_furnace_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3840,
+    "y": 512,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 34
+  },
+  "expansion/textures/blocks/workbench/workbench_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 35
+  },
+  "expansion/textures/blocks/terraformer/terraformer_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 256,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 36
+  },
+  "expansion/textures/blocks/oxygenator/oxygenator_gui_flash": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 37
+  },
+  "expansion/textures/blocks/oxygenator/oxygenator_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 768,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 38
+  },
+  "expansion/textures/blocks/modstation/modstation_none_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 39
+  },
+  "expansion/textures/blocks/modification_station/modification_station_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 40
+  },
+  "expansion/textures/blocks/modification_station/mech_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1536,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 41
+  },
+  "expansion/textures/blocks/modification_station/buggy_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1792,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 42
+  },
+  "expansion/textures/blocks/lacrymae_extractor/extractor_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2048,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 43
+  },
+  "expansion/textures/blocks/fabricator/fabricator_gui_flash": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2304,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 44
+  },
+  "expansion/textures/blocks/fabricator/fabricator_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2560,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 45
+  },
+  "expansion/textures/blocks/enhancer/gui_weapon": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2816,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 46
+  },
+  "expansion/textures/blocks/enhancer/gui_none": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3072,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 47
+  },
+  "expansion/textures/blocks/enhancer/enhancer_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3328,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 48
+  },
+  "expansion/textures/blocks/compressor/texture": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3584,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 49
+  },
+  "expansion/textures/blocks/compressor/compressor_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3840,
+    "y": 768,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 50
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_gui_0": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 51
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_gui": {
+    "texture": "atlases/atlas_2.png",
+    "x": 256,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 52
+  },
+  "bracken/textures/misc/tinted_glasses": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 53
+  },
+  "bracken/textures/misc/goggles": {
+    "texture": "atlases/atlas_2.png",
+    "x": 768,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 54
+  },
+  "bracken/textures/misc/diving_helm": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 55
+  },
+  "bracken/textures/misc/cryolith": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 56
+  },
+  "bracken/textures/misc/blindfold": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1536,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 57
+  },
+  "animated_java/textures/blueprint/mech_torso/sword": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1792,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 58
+  },
+  "animated_java/textures/blueprint/mech_torso/rocket": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2048,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 59
+  },
+  "animated_java/textures/blueprint/mech_torso/autocannon": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2304,
+    "y": 1024,
+    "width": 256,
+    "height": 256,
+    "custom_model_data": 60
+  },
+  "minecraft/textures/gui/container/brewing_guide_left": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3904,
+    "y": 0,
+    "width": 170,
+    "height": 166,
+    "custom_model_data": 61
+  },
+  "minecraft/textures/item/vent": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3136,
+    "y": 256,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 62
+  },
+  "minecraft/textures/item/trilobite": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3264,
+    "y": 256,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 63
+  },
+  "minecraft/textures/item/processor": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3392,
+    "y": 256,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 64
+  },
+  "minecraft/textures/item/goth": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3520,
+    "y": 256,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 65
+  },
+  "minecraft/textures/item/dweller": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3648,
+    "y": 256,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 66
+  },
+  "minecraft/textures/item/dragonfly": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3776,
+    "y": 256,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 67
+  },
+  "minecraft/textures/item/crofter": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3904,
+    "y": 256,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 68
+  },
+  "expansion/textures/vehicles/zwaluw/zwaluw": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2560,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 69
+  },
+  "expansion/textures/vehicles/spaceship/spaceship_landed": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2688,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 70
+  },
+  "expansion/textures/vehicles/spaceship/spaceship_cockpit_latch": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2816,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 71
+  },
+  "expansion/textures/vehicles/spaceship/spaceship": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2944,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 72
+  },
+  "expansion/textures/vehicles/spaceship/interior": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3072,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 73
+  },
+  "expansion/textures/vehicles/spaceship/cockpit_frame": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3200,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 74
+  },
+  "expansion/textures/vehicles/rocket/tocket_top_total": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3328,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 75
+  },
+  "expansion/textures/vehicles/mech_torso/sword_right": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3456,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 76
+  },
+  "expansion/textures/vehicles/mech_torso/sword_left": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3456,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 77
+  },
+  "expansion/textures/vehicles/mech_torso/mech_interior": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3584,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 78
+  },
+  "expansion/textures/vehicles/mech_torso/blank": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3712,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 79
+  },
+  "animated_java/textures/blueprint/mech_torso/blank": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3712,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 80
+  },
+  "expansion/textures/vehicles/lunar_module/interior_windows": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3840,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 81
+  },
+  "expansion/textures/vehicles/buggy/solar_panel": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3968,
+    "y": 1024,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 82
+  },
+  "expansion/textures/tools/fleet_finder": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2560,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 83
+  },
+  "expansion/textures/tools/cryoblaster": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2688,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 84
+  },
+  "expansion/textures/structures/texture": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2816,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 85
+  },
+  "expansion/textures/structures/portal_core_yellow": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2944,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 86
+  },
+  "expansion/textures/structures/portal_core_red": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3072,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 87
+  },
+  "expansion/textures/structures/portal_core_purple": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3200,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 88
+  },
+  "expansion/textures/structures/portal_core_green": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3328,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 89
+  },
+  "expansion/textures/structures/portal_core_blue": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3456,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 90
+  },
+  "expansion/textures/structures/illusion5": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3584,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 91
+  },
+  "expansion/textures/structures/illusion4": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3712,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 92
+  },
+  "expansion/textures/structures/illusion3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3840,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 93
+  },
+  "expansion/textures/structures/illusion2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3968,
+    "y": 1152,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 94
+  },
+  "expansion/textures/structures/animation4": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 95
+  },
+  "expansion/textures/structures/animation3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 128,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 96
+  },
+  "expansion/textures/structures/animation2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 256,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 97
+  },
+  "expansion/textures/structures/animation1": {
+    "texture": "atlases/atlas_2.png",
+    "x": 384,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 98
+  },
+  "expansion/textures/structures/animation0": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 99
+  },
+  "expansion/textures/mobs/drone": {
+    "texture": "atlases/atlas_2.png",
+    "x": 640,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 100
+  },
+  "expansion/textures/guides/basic_guide/teslaturret_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4032,
+    "y": 256,
+    "width": 64,
+    "height": 128,
+    "custom_model_data": 101
+  },
+  "expansion/textures/guides/basic_guide/spaceship_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 768,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 102
+  },
+  "expansion/textures/guides/basic_guide/fabricator_infographic": {
+    "texture": "atlases/atlas_2.png",
+    "x": 896,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 103
+  },
+  "expansion/textures/guides/basic_guide/fabricator_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 1280,
+    "width": 64,
+    "height": 128,
+    "custom_model_data": 104
+  },
+  "expansion/textures/guides/basic_guide/extractor_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1088,
+    "y": 1280,
+    "width": 64,
+    "height": 128,
+    "custom_model_data": 105
+  },
+  "expansion/textures/guides/basic_guide/enhancer_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1152,
+    "y": 1280,
+    "width": 64,
+    "height": 128,
+    "custom_model_data": 106
+  },
+  "expansion/textures/guides/basic_guide/compressor_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1216,
+    "y": 1280,
+    "width": 64,
+    "height": 128,
+    "custom_model_data": 107
+  },
+  "expansion/textures/blocks/workbench/workbench": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 108
+  },
+  "expansion/textures/blocks/tesla_coil/tesla_coil": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1408,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 109
+  },
+  "expansion/textures/blocks/lacrymae_extractor/lacrymae_extractor": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1536,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 110
+  },
+  "expansion/textures/blocks/fabricator/fabricator": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1664,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 111
+  },
+  "animated_java/textures/blueprint/fabricator/fabricator": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1664,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 112
+  },
+  "animated_java/textures/blueprint/mech_torso/jetpack": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1792,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 113
+  },
+  "animated_java/textures/blueprint/mech_torso/interior": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1920,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 114
+  },
+  "animated_java/textures/blueprint/enhancer/texture": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2048,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 115
+  },
+  "animated_java/textures/blueprint/compressor/texture": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2176,
+    "y": 1280,
+    "width": 128,
+    "height": 128,
+    "custom_model_data": 116
+  },
+  "stellarity/textures/item/music_disc/precipice_stereo": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4074,
+    "y": 0,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 117
+  },
+  "stellarity/textures/block/altar_of_the_sacred_side": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2304,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 118
+  },
+  "bracken/textures/custom_items/brine_ing/essence_of_infinity_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2320,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 119
+  },
+  "bracken/textures/custom_items/brine_ing/essence_of_infinity": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2320,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 120
+  },
+  "bracken/textures/custom_items/books/heal_book_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2336,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 121
+  },
+  "bracken/textures/custom_items/books/heal_book": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2352,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 122
+  },
+  "1_splatus/textures/item/hammer": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2368,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 123
+  },
+  "1_splatus/textures/item/end_excalibur": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2384,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 124
+  },
+  "1_splatus/textures/item/endlight_resting": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2400,
+    "y": 1280,
+    "width": 16,
+    "height": 112,
+    "custom_model_data": 125
+  },
+  "stellarity/textures/item/food/prismatic_sushi": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2416,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 126
+  },
+  "stellarity/textures/item/food/fish/prismite": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2432,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 127
+  },
+  "expansion/textures/armor/trader_helmet": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2448,
+    "y": 1280,
+    "width": 96,
+    "height": 96,
+    "custom_model_data": 128
+  },
+  "bracken/textures/custom_items/keys/varskspace_key_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2544,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 129
+  },
+  "bracken/textures/custom_items/keys/varskspace_key": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2560,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 130
+  },
+  "bracken/textures/custom_items/keys/omnidrome_key_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2576,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 131
+  },
+  "bracken/textures/custom_items/keys/omnidrome_key": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2576,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 132
+  },
+  "bracken/textures/custom_items/brine_ing/essence_of_eternity_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2592,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 133
+  },
+  "bracken/textures/custom_items/brine_ing/essence_of_eternity": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2608,
+    "y": 1280,
+    "width": 16,
+    "height": 96,
+    "custom_model_data": 134
+  },
+  "stellarity/textures/painting/end": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3904,
+    "y": 166,
+    "width": 80,
+    "height": 80,
+    "custom_model_data": 135
+  },
+  "bracken/textures/painting/crossing": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3984,
+    "y": 166,
+    "width": 64,
+    "height": 80,
+    "custom_model_data": 136
+  },
+  "bracken/textures/custom_items/books/adamantine_book_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4048,
+    "y": 166,
+    "width": 16,
+    "height": 80,
+    "custom_model_data": 137
+  },
+  "bracken/textures/custom_items/books/adamantine_book": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4064,
+    "y": 166,
+    "width": 16,
+    "height": 80,
+    "custom_model_data": 138
+  },
+  "1_splatus/textures/item/ice_staff_ready": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4080,
+    "y": 166,
+    "width": 16,
+    "height": 80,
+    "custom_model_data": 139
+  },
+  "1_splatus/textures/item/fire_staff_ready": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2624,
+    "y": 1280,
+    "width": 16,
+    "height": 80,
+    "custom_model_data": 140
+  },
+  "1_splatus/textures/item/electric_staff_ready": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2640,
+    "y": 1280,
+    "width": 16,
+    "height": 80,
+    "custom_model_data": 141
+  },
+  "1_splatus/textures/item/unused/delete": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2656,
+    "y": 1280,
+    "width": 16,
+    "height": 80,
+    "custom_model_data": 142
+  },
+  "stellarity/textures/entity/cow/ender_cow": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2672,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 143
+  },
+  "stellarity/textures/block/satchel_of_voids": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2736,
+    "y": 1280,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 144
+  },
+  "minecraft/textures/item/unsung": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2752,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 145
+  },
+  "minecraft/textures/item/thrall": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2816,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 146
+  },
+  "minecraft/textures/item/supermonitor": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2880,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 147
+  },
+  "minecraft/textures/item/red_death": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2944,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 148
+  },
+  "minecraft/textures/item/playerrealmkeeper": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3008,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 149
+  },
+  "minecraft/textures/item/playerdweller": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3072,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 150
+  },
+  "minecraft/textures/item/playerautomech3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3136,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 151
+  },
+  "minecraft/textures/item/playerautomech2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3200,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 152
+  },
+  "minecraft/textures/item/pirate3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3264,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 153
+  },
+  "minecraft/textures/item/pirate2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3328,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 154
+  },
+  "minecraft/textures/item/pirate": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3392,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 155
+  },
+  "minecraft/textures/item/pharaoh": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3456,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 156
+  },
+  "minecraft/textures/item/parser-b": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3520,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 157
+  },
+  "minecraft/textures/item/mimic3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3584,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 158
+  },
+  "minecraft/textures/item/mimic1": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3648,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 159
+  },
+  "minecraft/textures/item/knight": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3712,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 160
+  },
+  "minecraft/textures/item/keeper": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3776,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 161
+  },
+  "minecraft/textures/item/jellyfish": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3840,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 162
+  },
+  "minecraft/textures/item/hammerhead": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3904,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 163
+  },
+  "minecraft/textures/item/giant": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3968,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 164
+  },
+  "minecraft/textures/item/gavsakka": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4032,
+    "y": 1280,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 165
+  },
+  "minecraft/textures/item/flowerarms": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 166
+  },
+  "minecraft/textures/item/fae9": {
+    "texture": "atlases/atlas_2.png",
+    "x": 64,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 167
+  },
+  "minecraft/textures/item/fae8": {
+    "texture": "atlases/atlas_2.png",
+    "x": 128,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 168
+  },
+  "minecraft/textures/item/fae7": {
+    "texture": "atlases/atlas_2.png",
+    "x": 192,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 169
+  },
+  "minecraft/textures/item/fae6": {
+    "texture": "atlases/atlas_2.png",
+    "x": 256,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 170
+  },
+  "minecraft/textures/item/fae5": {
+    "texture": "atlases/atlas_2.png",
+    "x": 320,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 171
+  },
+  "minecraft/textures/item/fae4": {
+    "texture": "atlases/atlas_2.png",
+    "x": 384,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 172
+  },
+  "minecraft/textures/item/fae3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 448,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 173
+  },
+  "minecraft/textures/item/fae2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 174
+  },
+  "minecraft/textures/item/fae10": {
+    "texture": "atlases/atlas_2.png",
+    "x": 576,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 175
+  },
+  "minecraft/textures/item/fae1": {
+    "texture": "atlases/atlas_2.png",
+    "x": 640,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 176
+  },
+  "minecraft/textures/item/dunkleosteus": {
+    "texture": "atlases/atlas_2.png",
+    "x": 704,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 177
+  },
+  "minecraft/textures/item/bobbit_worm": {
+    "texture": "atlases/atlas_2.png",
+    "x": 768,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 178
+  },
+  "minecraft/textures/item/aquatic_sentinel": {
+    "texture": "atlases/atlas_2.png",
+    "x": 832,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 179
+  },
+  "minecraft/textures/item/adapter-t": {
+    "texture": "atlases/atlas_2.png",
+    "x": 896,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 180
+  },
+  "minecraft/textures/entity/phantom_eyes": {
+    "texture": "atlases/atlas_2.png",
+    "x": 960,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 181
+  },
+  "minecraft/textures/entity/shulker/shulker": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 182
+  },
+  "minecraft/textures/entity/horse/horse_skeleton": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1088,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 183
+  },
+  "minecraft/textures/entity/chest/ender": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1152,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 184
+  },
+  "minecraft/textures/block/dragon_egg": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1216,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 185
+  },
+  "incendium/textures/item/trailblazer/pulling_6": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1232,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 186
+  },
+  "incendium/textures/item/trailblazer/pulling_5": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1248,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 187
+  },
+  "incendium/textures/item/trailblazer/pulling_4": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1264,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 188
+  },
+  "incendium/textures/item/trailblazer/pulling_3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 189
+  },
+  "incendium/textures/item/trailblazer/pulling_2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1296,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 190
+  },
+  "incendium/textures/item/ragnarok/pulling_6": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1312,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 191
+  },
+  "incendium/textures/item/ragnarok/pulling_5": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1328,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 192
+  },
+  "incendium/textures/item/ragnarok/pulling_4": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1344,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 193
+  },
+  "incendium/textures/item/ragnarok/pulling_3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1360,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 194
+  },
+  "incendium/textures/item/ragnarok/pulling_2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1376,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 195
+  },
+  "incendium/textures/item/radiation/shield": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1392,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 196
+  },
+  "incendium/textures/item/necrotic/shield": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1456,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 197
+  },
+  "expansion/textures/vehicles/spaceship/landing_gear": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1520,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 198
+  },
+  "expansion/textures/vehicles/mech_torso/drills": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1584,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 199
+  },
+  "expansion/textures/vehicles/mech_torso/blaster_right": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1648,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 200
+  },
+  "expansion/textures/vehicles/mech_torso/blaster_left": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1648,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 201
+  },
+  "expansion/textures/tools/pocket_space": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1712,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 202
+  },
+  "expansion/textures/tools/oxygen_tank": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1776,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 203
+  },
+  "expansion/textures/statues/tristan_arthur": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1840,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 204
+  },
+  "expansion/textures/statues/quercus": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1904,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 205
+  },
+  "expansion/textures/mobs/pet_drone_blink": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1968,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 206
+  },
+  "expansion/textures/mobs/pet_drone": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2032,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 207
+  },
+  "expansion/textures/mobs/mod_drone": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2096,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 208
+  },
+  "expansion/textures/items/processing_unit": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2160,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 209
+  },
+  "expansion/textures/guides/basic_guide/vulcanium_ore_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2224,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 210
+  },
+  "expansion/textures/guides/basic_guide/titanium_ore_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2288,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 211
+  },
+  "expansion/textures/guides/basic_guide/terraformer_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2352,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 212
+  },
+  "expansion/textures/guides/basic_guide/space_equipment_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2416,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 213
+  },
+  "expansion/textures/guides/basic_guide/rocket_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2480,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 214
+  },
+  "expansion/textures/guides/basic_guide/railgun_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2544,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 215
+  },
+  "expansion/textures/guides/basic_guide/planetarium_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2608,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 216
+  },
+  "expansion/textures/guides/basic_guide/oxygenator_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2672,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 217
+  },
+  "expansion/textures/guides/basic_guide/modstation_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2736,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 218
+  },
+  "expansion/textures/guides/basic_guide/drone_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2800,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 219
+  },
+  "expansion/textures/guides/basic_guide/cryonite_ore_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2864,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 220
+  },
+  "expansion/textures/guides/basic_guide/cryoblaster_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2928,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 221
+  },
+  "expansion/textures/guides/basic_guide/crafting_table_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2992,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 222
+  },
+  "expansion/textures/guides/basic_guide/buggy_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3056,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 223
+  },
+  "expansion/textures/guides/basic_guide/arc_furnace_displayitem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3120,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 224
+  },
+  "expansion/textures/guides/basic_guide/recipes/wrench_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3184,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 225
+  },
+  "expansion/textures/guides/basic_guide/recipes/thruster_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3248,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 226
+  },
+  "expansion/textures/guides/basic_guide/recipes/thermometer_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3312,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 227
+  },
+  "expansion/textures/guides/basic_guide/recipes/tesla_turret_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3376,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 228
+  },
+  "expansion/textures/guides/basic_guide/recipes/terraformer_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3440,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 229
+  },
+  "expansion/textures/guides/basic_guide/recipes/steel_sword_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3504,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 230
+  },
+  "expansion/textures/guides/basic_guide/recipes/steel_smelt": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3568,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 231
+  },
+  "expansion/textures/guides/basic_guide/recipes/steel_shovel_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3632,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 232
+  },
+  "expansion/textures/guides/basic_guide/recipes/steel_plate_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3696,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 233
+  },
+  "expansion/textures/guides/basic_guide/recipes/steel_pickaxe_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3760,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 234
+  },
+  "expansion/textures/guides/basic_guide/recipes/steel_hoe_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3824,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 235
+  },
+  "expansion/textures/guides/basic_guide/recipes/steel_axe_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3888,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 236
+  },
+  "expansion/textures/guides/basic_guide/recipes/speedmod1_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3952,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 237
+  },
+  "expansion/textures/guides/basic_guide/recipes/spaceship_rightwing_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4016,
+    "y": 1408,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 238
+  },
+  "expansion/textures/guides/basic_guide/recipes/spaceship_nose_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 239
+  },
+  "expansion/textures/guides/basic_guide/recipes/spaceship_leftwing_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 64,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 240
+  },
+  "expansion/textures/guides/basic_guide/recipes/spaceship_engines_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 128,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 241
+  },
+  "expansion/textures/guides/basic_guide/recipes/simple_mechanism_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 192,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 242
+  },
+  "expansion/textures/guides/basic_guide/recipes/rocket_top_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 256,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 243
+  },
+  "expansion/textures/guides/basic_guide/recipes/rocket_cockpit_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 320,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 244
+  },
+  "expansion/textures/guides/basic_guide/recipes/rocket_bottom_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 384,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 245
+  },
+  "expansion/textures/guides/basic_guide/recipes/rocket_boots_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 448,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 246
+  },
+  "expansion/textures/guides/basic_guide/recipes/rocketmodule_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 247
+  },
+  "expansion/textures/guides/basic_guide/recipes/robot_arm_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 576,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 248
+  },
+  "expansion/textures/guides/basic_guide/recipes/repairkit_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 640,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 249
+  },
+  "expansion/textures/guides/basic_guide/recipes/planetarium_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 704,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 250
+  },
+  "expansion/textures/guides/basic_guide/recipes/oxygen_tank_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 768,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 251
+  },
+  "expansion/textures/guides/basic_guide/recipes/oxygen_tanktier2_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 832,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 252
+  },
+  "expansion/textures/guides/basic_guide/recipes/oxygenator_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 896,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 253
+  },
+  "expansion/textures/guides/basic_guide/recipes/modstation_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 960,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 254
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk2_leggings_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 255
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk2_chestplate_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1088,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 256
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk2_boots_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1152,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 257
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk1_leggings_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1216,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 258
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk1_chestplate_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 259
+  },
+  "expansion/textures/guides/basic_guide/recipes/mk1_boots_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1344,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 260
+  },
+  "expansion/textures/guides/basic_guide/recipes/magnetic_boots_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1408,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 261
+  },
+  "expansion/textures/guides/basic_guide/recipes/magneticmodule_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1472,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 262
+  },
+  "expansion/textures/guides/basic_guide/recipes/heatresist_mk2_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1536,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 263
+  },
+  "expansion/textures/guides/basic_guide/recipes/heating_module_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1600,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 264
+  },
+  "expansion/textures/guides/basic_guide/recipes/heating_element_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1664,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 265
+  },
+  "expansion/textures/guides/basic_guide/recipes/gear_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1728,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 266
+  },
+  "expansion/textures/guides/basic_guide/recipes/fuel_cell_mk2_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1792,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 267
+  },
+  "expansion/textures/guides/basic_guide/recipes/fuel_cell_mk1_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1856,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 268
+  },
+  "expansion/textures/guides/basic_guide/recipes/fuelmod1_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1920,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 269
+  },
+  "expansion/textures/guides/basic_guide/recipes/fan_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1984,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 270
+  },
+  "expansion/textures/guides/basic_guide/recipes/extractor_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2048,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 271
+  },
+  "expansion/textures/guides/basic_guide/recipes/elektromotor_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2112,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 272
+  },
+  "expansion/textures/guides/basic_guide/recipes/elektromagnet_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2176,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 273
+  },
+  "expansion/textures/guides/basic_guide/recipes/durability_mk2_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2240,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 274
+  },
+  "expansion/textures/guides/basic_guide/recipes/durability_mk1_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2304,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 275
+  },
+  "expansion/textures/guides/basic_guide/recipes/cpu_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2368,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 276
+  },
+  "expansion/textures/guides/basic_guide/recipes/copper_wire_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2432,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 277
+  },
+  "expansion/textures/guides/basic_guide/recipes/cooling_module_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2496,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 278
+  },
+  "expansion/textures/guides/basic_guide/recipes/cooling_element_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2560,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 279
+  },
+  "expansion/textures/guides/basic_guide/recipes/compressor_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2624,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 280
+  },
+  "expansion/textures/guides/basic_guide/recipes/complex_mechanism_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2688,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 281
+  },
+  "expansion/textures/guides/basic_guide/recipes/coldresist_mk2_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2752,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 282
+  },
+  "expansion/textures/guides/basic_guide/recipes/circuit_board_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2816,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 283
+  },
+  "expansion/textures/guides/basic_guide/recipes/buggy_wheel_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2880,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 284
+  },
+  "expansion/textures/guides/basic_guide/recipes/assembler_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2944,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 285
+  },
+  "expansion/textures/guides/basic_guide/recipes/amethonium_smelt": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3008,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 286
+  },
+  "expansion/textures/guides/basic_guide/recipes/amethonium_plate_recipe": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3072,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 287
+  },
+  "expansion/textures/blocks/wireframe_red": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3136,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 288
+  },
+  "expansion/textures/blocks/machine_template": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3200,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 289
+  },
+  "expansion/textures/blocks/terraformer/terraformer_all/terraformer": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3264,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 290
+  },
+  "expansion/textures/blocks/planetarium/planetarium": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3328,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 291
+  },
+  "expansion/textures/blocks/oxygenator/oxygenator": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3392,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 292
+  },
+  "expansion/textures/blocks/modstation/modstation": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3456,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 293
+  },
+  "expansion/textures/blocks/modification_station/modstation": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3520,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 294
+  },
+  "expansion/textures/blocks/enhancer/enhancer": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3584,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 295
+  },
+  "expansion/textures/blocks/compressor/compressor": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3648,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 296
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_on_5": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3712,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 297
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_on_4": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3776,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 298
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_on_3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3840,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 299
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_on_2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3904,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 300
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_on_1": {
+    "texture": "atlases/atlas_2.png",
+    "x": 3968,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 301
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace_on_0": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4032,
+    "y": 1472,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 302
+  },
+  "expansion/textures/blocks/arc_furnace/arc_furnace": {
+    "texture": "atlases/atlas_2.png",
+    "x": 0,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 303
+  },
+  "expansion/textures/armor/space_jetpack_yellow": {
+    "texture": "atlases/atlas_2.png",
+    "x": 64,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 304
+  },
+  "expansion/textures/armor/space_jetpack_white": {
+    "texture": "atlases/atlas_2.png",
+    "x": 128,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 305
+  },
+  "expansion/textures/armor/space_jetpack_red": {
+    "texture": "atlases/atlas_2.png",
+    "x": 192,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 306
+  },
+  "expansion/textures/armor/space_jetpack_purple": {
+    "texture": "atlases/atlas_2.png",
+    "x": 256,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 307
+  },
+  "expansion/textures/armor/space_jetpack_pink": {
+    "texture": "atlases/atlas_2.png",
+    "x": 320,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 308
+  },
+  "expansion/textures/armor/space_jetpack_orange": {
+    "texture": "atlases/atlas_2.png",
+    "x": 384,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 309
+  },
+  "expansion/textures/armor/space_jetpack_magenta": {
+    "texture": "atlases/atlas_2.png",
+    "x": 448,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 310
+  },
+  "expansion/textures/armor/space_jetpack_lime": {
+    "texture": "atlases/atlas_2.png",
+    "x": 512,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 311
+  },
+  "expansion/textures/armor/space_jetpack_lgray": {
+    "texture": "atlases/atlas_2.png",
+    "x": 576,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 312
+  },
+  "expansion/textures/armor/space_jetpack_lblue": {
+    "texture": "atlases/atlas_2.png",
+    "x": 640,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 313
+  },
+  "expansion/textures/armor/space_jetpack_green": {
+    "texture": "atlases/atlas_2.png",
+    "x": 704,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 314
+  },
+  "expansion/textures/armor/space_jetpack_gray": {
+    "texture": "atlases/atlas_2.png",
+    "x": 768,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 315
+  },
+  "expansion/textures/armor/space_jetpack_cyan": {
+    "texture": "atlases/atlas_2.png",
+    "x": 832,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 316
+  },
+  "expansion/textures/armor/space_jetpack_brown": {
+    "texture": "atlases/atlas_2.png",
+    "x": 896,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 317
+  },
+  "expansion/textures/armor/space_jetpack_blue": {
+    "texture": "atlases/atlas_2.png",
+    "x": 960,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 318
+  },
+  "expansion/textures/armor/space_jetpack_black": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1024,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 319
+  },
+  "expansion/textures/armor/helmets/trooper": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1088,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 320
+  },
+  "expansion/textures/armor/helmets/pilot": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1152,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 321
+  },
+  "expansion/textures/armor/helmets/nasa": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1216,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 322
+  },
+  "expansion/textures/armor/helmets/hazmat": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1280,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 323
+  },
+  "expansion/textures/armor/helmets/golem": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1344,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 324
+  },
+  "bracken/textures/painting/zenobia": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1408,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 325
+  },
+  "bracken/textures/painting/trisolde": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1472,
+    "y": 1536,
+    "width": 63,
+    "height": 64,
+    "custom_model_data": 326
+  },
+  "bracken/textures/painting/starry": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1535,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 327
+  },
+  "bracken/textures/entity/pig/mimic2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1599,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 328
+  },
+  "bracken/textures/entity/pig/half_hoglin": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1663,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 329
+  },
+  "bracken/textures/entity/cow/mimic1": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1727,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 330
+  },
+  "bracken/textures/custom_items/brine_ing/tempest_nectar_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 4080,
+    "y": 1408,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 331
+  },
+  "bracken/textures/custom_items/brine_ing/tempest_nectar": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1791,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 332
+  },
+  "bracken/textures/custom_items/books/fireball_book_e": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1807,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 333
+  },
+  "bracken/textures/custom_items/books/fireball_book": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1823,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 334
+  },
+  "animated_java/textures/blueprint/rocket/screens": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1839,
+    "y": 1536,
+    "width": 64,
+    "height": 64,
+    "custom_model_data": 335
+  },
+  "1_splatus/textures/item/wave_caster": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1903,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 336
+  },
+  "1_splatus/textures/item/evokers_wrath_ready_old": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1919,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 337
+  },
+  "1_splatus/textures/item/crucible/yellow": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1935,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 338
+  },
+  "1_splatus/textures/item/crucible/white": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1951,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 339
+  },
+  "1_splatus/textures/item/crucible/red": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1967,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 340
+  },
+  "1_splatus/textures/item/crucible/purple": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1983,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 341
+  },
+  "1_splatus/textures/item/crucible/pink": {
+    "texture": "atlases/atlas_2.png",
+    "x": 1999,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 342
+  },
+  "1_splatus/textures/item/crucible/orange": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2015,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 343
+  },
+  "1_splatus/textures/item/crucible/magenta": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2031,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 344
+  },
+  "1_splatus/textures/item/crucible/lime": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2047,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 345
+  },
+  "1_splatus/textures/item/crucible/light_gray": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2063,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 346
+  },
+  "1_splatus/textures/item/crucible/light_blue": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2079,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 347
+  },
+  "1_splatus/textures/item/crucible/green": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2095,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 348
+  },
+  "1_splatus/textures/item/crucible/gray": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2111,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 349
+  },
+  "1_splatus/textures/item/crucible/cyan_old": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2127,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 350
+  },
+  "1_splatus/textures/item/crucible/cyan": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2143,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 351
+  },
+  "1_splatus/textures/item/crucible/brown": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2159,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 352
+  },
+  "1_splatus/textures/item/crucible/blue": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2175,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 353
+  },
+  "1_splatus/textures/item/crucible/black": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2191,
+    "y": 1536,
+    "width": 16,
+    "height": 64,
+    "custom_model_data": 354
+  },
+  "minecraft/textures/item/playerdweller3": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2207,
+    "y": 1536,
+    "width": 56,
+    "height": 56,
+    "custom_model_data": 355
+  },
+  "minecraft/textures/item/playerdweller2": {
+    "texture": "atlases/atlas_2.png",
+    "x": 2263,
+    "y": 1536,
+    "width": 56,
+    "height": 56,
+    "custom_model_data": 356
+  }
+}

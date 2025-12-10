@@ -67,7 +67,7 @@ async function generateAtlases(hashMap, outputFolder) {
   const atlases = [];
   let atlasIndex = 1;
   let start = 0;
-  const atlasSize = 8192; // taille max de l'atlas
+  const atlasSize = 8192 / 2; // taille max de l'atlas
 
   const atlasDir = path.join(outputFolder, "atlases");
   fs.ensureDirSync(atlasDir);
