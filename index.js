@@ -28,8 +28,11 @@ async function collectTextures(baseFolder) {
   let maxTileSize = 0;
   let maxFile = "";
 
-  // 🔹 glob sur tous les sous-dossiers de textures
-  const files = glob.sync(`${baseFolder}/**/textures/{item,custom_items}/*.png`);
+  // 🔹 glob sur tous les sous-dossiers de textures (items seulement, POSIX-safe, recherche récursive)
+  const basePosix = baseFolder.replace(/\\+/g, '/');
+  const pattern = `${basePosix}/**/textures/item/**/*.png`;
+  console.log(`🔍 Pattern utilisé (items seulement): ${pattern}`);
+  const files = glob.sync(pattern, { nodir: true, nocase: true });
   console.log(`🔍 Total PNG trouvés: ${files.length}`);
 
   for (const file of files) {
@@ -194,51 +197,54 @@ async function generateAtlases(hashMap, outputFolder) {
 // 🔹 Réécriture des modèles JSON pour pointer sur les atlas
 // 🔹 Réécriture des modèles JSON pour pointer sur les atlas (tous modèles)
 async function rewriteModels(baseFolder, atlases) {
-  const modelFiles = glob.sync(`${baseFolder}/**/models/**/*.json`);
-
-  // Fonction récursive pour remplacer toutes les textures dans l'objet JSON
-  function replaceTexturesInObject(obj) {
-    for (const key in obj) {
-      if (!obj.hasOwnProperty(key)) continue;
-
-      if (typeof obj[key] === 'string') {
-        // on cherche si c'est une texture
-        const texName = obj[key].replace(/^minecraft:/, '').replace(/^.*\//, ''); 
-        let replaced = false;
-
-        for (const atlas of atlases) {
-          for (const [name, data] of Object.entries(atlas)) {
-            if (name.endsWith(texName)) {
-              obj[key] = data.texture;
-              // ajouter custom_model_data si c'est layer0 ou layer1 (items)
-              if (key.startsWith('layer')) {
-                obj.custom_model_data = data.custom_model_data;
-              }
-              replaced = true;
-              break;
-            }
-          }
-          if (replaced) break;
-        }
-
-      } else if (typeof obj[key] === 'object' && obj[key] !== null) {
-        // récursion pour sous-objets
-        replaceTexturesInObject(obj[key]);
-      }
-    }
-  }
+  const basePosix = baseFolder.replace(/\\+/g, '/');
+  const modelPattern = `${basePosix}/**/models/item/**/*.json`;
+  console.log(`🔍 Modèles ciblés (items seulement): ${modelPattern}`);
+  const modelFiles = glob.sync(modelPattern, { nodir: true, nocase: true });
 
   for (const modelFile of modelFiles) {
     try {
       const json = await fs.readJson(modelFile);
-      replaceTexturesInObject(json);
-      await fs.writeJson(modelFile, json, { spaces: 2 });
-      console.log(`✏️ Modèle mis à jour: ${modelFile}`);
+      let updated = false;
+
+      function replaceTextures(obj) {
+        for (const key in obj) {
+          if (!obj.hasOwnProperty(key)) continue;
+
+          const val = obj[key];
+
+          if (typeof val === 'string' && key.startsWith('layer')) {
+            const texName = val.replace(/^minecraft:/, '').replace(/^.*\//, '');
+            for (const atlas of atlases) {
+              for (const [name, data] of Object.entries(atlas)) {
+                if (name.endsWith(texName)) {
+                  obj[key] = data.texture;
+                  json.custom_model_data = data.custom_model_data; // ajouté au JSON
+                  updated = true;
+                  break;
+                }
+              }
+              if (updated) break;
+            }
+          } else if (typeof val === 'object' && val !== null) {
+            replaceTextures(val);
+          }
+        }
+      }
+
+      replaceTextures(json);
+
+      if (updated) {
+        await fs.writeJson(modelFile, json, { spaces: 2 });
+        console.log(`✏️ Modèle mis à jour: ${modelFile}`);
+      }
+
     } catch (err) {
       console.error(`⚠️ Impossible de traiter ${modelFile}: ${err.message}`);
     }
   }
 }
+
 
 
 // 🔹 Audio: collecte, sauvegarde lossless (FLAC) et réencodage OGG optimisé
