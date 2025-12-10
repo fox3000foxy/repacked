@@ -1,0 +1,31 @@
+{
+    "satb.config.title": "SATB Global Settings",
+    "satb.personalconfig.title": "SATB Personal Settings",
+
+    "satb.config.unlockedmsg": "Players can change the bar settings for themselves using %s. However, an operator can enable the global settings to force all players to use it.",
+    "satb.config.unlock": "Disable global settings",
+
+    "satb.config.lock": "Enable global settings",
+    "satb.config.lockederror": "I'm sorry, but the SATB Global Settings is on. Only operators can change the settings.",
+    "satb.config.lockedmsgchangetopersonal": "Change my personal settings",
+
+    "satb.config.saturation": "Saturation bar",
+    "satb.config.exhaustion": "Exhaustion bar",
+    "satb.config.toughness": "Armor Toughness bar",
+
+    "satb.config.save": "Save Changes",
+    "satb.config.exit": "Close",
+    
+    "satb.config.on": "ON",
+    "satb.config.off": "OFF",
+    
+    "satb.global_config.warning": "You are changing the global settings. Changes here will apply to all players.",
+
+    "satb.error.bugmessage": "%s. THIS IS A BUG. Please contact the developer (nodenotjs) on discord and provide the following code: %s",
+    "satb.error.failedopensettingsmenu": "Failed to open the settings menu",
+    "satb.error.failedtosavesettings": "Failed to save the settings",
+
+    "satb.errorcode": "D%sR2E%s",
+    "satb.errorcode.failedopensettingsmenu": "OSM",
+    "satb.errorcode.failedtosavesettings": "SS%s"
+}

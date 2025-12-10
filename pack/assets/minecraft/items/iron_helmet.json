@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 87003,
+        "model": {
+          "type": "model",
+          "model": "1_splatus:item/blaze"
+        }
+      },
+      {
+        "threshold": 87006,
+        "model": {
+          "type": "model",
+          "model": "1_splatus:item/shulker_shell_helmet"
+        }
+      }
+    ], 
+    "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/iron_helmet"
+      }
+  }
+}

@@ -1,0 +1,235 @@
+{
+    "sources": [
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/brine/brine_leggings",
+                "bracken:trims/models/armor/brine/brine"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/void/void_leggings",
+                "bracken:trims/models/armor/void/void"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/omnidrome/omnidrome_leggings",
+                "bracken:trims/models/armor/omnidrome/omnidrome"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/varskspace/varskspace_leggings",
+                "bracken:trims/models/armor/varskspace/varskspace"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/faewild/faewild_leggings",
+                "bracken:trims/models/armor/faewild/faewild"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/dormis/dormis_leggings",
+                "bracken:trims/models/armor/dormis/dormis"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/glacium/glacium_leggings",
+                "bracken:trims/models/armor/glacium/glacium"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/pax/pax_leggings",
+                "bracken:trims/models/armor/pax/pax"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/sanctum/sanctum_leggings",
+                "bracken:trims/models/armor/sanctum/sanctum"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/underdark/underdark_leggings",
+                "bracken:trims/models/armor/underdark/underdark"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        },
+        {
+            "type": "minecraft:paletted_permutations",
+            "textures": [
+                "bracken:trims/models/armor/panacea/panacea_leggings",
+                "bracken:trims/models/armor/panacea/panacea"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "quartz": "trims/color_palettes/quartz",
+                "iron": "trims/color_palettes/iron",
+                "gold": "trims/color_palettes/gold",
+                "diamond": "trims/color_palettes/diamond",
+                "netherite": "trims/color_palettes/netherite",
+                "redstone": "trims/color_palettes/redstone",
+                "copper": "trims/color_palettes/copper",
+                "emerald": "trims/color_palettes/emerald",
+                "lapis": "trims/color_palettes/lapis",
+                "amethyst": "trims/color_palettes/amethyst",
+                "blaze": "bracken:trims/color_palettes/blaze"
+            }
+        }
+    ]
+}

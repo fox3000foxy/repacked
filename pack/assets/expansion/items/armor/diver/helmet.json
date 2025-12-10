@@ -1,0 +1,22 @@
+{
+    "model": {
+        "type": "select",
+        "property": "display_context",
+        "cases": 
+        [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "expansion:items/armor/diver/helmet",
+                    "tints": []
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "expansion:items/armor/diver/helmet_3d",
+            "tints": []
+        }
+    }
+}

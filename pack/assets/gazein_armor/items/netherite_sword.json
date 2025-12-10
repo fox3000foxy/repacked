@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "gazein_armor:item/netherite_sword",
+    "tints": []
+  }
+}

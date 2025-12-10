@@ -1,0 +1,20 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/iron_helmet"
+    },
+  "overrides": [
+    {
+        "predicate": {
+          "custom_model_data": 87003
+        },
+        "model": "1_splatus:item/blaze"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 87006
+      },
+      "model": "1_splatus:item/shulker_shell_helmet"
+  }
+]
+}

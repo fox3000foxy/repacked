@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/dried_kelp"
+  },
+"overrides": [
+  {
+      "predicate": {
+        "custom_model_data": 27012
+      },
+      "model": "1_splatus:item/jellyfish_strip"
+    }
+    
+  
+]
+}

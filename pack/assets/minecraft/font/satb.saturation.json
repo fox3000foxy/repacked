@@ -1,0 +1,41 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/saturation/full.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["F"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/saturation/half.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["H"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/saturation/empty.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": ["_"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/not.png",
+            "ascent": -32768,
+            "height": -4,
+            "chars": ["-"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/not.png",
+            "ascent": -32768,
+            "height": 18,
+            "chars": ["+"]
+        }
+    ]
+}
