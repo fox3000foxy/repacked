@@ -58,8 +58,11 @@ async function generateAtlases(textures, outputFolder) {
   let start = 0;
   const atlasSize = 8192; // taille max de l'atlas
 
+  const atlasDir = path.join(outputFolder, "atlases");
+  fs.ensureDirSync(atlasDir);
+
   while (start < entries.length) {
-    const slice = entries.slice(start, start + 2048); // max 512 textures par atlas
+    const slice = entries.slice(start, start + 512); // max 512 textures par atlas
     let x = 0, y = 0, rowHeight = 0;
 
     let atlas = sharp({
@@ -68,13 +71,12 @@ async function generateAtlases(textures, outputFolder) {
     const composites = [];
     const mapping = {};
 
-    // 🔹 Trier par hauteur décroissante pour un meilleur packing
+    // 🔹 Trier par hauteur décroissante pour meilleur packing
     slice.sort((a,b) => b[1].height - a[1].height);
 
     for (const [i, [name, file]] of slice.entries()) {
       const metadata = await sharp(file).metadata();
 
-      // Nouvelle ligne si pas assez de place
       if (x + metadata.width > atlasSize) {
         x = 0;
         y += rowHeight;
@@ -89,23 +91,22 @@ async function generateAtlases(textures, outputFolder) {
       composites.push({ input: file, left: x, top: y });
       mapping[name] = { 
         texture: `atlases/atlas_${atlasIndex}.png`, 
-        x, y, 
-        width: metadata.width, 
-        height: metadata.height, 
-        custom_model_data: i + 1 
+        x, y, width: metadata.width, height: metadata.height, custom_model_data: i + 1 
       };
 
       x += metadata.width;
       rowHeight = Math.max(rowHeight, metadata.height);
+
+      // 🔹 Supprimer l'image originale après l'ajout
+      fs.removeSync(file);
     }
 
     atlas = atlas.composite(composites);
 
-    const atlasPath = path.join(outputFolder, "atlases", `atlas_${atlasIndex}.png`);
-    fs.ensureDirSync(path.dirname(atlasPath));
+    const atlasPath = path.join(atlasDir, `atlas_${atlasIndex}.png`);
     await atlas.png().toFile(atlasPath);
 
-    const jsonPath = path.join(outputFolder, "atlases", `atlas_${atlasIndex}.json`);
+    const jsonPath = path.join(atlasDir, `atlas_${atlasIndex}.json`);
     fs.writeJsonSync(jsonPath, mapping, { spaces: 2 });
 
     console.log(`✅ Atlas créé: ${atlasPath} (${Object.keys(mapping).length} textures)`);
@@ -117,6 +118,7 @@ async function generateAtlases(textures, outputFolder) {
 
   return atlases;
 }
+
 
 
 // 🔹 Réécriture des modèles JSON pour pointer sur les atlas
