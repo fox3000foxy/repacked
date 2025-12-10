@@ -14,10 +14,10 @@ async function hashImage(file) {
   return crypto.createHash("md5").update(data).digest("hex");
 }
 
-// 🔹 Collecte des textures carrées uniquement
+// 🔹 Collecte des textures (inclut non-carrées) et déduplication par hash
 async function collectTextures(baseFolder) {
-  const textures = {};
-  const hashMap = {};
+  const textures = {}; // map relativeName -> { hash }
+  const hashMap = {}; // map hash -> { file, width, height, names: [] }
   let maxTileSize = 0;
   let maxFile = "";
 
@@ -29,30 +29,41 @@ async function collectTextures(baseFolder) {
     if (file.endsWith("_portal.png")) continue; // ignorer *_portal.png
 
     const metadata = await sharp(file).metadata();
-    if (metadata.width !== metadata.height) continue; // seulement carrées
+    const width = metadata.width;
+    const height = metadata.height;
 
-    const size = metadata.width;
-    if (size > maxTileSize) {
-      maxTileSize = size;
+    // Mise à jour de la plus grande dimension rencontrée
+    const maxDim = Math.max(width, height);
+    if (maxDim > maxTileSize) {
+      maxTileSize = maxDim;
       maxFile = file;
     }
 
     const h = await hashImage(file);
+
+    const relativeName = path.relative(baseFolder, file).replace(/\\/g, "/").replace(".png", "");
+
     if (!hashMap[h]) {
-      hashMap[h] = file;
-      const relativeName = path.relative(baseFolder, file).replace(/\\/g, "/").replace(".png", "");
-      textures[relativeName] = file;
+      hashMap[h] = { file, width, height, names: [relativeName] };
+    } else {
+      // duplicate: add alias name to the existing hash entry
+      hashMap[h].names.push(relativeName);
     }
+
+    // store reference so models can map by relative name later
+    textures[relativeName] = { hash: h };
   }
 
   console.log(`⚠️ Texture la plus grande: ${maxFile || "(aucune)"} (${maxTileSize}px)`);
-  console.log(`✅ Textures carrées à traiter: ${Object.keys(textures).length}`);
-  return { textures, maxTileSize };
+  console.log(`✅ Textures uniques à traiter: ${Object.keys(hashMap).length}`);
+  console.log(`✅ Noms de textures référencés (avec alias): ${Object.keys(textures).length}`);
+  return { textures, maxTileSize, hashMap };
 }
 
 // 🔹 Génération des atlases
-async function generateAtlases(textures, outputFolder) {
-    const entries = Object.entries(textures);
+async function generateAtlases(hashMap, outputFolder) {
+  // Nous travaillons sur les entrées uniques (par hash)
+  const entries = Object.entries(hashMap); // [hash, {file,width,height,names}]
     const atlases = [];
     let atlasIndex = 1;
     let start = 0;
@@ -66,7 +77,7 @@ async function generateAtlases(textures, outputFolder) {
         let x = 0, y = 0, rowHeight = 0;
 
         let atlas = sharp({
-            create: { width: atlasSize, height: atlasSize, channels: 4, background: { r:0,g:0,b:0,alpha:0 } }
+          create: { width: atlasSize, height: atlasSize, channels: 4, background: { r:0,g:0,b:0,alpha:0 } }
         });
         const composites = [];
         const mapping = {};
@@ -75,29 +86,34 @@ async function generateAtlases(textures, outputFolder) {
         // 🔹 Trier par hauteur décroissante pour meilleur packing
         slice.sort((a,b) => b[1].height - a[1].height);
 
-        for (const [i, [name, file]] of slice.entries()) {
-            const metadata = await sharp(file).metadata();
+        for (const [i, [hash, data]] of slice.entries()) {
+          const file = data.file;
+          const metadata = { width: data.width, height: data.height };
 
-            if (x + metadata.width > atlasSize) {
-                x = 0;
-                y += rowHeight;
-                rowHeight = 0;
-            }
+          if (x + metadata.width > atlasSize) {
+            x = 0;
+            y += rowHeight;
+            rowHeight = 0;
+          }
 
-            if (y + metadata.height > atlasSize) {
-                console.warn(`⚠️ L'atlas ${atlasIndex} est plein, certaines textures seront mises dans le prochain atlas`);
-                break;
-            }
+          if (y + metadata.height > atlasSize) {
+            console.warn(`⚠️ L'atlas ${atlasIndex} est plein, certaines textures seront mises dans le prochain atlas`);
+            break;
+          }
 
-            composites.push({ input: file, left: x, top: y });
-            mapping[name] = { 
-                texture: `atlases/atlas_${atlasIndex}.png`, 
-                x, y, width: metadata.width, height: metadata.height, custom_model_data: i + 1 
+          composites.push({ input: file, left: x, top: y });
+
+          // Pour chaque nom (alias) qui pointe vers ce fichier, on crée une entrée identique
+          for (const name of data.names) {
+            mapping[name] = {
+            texture: `atlases/atlas_${atlasIndex}.png`,
+            x, y, width: metadata.width, height: metadata.height, custom_model_data: i + 1
             };
+          }
 
-            filesToRemove.push(file);
-            x += metadata.width;
-            rowHeight = Math.max(rowHeight, metadata.height);
+          filesToRemove.push(file);
+          x += metadata.width;
+          rowHeight = Math.max(rowHeight, metadata.height);
         }
 
         atlas = atlas.composite(composites);
@@ -110,7 +126,7 @@ async function generateAtlases(textures, outputFolder) {
 
         // 🔹 Supprimer les images originales après l'atlas généré
         for (const file of filesToRemove) {
-            fs.removeSync(file);
+        //   try { fs.removeSync(file); } catch(e) { /* ignore */ }
         }
 
         console.log(`✅ Atlas créé: ${atlasPath} (${Object.keys(mapping).length} textures)`);
@@ -150,7 +166,7 @@ async function rewriteModels(baseFolder, atlases) {
     }
 
     if (replaced) {
-      await fs.writeJson(modelFile, json, { spaces: 2 });
+    //   await fs.writeJson(modelFile, json, { spaces: 2 });
       console.log(`✏️ Modèle mis à jour: ${modelFile}`);
     }
   }
@@ -159,15 +175,15 @@ async function rewriteModels(baseFolder, atlases) {
 // 🔹 Main
 (async () => {
   console.log("🔎 Collecte des textures et déduplication...");
-  const { textures } = await collectTextures(inputFolder);
+  const { textures, hashMap } = await collectTextures(inputFolder);
 
-  if (Object.keys(textures).length === 0) {
-    console.log("⚠️ Aucune texture carrée à traiter. Vérifie le dossier ou les fichiers _portal.png.");
+  if (Object.keys(hashMap).length === 0) {
+    console.log("⚠️ Aucune texture unique à traiter. Vérifie le dossier ou les fichiers _portal.png.");
     return;
   }
 
   console.log("🖼️ Génération des atlas...");
-  const atlases = await generateAtlases(textures, outputFolder);
+  const atlases = await generateAtlases(hashMap, outputFolder);
 
   console.log("✏️ Réécriture des modèles JSON...");
   await rewriteModels(inputFolder, atlases);
