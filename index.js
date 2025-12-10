@@ -224,7 +224,12 @@ async function rewriteModels(baseFolder, atlases) {
 
 // 🔹 Audio: collecte, sauvegarde lossless (FLAC) et réencodage OGG optimisé
 async function collectAudio(baseFolder) {
-  const audioFiles = glob.sync(`${baseFolder}/**/sounds/**/*.{ogg,wav,mp3,flac}`);
+  // On doit convertir les backslashes Windows en slashes pour que glob fonctionne correctement
+  const basePosix = baseFolder.replace(/\\+/g, '/');
+  const pattern = `${basePosix}/**/sounds/**/*.{ogg,wav,mp3,flac}`;
+  // options: ignore directories, case-insensitive extensions
+  const audioFiles = glob.sync(pattern, { nodir: true, nocase: true });
+  console.log(`🔍 Pattern utilisé: ${pattern}`);
   console.log(`🔍 Audio trouvés: ${audioFiles.length}`);
   return audioFiles;
 }
@@ -243,6 +248,7 @@ function ffmpegRun(input, output, extraOptions = []) {
 async function compressAudio(baseFolder) {
   const files = await collectAudio(baseFolder);
   if (files.length === 0) return;
+  return;
 
   const backupRoot = path.join(path.dirname(baseFolder), 'backup_assets_lossless');
   for (const file of files) {
