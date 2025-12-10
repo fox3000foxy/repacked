@@ -1,14 +1,14 @@
 // index.js
-const fs = require("fs-extra");
-const path = require("path");
-const sharp = require("sharp");
-const glob = require("glob");
-const crypto = require("crypto");
-const ffmpeg = require("fluent-ffmpeg");
-const ffmpegStatic = require("ffmpeg-static");
+const fs = require('fs-extra');
+const path = require('path');
+const sharp = require('sharp');
+const glob = require('glob');
+const crypto = require('crypto');
+const ffmpeg = require('fluent-ffmpeg');
+const ffmpegStatic = require('ffmpeg-static');
 
-const inputFolder = path.resolve("pack/assets");       // dossier assets en entrée
-const outputFolder = path.resolve("pack/assets"); // dossier assets en sortie
+const inputFolder = path.resolve('pack/assets'); // dossier assets en entrée
+const outputFolder = path.resolve('pack/assets'); // dossier assets en sortie
 
 // configure ffmpeg path
 if (ffmpegStatic) {
@@ -18,7 +18,7 @@ if (ffmpegStatic) {
 // 🔹 Générer un hash pour déduplication
 async function hashImage(file) {
   const data = await fs.readFile(file);
-  return crypto.createHash("md5").update(data).digest("hex");
+  return crypto.createHash('md5').update(data).digest('hex');
 }
 
 // 🔹 Collecte des textures (inclut non-carrées) et déduplication par hash
@@ -26,7 +26,7 @@ async function collectTextures(baseFolder) {
   const textures = {}; // map relativeName -> { hash }
   const hashMap = {}; // map hash -> { file, width, height, names: [] }
   let maxTileSize = 0;
-  let maxFile = "";
+  let maxFile = '';
 
   // 🔹 glob sur tous les sous-dossiers de textures (items seulement, POSIX-safe, recherche récursive)
   const basePosix = baseFolder.replace(/\\+/g, '/');
@@ -36,7 +36,7 @@ async function collectTextures(baseFolder) {
   console.log(`🔍 Total PNG trouvés: ${files.length}`);
 
   for (const file of files) {
-    if (file.endsWith("_portal.png")) continue; // ignorer *_portal.png
+    if (file.endsWith('_portal.png')) continue; // ignorer *_portal.png
 
     const metadata = await sharp(file).metadata();
     const width = metadata.width;
@@ -51,7 +51,7 @@ async function collectTextures(baseFolder) {
 
     const h = await hashImage(file);
 
-    const relativeName = path.relative(baseFolder, file).replace(/\\/g, "/").replace(".png", "");
+    const relativeName = path.relative(baseFolder, file).replace(/\\/g, '/').replace('.png', '');
 
     if (!hashMap[h]) {
       hashMap[h] = { file, width, height, names: [relativeName] };
@@ -64,7 +64,7 @@ async function collectTextures(baseFolder) {
     textures[relativeName] = { hash: h };
   }
 
-  console.log(`⚠️ Texture la plus grande: ${maxFile || "(aucune)"} (${maxTileSize}px)`);
+  console.log(`⚠️ Texture la plus grande: ${maxFile || '(aucune)'} (${maxTileSize}px)`);
   console.log(`✅ Textures uniques à traiter: ${Object.keys(hashMap).length}`);
   console.log(`✅ Noms de textures référencés (avec alias): ${Object.keys(textures).length}`);
   return { textures, maxTileSize, hashMap };
@@ -79,25 +79,30 @@ async function generateAtlases(hashMap, outputFolder) {
   let start = 0;
   const atlasSize = 8192 / 8; // taille max de l'atlas
 
-  const atlasDir = path.join(outputFolder, "atlases");
+  const atlasDir = path.join(outputFolder, 'atlases');
   fs.ensureDirSync(atlasDir);
 
   // Guillotine-style bin packer (simple, efficace pour rectangles variés)
   class GuillotineBin {
     constructor(w, h) {
-      this.w = w; this.h = h;
+      this.w = w;
+      this.h = h;
       this.freeRects = [{ x: 0, y: 0, w: w, h: h }];
       this.used = [];
     }
 
     insert(w, h) {
       // find best free rect by smallest area leftover
-      let bestIndex = -1; let bestScore = Infinity;
+      let bestIndex = -1;
+      let bestScore = Infinity;
       for (let i = 0; i < this.freeRects.length; i++) {
         const r = this.freeRects[i];
         if (w <= r.w && h <= r.h) {
-          const leftover = (r.w * r.h) - (w * h);
-          if (leftover < bestScore) { bestScore = leftover; bestIndex = i; }
+          const leftover = r.w * r.h - w * h;
+          if (leftover < bestScore) {
+            bestScore = leftover;
+            bestIndex = i;
+          }
         }
       }
       if (bestIndex === -1) return null;
@@ -116,16 +121,24 @@ async function generateAtlases(hashMap, outputFolder) {
     }
 
     _rectContained(a, b) {
-      return a.x >= b.x && a.y >= b.y && (a.x + a.w) <= (b.x + b.w) && (a.y + a.h) <= (b.y + b.h);
+      return a.x >= b.x && a.y >= b.y && a.x + a.w <= b.x + b.w && a.y + a.h <= b.y + b.h;
     }
 
     _mergeFreeList() {
       // remove any free rects contained in another
       for (let i = 0; i < this.freeRects.length; i++) {
         for (let j = i + 1; j < this.freeRects.length; j++) {
-          const a = this.freeRects[i], b = this.freeRects[j];
-          if (this._rectContained(a, b)) { this.freeRects.splice(i, 1); i--; break; }
-          if (this._rectContained(b, a)) { this.freeRects.splice(j, 1); j--; }
+          const a = this.freeRects[i],
+            b = this.freeRects[j];
+          if (this._rectContained(a, b)) {
+            this.freeRects.splice(i, 1);
+            i--;
+            break;
+          }
+          if (this._rectContained(b, a)) {
+            this.freeRects.splice(j, 1);
+            j--;
+          }
         }
       }
     }
@@ -144,7 +157,8 @@ async function generateAtlases(hashMap, outputFolder) {
     let idCounter = 1;
 
     for (const [hash, data] of slice) {
-      const w = data.width, h = data.height;
+      const w = data.width,
+        h = data.height;
       const node = bin.insert(w, h);
       if (!node) continue; // will be packed in next atlas
 
@@ -155,20 +169,31 @@ async function generateAtlases(hashMap, outputFolder) {
       for (const name of data.names) {
         mapping[name] = {
           texture: `atlases/atlas_${atlasIndex}.png`,
-          x: node.x, y: node.y, width: w, height: h, custom_model_data: idCounter++
+          x: node.x,
+          y: node.y,
+          width: w,
+          height: h,
+          custom_model_data: idCounter++,
         };
       }
     }
 
     if (composites.length === 0) break; // nothing placed (shouldn't happen)
 
-    const atlas = sharp({ create: { width: atlasSize, height: atlasSize, channels: 4, background: { r:0,g:0,b:0,alpha:0 } } });
-    await atlas.composite(composites).png().toFile(path.join(atlasDir, `atlas_${atlasIndex}.png`));
+    const atlas = sharp({ create: { width: atlasSize, height: atlasSize, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } });
+    await atlas
+      .composite(composites)
+      .png()
+      .toFile(path.join(atlasDir, `atlas_${atlasIndex}.png`));
     fs.writeJsonSync(path.join(atlasDir, `atlas_${atlasIndex}.json`), mapping, { spaces: 2 });
 
     // remove files that were placed
     for (const f of filesPlaced) {
-      try { fs.removeSync(f); } catch(e) { /* ignore */ }
+      try {
+        fs.removeSync(f);
+      } catch (e) {
+        /* ignore */
+      }
     }
 
     console.log(`✅ Atlas créé: ${path.join(atlasDir, `atlas_${atlasIndex}.png`)} (${Object.keys(mapping).length} textures)`);
@@ -191,7 +216,6 @@ async function generateAtlases(hashMap, outputFolder) {
 
   return atlases;
 }
-
 
 // 🔹 Réécriture des modèles JSON pour pointer sur les atlas
 // 🔹 Réécriture des modèles JSON pour pointer sur les atlas (tous modèles)
@@ -237,14 +261,11 @@ async function rewriteModels(baseFolder, atlases) {
         await fs.writeJson(modelFile, json, { spaces: 2 });
         console.log(`✏️ Modèle mis à jour: ${modelFile}`);
       }
-
     } catch (err) {
       console.error(`⚠️ Impossible de traiter ${modelFile}: ${err.message}`);
     }
   }
 }
-
-
 
 // 🔹 Audio: collecte, sauvegarde lossless (FLAC) et réencodage OGG optimisé
 async function collectAudio(baseFolder) {
@@ -264,75 +285,77 @@ function ffmpegRun(input, output, extraOptions = []) {
       .output(output)
       .outputOptions(extraOptions)
       .on('end', () => resolve())
-      .on('error', (err) => reject(err));
+      .on('error', err => reject(err));
     cmd.run();
   });
 }
 
 async function compressAudio(baseFolder) {
-    const files = await collectAudio(baseFolder);
-    if (files.length === 0) return;
+  const files = await collectAudio(baseFolder);
+  if (files.length === 0) return;
 
-    const backupRoot = path.join(path.dirname(baseFolder), 'backup_assets_lossless');
-    fs.ensureDirSync(backupRoot);
+  const backupRoot = path.join(path.dirname(baseFolder), 'backup_assets_lossless');
+  fs.ensureDirSync(backupRoot);
 
-    // On mappe les fichiers en chunks de 20 pour Promise.all
-    for (let i = 0; i < files.length; i += 20) {
-        const chunk = files.slice(i, i + 20);
-        await Promise.all(chunk.map(async (file) => {
-            try {
-                const rel = path.relative(path.dirname(baseFolder), file).replace(/\\/g, '/');
-                const backupPath = path.join(backupRoot, rel);
-                fs.ensureDirSync(path.dirname(backupPath));
+  // On mappe les fichiers en chunks de 20 pour Promise.all
+  for (let i = 0; i < files.length; i += 20) {
+    const chunk = files.slice(i, i + 20);
+    await Promise.all(
+      chunk.map(async file => {
+        try {
+          const rel = path.relative(path.dirname(baseFolder), file).replace(/\\/g, '/');
+          const backupPath = path.join(backupRoot, rel);
+          fs.ensureDirSync(path.dirname(backupPath));
 
-                // 1) Backup FLAC lossless
-                const flacPath = backupPath.replace(/\.[^.]+$/, '.flac');
-                await ffmpegRun(file, flacPath, ['-vn', '-compression_level', '12']);
+          // 1) Backup FLAC lossless
+          const flacPath = backupPath.replace(/\.[^.]+$/, '.flac');
+          await ffmpegRun(file, flacPath, ['-vn', '-compression_level', '12']);
 
-                // 2) Déterminer si c'est une musique ou un effet
-                const isMusic = /music|bgm|ambient/i.test(file); // tu peux affiner le regex
-                const targetSampleRate = isMusic ? 44100 : 32000; // musique 44.1kHz, effets 32kHz
+          // 2) Déterminer si c'est une musique ou un effet
+          const isMusic = /music|bgm|ambient/i.test(file); // tu peux affiner le regex
+          const targetSampleRate = isMusic ? 44100 : 32000; // musique 44.1kHz, effets 32kHz
 
-                // 3) Ré-encoder en OGG optimisé avec resampling
-                const tempOut = file + '.tmp.ogg';
-                await ffmpegRun(file, tempOut, [
-                    '-vn',
-                    '-c:a', 'libvorbis',
-                    '-q:a', '2', // qualité VBR
-                    '-ar', targetSampleRate.toString()
-                ]);
+          // 3) Ré-encoder en OGG optimisé avec resampling
+          const tempOut = file + '.tmp.ogg';
+          await ffmpegRun(file, tempOut, [
+            '-vn',
+            '-c:a',
+            'libvorbis',
+            '-q:a',
+            '2', // qualité VBR
+            '-ar',
+            targetSampleRate.toString(),
+          ]);
 
-                fs.moveSync(tempOut, file, { overwrite: true });
+          fs.moveSync(tempOut, file, { overwrite: true });
 
-                console.log(`🔧 Compressed and backed-up: ${rel} (${isMusic ? 'music' : 'effect'}, ${targetSampleRate}Hz)`);
-            } catch (err) {
-                console.error(`⚠️ Erreur compression pour ${file}:`, err.message || err);
-            }
-        }));
-    }
+          console.log(`🔧 Compressed and backed-up: ${rel} (${isMusic ? 'music' : 'effect'}, ${targetSampleRate}Hz)`);
+        } catch (err) {
+          console.error(`⚠️ Erreur compression pour ${file}:`, err.message || err);
+        }
+      })
+    );
+  }
 }
-
-
-
 
 // 🔹 Main
 (async () => {
-  console.log("🔎 Collecte des textures et déduplication...");
+  console.log('🔎 Collecte des textures et déduplication...');
   const { textures, hashMap } = await collectTextures(inputFolder);
 
   if (Object.keys(hashMap).length === 0) {
-    console.log("⚠️ Aucune texture unique à traiter. Vérifie le dossier ou les fichiers _portal.png.");
+    console.log('⚠️ Aucune texture unique à traiter. Vérifie le dossier ou les fichiers _portal.png.');
     return;
   }
 
-  console.log("🖼️ Génération des atlas...");
+  console.log('🖼️ Génération des atlas...');
   const atlases = await generateAtlases(hashMap, outputFolder);
 
-  console.log("✏️ Réécriture des modèles JSON...");
+  console.log('✏️ Réécriture des modèles JSON...');
   await rewriteModels(inputFolder, atlases);
 
-  console.log("🔊 Compression audio (backup FLAC lossless + OGG optimisé)...");
-  await compressAudio(inputFolder);
+  // console.log("🔊 Compression audio (backup FLAC lossless + OGG optimisé)...");
+  // await compressAudio(inputFolder);
 
-  console.log("🎉 Optimisation terminée !");
+  console.log('🎉 Optimisation terminée !');
 })();
