@@ -52,71 +52,75 @@ async function collectTextures(baseFolder) {
 
 // 🔹 Génération des atlases
 async function generateAtlases(textures, outputFolder) {
-  const entries = Object.entries(textures);
-  const atlases = [];
-  let atlasIndex = 1;
-  let start = 0;
-  const atlasSize = 8192; // taille max de l'atlas
+    const entries = Object.entries(textures);
+    const atlases = [];
+    let atlasIndex = 1;
+    let start = 0;
+    const atlasSize = 8192; // taille max de l'atlas
 
-  const atlasDir = path.join(outputFolder, "atlases");
-  fs.ensureDirSync(atlasDir);
+    const atlasDir = path.join(outputFolder, "atlases");
+    fs.ensureDirSync(atlasDir);
 
-  while (start < entries.length) {
-    const slice = entries.slice(start, start + 512); // max 512 textures par atlas
-    let x = 0, y = 0, rowHeight = 0;
+    while (start < entries.length) {
+        const slice = entries.slice(start, start + 512); // max 512 textures par atlas
+        let x = 0, y = 0, rowHeight = 0;
 
-    let atlas = sharp({
-      create: { width: atlasSize, height: atlasSize, channels: 4, background: { r:0,g:0,b:0,alpha:0 } }
-    });
-    const composites = [];
-    const mapping = {};
+        let atlas = sharp({
+            create: { width: atlasSize, height: atlasSize, channels: 4, background: { r:0,g:0,b:0,alpha:0 } }
+        });
+        const composites = [];
+        const mapping = {};
+        const filesToRemove = [];
 
-    // 🔹 Trier par hauteur décroissante pour meilleur packing
-    slice.sort((a,b) => b[1].height - a[1].height);
+        // 🔹 Trier par hauteur décroissante pour meilleur packing
+        slice.sort((a,b) => b[1].height - a[1].height);
 
-    for (const [i, [name, file]] of slice.entries()) {
-      const metadata = await sharp(file).metadata();
+        for (const [i, [name, file]] of slice.entries()) {
+            const metadata = await sharp(file).metadata();
 
-      if (x + metadata.width > atlasSize) {
-        x = 0;
-        y += rowHeight;
-        rowHeight = 0;
-      }
+            if (x + metadata.width > atlasSize) {
+                x = 0;
+                y += rowHeight;
+                rowHeight = 0;
+            }
 
-      if (y + metadata.height > atlasSize) {
-        console.warn(`⚠️ L'atlas ${atlasIndex} est plein, certaines textures seront mises dans le prochain atlas`);
-        break;
-      }
+            if (y + metadata.height > atlasSize) {
+                console.warn(`⚠️ L'atlas ${atlasIndex} est plein, certaines textures seront mises dans le prochain atlas`);
+                break;
+            }
 
-      composites.push({ input: file, left: x, top: y });
-      mapping[name] = { 
-        texture: `atlases/atlas_${atlasIndex}.png`, 
-        x, y, width: metadata.width, height: metadata.height, custom_model_data: i + 1 
-      };
+            composites.push({ input: file, left: x, top: y });
+            mapping[name] = { 
+                texture: `atlases/atlas_${atlasIndex}.png`, 
+                x, y, width: metadata.width, height: metadata.height, custom_model_data: i + 1 
+            };
 
-      x += metadata.width;
-      rowHeight = Math.max(rowHeight, metadata.height);
+            filesToRemove.push(file);
+            x += metadata.width;
+            rowHeight = Math.max(rowHeight, metadata.height);
+        }
 
-      // 🔹 Supprimer l'image originale après l'ajout
-    //   fs.removeSync(file);
+        atlas = atlas.composite(composites);
+
+        const atlasPath = path.join(atlasDir, `atlas_${atlasIndex}.png`);
+        await atlas.png().toFile(atlasPath);
+
+        const jsonPath = path.join(atlasDir, `atlas_${atlasIndex}.json`);
+        fs.writeJsonSync(jsonPath, mapping, { spaces: 2 });
+
+        // 🔹 Supprimer les images originales après l'atlas généré
+        for (const file of filesToRemove) {
+            fs.removeSync(file);
+        }
+
+        console.log(`✅ Atlas créé: ${atlasPath} (${Object.keys(mapping).length} textures)`);
+
+        atlases.push(mapping);
+        start += slice.length;
+        atlasIndex++;
     }
 
-    atlas = atlas.composite(composites);
-
-    const atlasPath = path.join(atlasDir, `atlas_${atlasIndex}.png`);
-    await atlas.png().toFile(atlasPath);
-
-    const jsonPath = path.join(atlasDir, `atlas_${atlasIndex}.json`);
-    fs.writeJsonSync(jsonPath, mapping, { spaces: 2 });
-
-    console.log(`✅ Atlas créé: ${atlasPath} (${Object.keys(mapping).length} textures)`);
-
-    atlases.push(mapping);
-    start += slice.length;
-    atlasIndex++;
-  }
-
-  return atlases;
+    return atlases;
 }
 
 
