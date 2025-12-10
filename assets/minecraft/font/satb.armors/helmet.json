@@ -1,0 +1,46 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "item/leather_helmet.png",
+            "ascent": 12,
+            "height": 16,
+            "chars": ["L"]
+        },
+        {
+            "type": "bitmap",
+            "file": "item/chainmail_helmet.png",
+            "ascent": 12,
+            "height": 16,
+            "chars": ["C"]
+        },
+        {
+            "type": "bitmap",
+            "file": "item/golden_helmet.png",
+            "ascent": 12,
+            "height": 16,
+            "chars": ["G"]
+        },
+        {
+            "type": "bitmap",
+            "file": "item/iron_helmet.png",
+            "ascent": 12,
+            "height": 16,
+            "chars": ["I"]
+        },
+        {
+            "type": "bitmap",
+            "file": "item/diamond_helmet.png",
+            "ascent": 12,
+            "height": 16,
+            "chars": ["D"]
+        },
+        {
+            "type": "bitmap",
+            "file": "item/netherite_helmet.png",
+            "ascent": 12,
+            "height": 16,
+            "chars": ["N"]
+        }
+    ]
+}

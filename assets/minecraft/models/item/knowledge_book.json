@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/knowledge_book"
+  },
+"overrides": [
+  {
+      "predicate": {
+        "custom_model_data": 47007
+      },
+      "model": "1_splatus:item/white_staff"
+    }
+    
+  
+]
+}

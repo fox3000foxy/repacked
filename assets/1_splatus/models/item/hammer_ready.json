@@ -1,0 +1,7 @@
+{
+    "parent": "1_splatus:item/hammer",
+    "textures": {
+        "layer0": "1_splatus:item/hammer",
+        "layer1": "1_splatus:item/hammer_ready"
+    }
+}

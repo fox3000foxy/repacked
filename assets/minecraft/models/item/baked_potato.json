@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/baked_potato"
+  },
+"overrides": [
+  {
+      "predicate": {
+        "custom_model_data": 27010
+      },
+      "model": "1_splatus:item/deep_sea_squid_tentacle"
+    }
+    
+  
+]
+}

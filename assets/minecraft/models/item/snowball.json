@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/snowball"
+  },
+  "overrides": [
+  	{
+        "predicate": {
+                "custom_model_data": 27018
+            },
+            "model": "1_splatus:item/confetti_ball"
+        },
+        {
+          "predicate": {
+                  "custom_model_data": 1450404
+              },
+              "model": "incendium:item/restless"
+          },
+          {
+            "predicate": {
+              "custom_model_data": 376003
+            },
+            "model": "gadgets:item/confusion_slime"
+        },
+        {
+          "predicate": {
+            "custom_model_data": 376008
+          },
+          "model": "gadgets:item/bomb"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 376009
+        },
+        "model": "gadgets:item/spectral_bottle"
+    }
+    ]
+}

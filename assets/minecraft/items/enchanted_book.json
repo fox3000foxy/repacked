@@ -1,0 +1,19 @@
+{
+    "model": {
+      "type": "minecraft:range_dispatch",
+      "property": "minecraft:custom_model_data",
+      "entries": [
+        {
+            "threshold": 87001,
+            "model": {
+                "type": "model",
+                "model": "1_splatus:item/enchanted_charm_1"
+            }
+        }
+    ], 
+    "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/enchanted_book"
+      }
+}
+}

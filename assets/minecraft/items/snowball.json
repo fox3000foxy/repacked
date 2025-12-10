@@ -1,0 +1,47 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 27018,
+        "model": {
+          "type": "model",
+          "model": "1_splatus:item/confetti_ball"
+        }
+      },
+      {
+        "threshold": 1450404,
+        "model": {
+          "type": "model",
+          "model": "incendium:item/restless"
+        }
+      },
+      {
+        "threshold": 376003,
+        "model": {
+          "type": "model",
+          "model": "gadgets:item/confusion_slime"
+        }
+      },
+      {
+        "threshold": 376008,
+        "model": {
+          "type": "model",
+          "model": "gadgets:item/bomb"
+        }
+      },
+      {
+        "threshold": 376009,
+        "model": {
+          "type": "model",
+          "model": "gadgets:item/spectral_bottle"
+        }
+      }
+    ], 
+    "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/snowball"
+      }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "container.brewing":"\u00a7f\ueff1                                       \u00a7f\ueff2",
+  "container.furnace":"                                                                            \u00a7f\ueff3",
+  "container.smoker":"                                                                            \u00a7f\ueff3",
+  "container.blast_furnace":"                                                                            \u00a7f\ueff3",
+  "container.cartography_table":"                       \u00a7f\ue078",
+  "container.inventory": " ",
+  "container.upgrade":"\uF809\uF80A\uF80B\u00a7f\ue080                                             \u00a7f\u00a7f\ue081",
+  "entity.minecraft.villager.armorer":"                                                                                                                \u00a7f\ue001",
+  "entity.minecraft.villager.butcher":"                                                                                                          \u00a7f\ue002",
+  "entity.minecraft.villager.cartographer":"                                                                                                          \u00a7f\ue003",
+  "entity.minecraft.villager.cleric":"                                                                                                          \u00a7f\ue004",
+  "entity.minecraft.villager.farmer":"                                                                                                          \u00a7f\ue02c",
+  "entity.minecraft.villager.fisherman":"                                                                                                          \u00a7f\ueff7",
+  "entity.minecraft.villager.fletcher":"                                                                                                          \u00a7f\ueff8",
+  "entity.minecraft.villager.leatherworker":"                                                                                                          \u00a7f\ue031",
+  "entity.minecraft.villager.librarian":"                                                                                                          \u00a7f\ue030",
+  "entity.minecraft.villager.mason":"                                                                                                           \u00a7f\ue03a",
+  "entity.minecraft.villager.shepherd":"                                                                                                          \u00a7f\ue03b",
+  "entity.minecraft.villager.toolsmith":"                                                                                                          \u00a7f\ue03c",
+  "entity.minecraft.villager.weaponsmith":"                                                                                                          \u00a7f\ue03f",
+  "entity.minecraft.wandering_trader":"                            \u00a7f\ue077                  \u00a7f\ue03d"
+}

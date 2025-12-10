@@ -1,0 +1,48 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/toughness/numeric/numbers.png",
+            "ascent": -17,
+            "chars": ["0123", "4567", "89\u0000\u0000","\u0000\u0000\u0000\u0000"]
+        },
+        
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/not.png",
+            "ascent": -32768,
+            "height": 2,
+            "chars": ["_"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/toughness/numeric/armor.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": ["A"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/not.png",
+            "ascent": -32768,
+            "height": 22,
+            "chars": ["N"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/not.png",
+            "ascent": -32768,
+            "height": 82,
+            "chars": ["+"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:satb/custom_font/not.png",
+            "ascent": -32768,
+            "height": -6,
+            "chars": ["-"]
+        }
+    ]
+}

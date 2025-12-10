@@ -1,0 +1,15 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/netherite_helmet"
+    },
+  "overrides": [
+   
+    {
+      "predicate": {
+        "custom_model_data": 87006
+      },
+      "model": "1_splatus:item/shulker_shell_helmet"
+  }
+]
+}

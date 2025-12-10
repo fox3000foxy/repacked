@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 87007,
+        "model": {
+          "type": "model",
+          "model": "1_splatus:item/corrupt"
+        }
+      },
+      {
+        "threshold": 1450401,
+        "model": {
+          "type": "model",
+          "model": "incendium:item/powder"
+        }
+      }
+    ], 
+    "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/glowstone_dust"
+      }
+  }
+}

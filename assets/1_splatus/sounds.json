@@ -1,0 +1,64 @@
+{
+    "ultris.rouxls_battle": {
+         "sounds":[
+             {
+                 "name": "1_splatus:ultris/rouxls_battle",
+                 "pitch": 1.0,
+                 "weight": 1,
+                 "volume": 0.6
+             } 
+         ]
+    },
+
+    "ultris.umbriel": {
+         "sounds":[
+             {
+                 "name": "1_splatus:ultris/umbriel",
+                 "pitch": 1.0,
+                 "weight": 1,
+                 "volume": 1
+             } 
+         ]
+    },
+
+    "ultris.ichor": {
+         "sounds":[
+             {
+                 "name": "1_splatus:ultris/ichor",
+                 "pitch": 1.0,
+                 "weight": 1,
+                 "volume": 1
+             } 
+         ]
+    },
+  "ultris.furyofthespirits": {
+         "sounds":[
+             {
+                 "name": "1_splatus:ultris/furyofthespirits",
+                 "pitch": 1.0,
+                 "weight": 1,
+                 "volume": 1
+             } 
+         ]
+    },
+"ultris.mc_dungeons_etherealblocks": {
+         "sounds":[
+             {
+                 "name": "1_splatus:ultris/mc_dungeons_etherealblocks",
+                 "pitch": 1.0,
+                 "weight": 1,
+"volume": 0.8
+             } 
+         ]
+    },
+    "ultris.mc_dungeons_metaluna": {
+        "sounds":[
+            {
+                "name": "1_splatus:ultris/mc_dungeons_metaluna",
+                "pitch": 1.0,
+                "weight": 1,
+"volume": 0.65
+            } 
+        ]
+   }
+}

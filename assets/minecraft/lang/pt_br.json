@@ -1,0 +1,27 @@
+{
+    "satb.config.title": "Configurações Globais do SATB",
+    "satb.personalconfig.title": "Configurações Pessoal do SATB",
+
+    "satb.config.unlockedmsg": "Os jogadores podem trocar a configuração para eles mesmos usando %s. Entretando, um operador pode habilitar as configurações globais para forçar todos os jogadores a usa-la.",
+    "satb.config.unlock": "Desativar configuração global",
+
+    "satb.config.lock": "Habilitar configuração global",
+    "satb.config.lockederror": "Desculpe, mas as configurações globais do SATB estão ativadas. Apenas operadores podem mudar as configurações.",
+    "satb.config.lockedmsgchangetopersonal": "Alterar minha configuração pessoal",
+
+    "satb.config.saturation": "Barra de saturação",
+    "satb.config.exhaustion": "Barra de exaustão",
+    "satb.config.toughness": "Barra de Resistência da Armadura",
+
+    "satb.config.save": "Salvar Mudanças",
+    "satb.config.exit": "Fechar",
+    
+    "satb.config.on": "ON",
+    "satb.config.off": "OFF",
+    
+    "satb.global_config.warning": "Você está alterando a configuração global. Mudanças aqui serão aplicadas para todos os jogadores.",
+
+    "satb.error.bugmessage": "%s. ISSO É UM BUG!. Por favor, contate o desenvolvedor (nodenotjs) no discord e entegue o seguinte código: %s",
+    "satb.error.failedopensettingsmenu": "Falha ao abrir o menu de configuração",
+    "satb.error.failedtosavesettings": "Falha ao salvar as configurações"
+}
