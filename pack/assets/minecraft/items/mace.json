@@ -1,0 +1,84 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:item_name",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:item_name",
+      "cases": [
+        {
+          "when": {"text":"Roxy's Staff","italic":false},
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/roxstuff"
+          }
+        },
+        {
+          "when": {"text":"Посох Рокси","italic":false},
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/roxstuff"
+          }
+        },
+        {
+          "when": {"text":"Ballad of the Fjords","color":"#4FC3F7","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/ballad_of_the_fjords/ballad_of_the_fjords"}
+        },
+        {
+          "when": {"text":"Crimson Moon's Semblance","color":"#D32F2F","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/crimson_moons_semblance/crimson_moons_semblance"}
+        },
+        {
+          "when": {"text":"Dragon's Bane","color":"#4CAF50","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/dragons_bane/dragons_bane"}
+        },
+        {
+          "when": {"text":"Engulfing Lightning","color":"#9C27B0","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/engulfing_lightning/engulfing_lightning"}
+        },
+        {
+          "when": {"text":"Lithic Spear","color":"#FF6F00","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/lithic_spear/lithic_spear"}
+        },
+        {
+          "when": {"text":"Lumidouce Elegy","color":"#AB47BC","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/lumidouce_elegy/lumidouce_elegy"}
+        },
+        {
+          "when": {"text":"Primordial Jade Winged-Spear","color":"#00E676","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/primordial_jade_winged_spear/primordial_jade_winged_spear"}
+        },
+        {
+          "when": {"text":"Skyward Spine","color":"#00BCD4","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/skyward_spine/skyward_spine"}
+        },
+        {
+          "when": {"text":"Staff of Homa","color":"#E53935","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/staff_of_homa/staff_of_homa"}
+        },
+        {
+          "when": {"text":"Staff of the Scarlet Sands","color":"#FFB300","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/staff_of_the_scarlet_sands/staff_of_the_scarlet_sands"}
+        },
+        {
+          "when": {"text":"The Catch","color":"#AB47BC","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/the_catch/the_catch"}
+        },
+        {
+          "when": {"text":"Vortex Vanquisher","color":"#FFD600","italic":false},
+          "model": {"type": "minecraft:model", "model": "genshin_weapons/polearm/vortex_vanquisher/vortex_vanquisher"}
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/mace"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/mace"
+    }
+  }
+}

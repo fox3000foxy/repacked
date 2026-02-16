@@ -1,0 +1,62 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:item_name",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:item_name",
+      "cases": [
+        { "when": "Fontaine Anemo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/fanemo" } },
+        { "when": "Fontaine Cryo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/fcryo" } },
+        { "when": "Fontaine Dendro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/fdendro" } },
+        { "when": "Fontaine Electro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/felectro" } },
+        { "when": "Fontaine Geo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/fgeo" } },
+        { "when": "Fontaine Hydro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/fhydro" } },
+        { "when": "Fontaine Masterless Vision", "model": { "type": "minecraft:model", "model": "item/genshin/fempty" } },
+        { "when": "Fontaine Pyro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/fpyro" } },
+        { "when": "Inazuma Anemo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/ianemo" } },
+        { "when": "Inazuma Cryo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/icryo" } },
+        { "when": "Inazuma Dendro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/idendro" } },
+        { "when": "Inazuma Electro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/ielectro" } },
+        { "when": "Inazuma Geo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/igeo" } },
+        { "when": "Inazuma Hydro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/ihydro" } },
+        { "when": "Inazuma Masterless Vision", "model": { "type": "minecraft:model", "model": "item/genshin/iempty" } },
+        { "when": "Inazuma Pyro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/ipyro" } },
+        { "when": "Liyue Anemo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/lanemo" } },
+        { "when": "Liyue Cryo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/lcryo" } },
+        { "when": "Liyue Dendro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/ldendro" } },
+        { "when": "Liyue Electro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/lelectro" } },
+        { "when": "Liyue Geo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/lgeo" } },
+        { "when": "Liyue Hydro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/lhydro" } },
+        { "when": "Liyue Masterless Vision", "model": { "type": "minecraft:model", "model": "item/genshin/lempty" } },
+        { "when": "Liyue Pyro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/lpyro" } },
+        { "when": "Mondstadt Anemo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/manemo" } },
+        { "when": "Mondstadt Cryo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/mcryo" } },
+        { "when": "Mondstadt Dendro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/mdendro" } },
+        { "when": "Mondstadt Electro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/melectro" } },
+        { "when": "Mondstadt Geo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/mgeo" } },
+        { "when": "Mondstadt Hydro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/mhydro" } },
+        { "when": "Mondstadt Masterless Vision", "model": { "type": "minecraft:model", "model": "item/genshin/mempty" } },
+        { "when": "Mondstadt Pyro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/mpyro" } },
+        { "when": "Sumeru Anemo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/sanemo" } },
+        { "when": "Sumeru Cryo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/scryo" } },
+        { "when": "Sumeru Dendro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/sdendro" } },
+        { "when": "Sumeru Electro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/selectro" } },
+        { "when": "Sumeru Geo Vision", "model": { "type": "minecraft:model", "model": "item/genshin/sgeo" } },
+        { "when": "Sumeru Hydro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/shydro" } },
+        { "when": "Sumeru Masterless Vision", "model": { "type": "minecraft:model", "model": "item/genshin/sempty" } },
+        { "when": "Sumeru Pyro Vision", "model": { "type": "minecraft:model", "model": "item/genshin/spyro" } }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:block/glass"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/glass"
+    }
+  }
+}

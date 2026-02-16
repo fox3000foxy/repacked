@@ -1,0 +1,25 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:item_name",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:item_name",
+      "cases": [
+        { "when": "Ayaka", "model": { "type": "minecraft:model", "model": "item/genshin/tcgayaka" } },
+        { "when": "Tartaglia", "model": { "type": "minecraft:model", "model": "item/genshin/tcgchilde" } },
+        { "when": "Yoimiya", "model": { "type": "minecraft:model", "model": "item/genshin/tcgyoimiya" } }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/paper"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/paper"
+    }
+  }
+}

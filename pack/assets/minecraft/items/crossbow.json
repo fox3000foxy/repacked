@@ -383,8 +383,45 @@
             }
           ],
           "fallback": {
-            "type": "minecraft:model",
-            "model": "minecraft:item/crossbow"
+            "type": "minecraft:condition",
+            "property": "minecraft:has_component",
+            "component": "minecraft:item_name",
+            "on_true": {
+              "type": "minecraft:select",
+              "property": "minecraft:component",
+              "component": "minecraft:item_name",
+              "cases": [
+                {
+                  "when": "A Thousand Emerging Dreams",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "item/genshin/thousandfloatingdreamsdendro"
+                  }
+                },
+                {
+                  "when": "A Thousand Floating Dreams",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "item/genshin/thousandfloatingdreams"
+                  }
+                },
+                {
+                  "when": "A Thousand Swirling Dreams",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "item/genshin/thousandfloatingdreamsanemo"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/crossbow"
+              }
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/crossbow"
+            }
           }
         }
       }

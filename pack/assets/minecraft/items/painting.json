@@ -1,0 +1,6000 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:painting/variant",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:painting/variant",
+      "cases": [
+        {
+          "when": "give:ability_books_adamantine_will",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/adamantine_will"
+          }
+        },
+        {
+          "when": "give:ability_books_crimson_spark",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/crimson_spark"
+          }
+        },
+        {
+          "when": "give:ability_books_fang_attack",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/fang_attack"
+          }
+        },
+        {
+          "when": "give:ability_books_fireball",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/fireball"
+          }
+        },
+        {
+          "when": "give:ability_books_flying_boat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/flying_boat"
+          }
+        },
+        {
+          "when": "give:ability_books_frostlock",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/frostlock"
+          }
+        },
+        {
+          "when": "give:ability_books_great_nullifier",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/great_nullifier"
+          }
+        },
+        {
+          "when": "give:ability_books_iron_golem",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/iron_golem"
+          }
+        },
+        {
+          "when": "give:ability_books_kill",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/kill"
+          }
+        },
+        {
+          "when": "give:ability_books_lightning_bolt",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/lightning_bolt"
+          }
+        },
+        {
+          "when": "give:ability_books_magnificent_mansion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/magnificent_mansion"
+          }
+        },
+        {
+          "when": "give:ability_books_mass_heal",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/mass_heal"
+          }
+        },
+        {
+          "when": "give:ability_books_returning_tides",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/returning_tides"
+          }
+        },
+        {
+          "when": "give:ability_books_scatterstorm",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/scatterstorm"
+          }
+        },
+        {
+          "when": "give:ability_books_swordfall",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/swordfall"
+          }
+        },
+        {
+          "when": "give:ability_books_tetra_slime",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/tetra_slime"
+          }
+        },
+        {
+          "when": "give:ability_books_truelight_glow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/truelight_glow"
+          }
+        },
+        {
+          "when": "give:ability_books_void_pull",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/truelight_glow"
+          }
+        },
+        {
+          "when": "give:ability_books_world_soar",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/world_soar"
+          }
+        },
+        {
+          "when": "give:ability_books_worm_toothed_burrower",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/ability_books/worm_toothed_burrower"
+          }
+        },
+        {
+          "when": "give:archon_ground",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/statuelower"
+          }
+        },
+        {
+          "when": "give:archon_top",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/statueupper"
+          }
+        },
+        {
+          "when": "give:armor_champion_boots",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/champion_boots"
+          }
+        },
+        {
+          "when": "give:armor_champion_chestplate",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/champion_chestplate"
+          }
+        },
+        {
+          "when": "give:armor_champion_helmet",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/champion_helmet"
+          }
+        },
+        {
+          "when": "give:armor_champion_leggings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/champion_leggings"
+          }
+        },
+        {
+          "when": "give:armor_elytra_dragon_wings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/elytra/dragon_wings"
+          }
+        },
+        {
+          "when": "give:armor_elytra_empress_wings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/elytra/empress_wings"
+          }
+        },
+        {
+          "when": "give:armor_elytra_phantom_wings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/elytra/phantom_wings"
+          }
+        },
+        {
+          "when": "give:armor_floral_boots",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/floral_boots"
+          }
+        },
+        {
+          "when": "give:armor_floral_chestplate",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/floral_chestplate"
+          }
+        },
+        {
+          "when": "give:armor_floral_helmet",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/floral_helmet"
+          }
+        },
+        {
+          "when": "give:armor_floral_leggings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/floral_leggings"
+          }
+        },
+        {
+          "when": "give:armor_hallowed_boots",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/hallowed_boots"
+          }
+        },
+        {
+          "when": "give:armor_hallowed_chestplate",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/hallowed_chestplate"
+          }
+        },
+        {
+          "when": "give:armor_hallowed_helmet",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/hallowed_helmet"
+          }
+        },
+        {
+          "when": "give:armor_hallowed_leggings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/hallowed_leggings"
+          }
+        },
+        {
+          "when": "give:armor_reinforced_horse_armor",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/reinforced_horse_armor"
+          }
+        },
+        {
+          "when": "give:armor_shulker_boots",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_boots"
+          }
+        },
+        {
+          "when": "give:armor_shulker_chestplate",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_chestplate"
+          }
+        },
+        {
+          "when": "give:armor_shulker_helmet",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_helmet"
+          }
+        },
+        {
+          "when": "give:armor_shulker_leggings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_leggings"
+          }
+        },
+        {
+          "when": "give:artifact_banners_blade",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/white_banner"
+          }
+        },
+        {
+          "when": "give:artifact_banners_ominous",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/white_banner"
+          }
+        },
+        {
+          "when": "give:artifact_banners_poppy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/white_banner"
+          }
+        },
+        {
+          "when": "give:artifact_banners_sanctum",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/white_banner"
+          }
+        },
+        {
+          "when": "give:artifact_patron_scouts_battle_helm",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/netherite_helmet"
+          }
+        },
+        {
+          "when": "give:artifact_patron_scroll_of_returning",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/map"
+          }
+        },
+        {
+          "when": "give:artifact_potions_bad_omen",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:artifact_potions_death",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:artifact_potions_elixer_of_undying",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:artifact_potions_eternal_glowing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/splash_potion"
+          }
+        },
+        {
+          "when": "give:artifact_potions_miners_ale",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:artifact_potions_sus_brew",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:artifact_shield_necrotic_shield",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield"
+          }
+        },
+        {
+          "when": "give:artifact_shield_prismatic_shield",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield"
+          }
+        },
+        {
+          "when": "give:artifact_shield_radiation_shield",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield"
+          }
+        },
+        {
+          "when": "give:artifact_tool_hazmat_suit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/leather_boots"
+          }
+        },
+        {
+          "when": "give:artifact_tool_infernal_feather",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/jigsaw"
+          }
+        },
+        {
+          "when": "give:artifact_tool_infernal_wings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra"
+          }
+        },
+        {
+          "when": "give:artifact_tool_torch_of_lunacy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/soul_torch"
+          }
+        },
+        {
+          "when": "give:artifact_tool_unstable_powder",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/glowstone_dust"
+          }
+        },
+        {
+          "when": "give:artifact_weapon_firestorm",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/crossbow"
+          }
+        },
+        {
+          "when": "give:artifact_weapon_sentrys_wrath",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/crossbow"
+          }
+        },
+        {
+          "when": "give:artifact_weapon_trailblazer",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/bow"
+          }
+        },
+        {
+          "when": "give:average_weapons_diamond_shard",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/diamond/shard"
+          }
+        },
+        {
+          "when": "give:average_weapons_old_world_bronze_assarion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/old_world_bronze/assarion"
+          }
+        },
+        {
+          "when": "give:average_weapons_old_world_bronze_ingot",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/old_world_bronze/ingot"
+          }
+        },
+        {
+          "when": "give:average_weapons_old_world_bronze_lepton",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/old_world_bronze/lepton"
+          }
+        },
+        {
+          "when": "give:average_weapons_old_world_bronze_quadran",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/old_world_bronze/quadran"
+          }
+        },
+        {
+          "when": "give:average_weapons_silversteel_ingot",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/silversteel/ingot"
+          }
+        },
+        {
+          "when": "give:average_weapons_silversteel_shekel",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/silversteel/shekel"
+          }
+        },
+        {
+          "when": "give:average_weapons_wands_eye_blossom_wand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/wands/eye_blossom_wand"
+          }
+        },
+        {
+          "when": "give:average_weapons_wands_scepter",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/wands/scepter"
+          }
+        },
+        {
+          "when": "give:average_weapons_wands_torchflower_wand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/wands/torchflower_wand"
+          }
+        },
+        {
+          "when": "give:average_weapons_wands_tulip_wand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/wands/tulip_wand"
+          }
+        },
+        {
+          "when": "give:average_weapons_wands_wanderlight_wand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/wands/wanderlight_wand"
+          }
+        },
+        {
+          "when": "give:average_weapons_wands_wither_rose_wand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/average_weapons/wands/wither_wand"
+          }
+        },
+        {
+          "when": "give:baptism_of_song",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/barbara"
+          }
+        },
+        {
+          "when": "give:blazeblade",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/blazeblade"
+          }
+        },
+        {
+          "when": "give:block_altar_of_the_sacred",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:block/altar_of_the_sacred"
+          }
+        },
+        {
+          "when": "give:block_phantom_item_frame",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/phantom_item_frame"
+          }
+        },
+        {
+          "when": "give:blowgun",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/blowgun_normalts"
+          }
+        },
+        {
+          "when": "give:bone_wand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/bone_wand"
+          }
+        },
+        {
+          "when": "give:broken_crucible",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/crucible_broken"
+          }
+        },
+        {
+          "when": "give:campsite_tent",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/iron_boots"
+          }
+        },
+        {
+          "when": "give:campsite_tent_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/iron_boots"
+          }
+        },
+        {
+          "when": "give:castle_barrel_alchemist",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:castle_barrel_library",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/written_book"
+          }
+        },
+        {
+          "when": "give:chainfiring",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/chainfiring_resting"
+          }
+        },
+        {
+          "when": "give:cosmetic_02",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/02"
+          }
+        },
+        {
+          "when": "give:cosmetic_academic_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/academic"
+          }
+        },
+        {
+          "when": "give:cosmetic_altair_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/altair"
+          }
+        },
+        {
+          "when": "give:cosmetic_among_us",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/among_us/among_us"
+          }
+        },
+        {
+          "when": "give:cosmetic_ankha",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/ankhahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_aqua",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/aqua"
+          }
+        },
+        {
+          "when": "give:cosmetic_aqua_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/aqua_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_aquatic_witch_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/witch_hats/aquatic_witch_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_architect_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/architect/architect_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_artistic_beret",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/berets/artistic_beret"
+          }
+        },
+        {
+          "when": "give:cosmetic_astronaut_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/astronaut_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_atm_mask",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/carved_pumpkin/atm_mask"
+          }
+        },
+        {
+          "when": "give:cosmetic_ava",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/avahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_axolotl_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/bucket_hats/axolotl_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_bandana",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/bandana/bandana"
+          }
+        },
+        {
+          "when": "give:cosmetic_barbatos",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/barbatos"
+          }
+        },
+        {
+          "when": "give:cosmetic_beau",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/beauhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_bee_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/bucket_hats/bee_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_bells",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/yaoyaobells"
+          }
+        },
+        {
+          "when": "give:cosmetic_benedict",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/benedicthat"
+          }
+        },
+        {
+          "when": "give:cosmetic_blanca",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/blancahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_blathers",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/blathershat"
+          }
+        },
+        {
+          "when": "give:cosmetic_blindfold",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/bandage"
+          }
+        },
+        {
+          "when": "give:cosmetic_bloodborne",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/bloodborne"
+          }
+        },
+        {
+          "when": "give:cosmetic_blue_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/blue_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_bob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/bobhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_books",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/books/books"
+          }
+        },
+        {
+          "when": "give:cosmetic_bow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/bowhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_bread_o_warrior",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/bread_o_warrior"
+          }
+        },
+        {
+          "when": "give:cosmetic_brewster",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/brewsterhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_bunnie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/bunniehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_bunny",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/bunny"
+          }
+        },
+        {
+          "when": "give:cosmetic_bunny_beret",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/berets/bunny_beret"
+          }
+        },
+        {
+          "when": "give:cosmetic_cap",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cap/cap"
+          }
+        },
+        {
+          "when": "give:cosmetic_cat_beret",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/berets/cat_beret"
+          }
+        },
+        {
+          "when": "give:cosmetic_celestial_witch_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/witch_hats/celestial_witch_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_cephalobot",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/cephalobothat"
+          }
+        },
+        {
+          "when": "give:cosmetic_chef_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/chef_hat/chef_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_cheri",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/cherihat"
+          }
+        },
+        {
+          "when": "give:cosmetic_cherry",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/cherryhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_christmas_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/christmas_hat/christmas_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_clown_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/clown"
+          }
+        },
+        {
+          "when": "give:cosmetic_coco",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/cocohat"
+          }
+        },
+        {
+          "when": "give:cosmetic_cook_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/cook"
+          }
+        },
+        {
+          "when": "give:cosmetic_cookie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/cookiehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_cornimer",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/cornimerhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_courier_steam",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/steam"
+          }
+        },
+        {
+          "when": "give:cosmetic_cowboy_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/cowboy"
+          }
+        },
+        {
+          "when": "give:cosmetic_crown",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/crown"
+          }
+        },
+        {
+          "when": "give:cosmetic_cubecraft_buddy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/shoulder_buddies/cubecraft_buddy"
+          }
+        },
+        {
+          "when": "give:cosmetic_cyber_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/cyber_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_daisy_mae",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/daisymaehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_demon_horn",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/demon_horn/demon_horn"
+          }
+        },
+        {
+          "when": "give:cosmetic_derwin",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/derwinhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_drillers_helmet",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/drg"
+          }
+        },
+        {
+          "when": "give:cosmetic_ducky_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/bucket_hats/ducky_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_earflaps",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/earflaps"
+          }
+        },
+        {
+          "when": "give:cosmetic_egbert",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/egberthat"
+          }
+        },
+        {
+          "when": "give:cosmetic_elf_ears_dark_long",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/elf_ears/elf_ears_dark_long"
+          }
+        },
+        {
+          "when": "give:cosmetic_elf_ears_dark_short",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/elf_ears/elf_ears_dark_short"
+          }
+        },
+        {
+          "when": "give:cosmetic_elf_ears_light_long",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/elf_ears/elf_ears_light_long"
+          }
+        },
+        {
+          "when": "give:cosmetic_elf_ears_light_short",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/elf_ears/elf_ears_light_short"
+          }
+        },
+        {
+          "when": "give:cosmetic_ender_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/ender_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_eye",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/eye/eye"
+          }
+        },
+        {
+          "when": "give:cosmetic_farley",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/farleyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_fauna",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/faunahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_fire_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/fire_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_flame_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/flame_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_floating_crown",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/floating_crown"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fanemo"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fcryo"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fdendro"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/felectro"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fgeo"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fhydro"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fempty"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaine_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fpyro"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineanemoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fanemoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineanemob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fanemob"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineanemoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fanemor"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineanemod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fanemol"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainecryoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fcryoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainecryob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fcryob"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainecryoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fcryor"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainecryod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fcryol"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainedendroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fdendroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainedendrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fdendrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainedendroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fdendror"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainedendrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fdendrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineelectroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/felectroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineelectrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/felectrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineelectroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/felectror"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontaineelectrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/felectrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainegeoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fgeoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainegeob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fgeob"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainegeoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fgeor"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainegeod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fgeol"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainehydroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fhydroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainehydrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fhydrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainehydroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fhydror"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainehydrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fhydrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainemasterlessa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/femptyc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainemasterlessb",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/femptyb"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainemasterlessc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/femptyr"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainemasterlessd",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/femptyl"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainepyroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fpyroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainepyrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fpyrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainepyroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fpyror"
+          }
+        },
+        {
+          "when": "give:cosmetic_fontainepyrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fpyrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_franklin",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/franklinhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_froggy_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/bucket_hats/froggy_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_fuchsia",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/fuchsiahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_furina_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/furina"
+          }
+        },
+        {
+          "when": "give:cosmetic_gaming_headset_black",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/gaming_headsets/gaming_headset_black"
+          }
+        },
+        {
+          "when": "give:cosmetic_gaming_headset_pink",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/gaming_headsets/gaming_headset_pink"
+          }
+        },
+        {
+          "when": "give:cosmetic_gaming_headset_white",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/gaming_headsets/gaming_headset_white"
+          }
+        },
+        {
+          "when": "give:cosmetic_ganyu",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ganyu"
+          }
+        },
+        {
+          "when": "give:cosmetic_gas_mask",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/gas_mask"
+          }
+        },
+        {
+          "when": "give:cosmetic_ghost_buddy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/shoulder_buddies/ghost_buddy"
+          }
+        },
+        {
+          "when": "give:cosmetic_glass_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/glass_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_gold_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/gold_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_goldie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/goldiehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_goose",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/goosehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_gracie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/graciehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_graduation_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/graduation/graduation_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_gyroid",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/gyroidhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_halo",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/halo/halo"
+          }
+        },
+        {
+          "when": "give:cosmetic_halo_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/halo"
+          }
+        },
+        {
+          "when": "give:cosmetic_hat_1",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/carved_pumpkin/hat1"
+          }
+        },
+        {
+          "when": "give:cosmetic_headset",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/headset/headset"
+          }
+        },
+        {
+          "when": "give:cosmetic_hokage_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/hokage"
+          }
+        },
+        {
+          "when": "give:cosmetic_hu_tao",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/hutao"
+          }
+        },
+        {
+          "when": "give:cosmetic_hunter_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/hunter_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_hutao_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/hutao"
+          }
+        },
+        {
+          "when": "give:cosmetic_ice_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/ice_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ianemo"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/icryo"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/idendro"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ielectro"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/igeo"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ihydro"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/iempty"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazuma_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ipyro"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaanemoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ianemoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaanemob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ianemob"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaanemoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ianemol"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaanemod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ianemor"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumacryoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/icryoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumacryob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/icryob"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumacryoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/icryol"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumacryod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/icryor"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumadendroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/idendroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumadendrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/idendrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumadendroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/idendrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumadendrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/idendror"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaelectroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ielectroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaelectrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ielectrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaelectroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ielectrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumaelectrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ielectror"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumageoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/igeoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumageob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/igeob"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumageoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/igeol"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumageod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/igeor"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumahydroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ihydroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumahydrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ihydrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumahydroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ihydrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumahydrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ihydror"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumapyroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ipyroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumapyrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ipyrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumapyroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ipyrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_inazumapyrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ipyror"
+          }
+        },
+        {
+          "when": "give:cosmetic_inoske_mask",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/inoske"
+          }
+        },
+        {
+          "when": "give:cosmetic_isabelle",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/isabellehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_jack",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/jackhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_jingle",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/jinglehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_jotaro_cap",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/jotaro"
+          }
+        },
+        {
+          "when": "give:cosmetic_k_k_slider",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/kksliderhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_kamina_glasses",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/kamina"
+          }
+        },
+        {
+          "when": "give:cosmetic_kanna",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/kanna"
+          }
+        },
+        {
+          "when": "give:cosmetic_karen_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/karen"
+          }
+        },
+        {
+          "when": "give:cosmetic_katarina_helmet",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/katarina"
+          }
+        },
+        {
+          "when": "give:cosmetic_katie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/katiehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_ketchup",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/ketchuphat"
+          }
+        },
+        {
+          "when": "give:cosmetic_kirara",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/kirara"
+          }
+        },
+        {
+          "when": "give:cosmetic_klee1",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/klee"
+          }
+        },
+        {
+          "when": "give:cosmetic_klee2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/klee1"
+          }
+        },
+        {
+          "when": "give:cosmetic_label",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/labelhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_lamb_crown",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/lamb"
+          }
+        },
+        {
+          "when": "give:cosmetic_lapis_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/lapis_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_light_fury",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/pop_culture/light_fury"
+          }
+        },
+        {
+          "when": "give:cosmetic_little_angel",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/little_angel"
+          }
+        },
+        {
+          "when": "give:cosmetic_little_devil",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/little_devil"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lanemo"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lcryo"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ldendro"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lelectro"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lgeo"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lhydro"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lempty"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyue_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lpyro"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueanemoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lanemoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueanemob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lanemob"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueanemoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lanemol"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueanemod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lanemor"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuecryoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lcryoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuecryob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lcryob"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuecryoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lcryol"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuecryod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lcryor"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuedendroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ldendroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuedendrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ldendrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuedendroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ldendrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuedendrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ldendror"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueelectroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lelectroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueelectrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lelectrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueelectroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lelectrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyueelectrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lelectror"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuegeoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lgeoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuegeob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lgeob"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuegeoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lgeol"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuegeod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lgeor"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuehydroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lhydroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuehydrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lhydrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuehydroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lhydrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuehydrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lhydror"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuepyroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lpyroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuepyrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lpyrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuepyroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lpyrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_liyuepyrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lpyror"
+          }
+        },
+        {
+          "when": "give:cosmetic_lucky",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/luckyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_luigi_cap",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/pop_culture/luigi"
+          }
+        },
+        {
+          "when": "give:cosmetic_mable",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/mablehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_magic_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/magic_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_magma_witch_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/witch_hats/magma_witch_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_maple",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/maplehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_marina",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/marinahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_mario_cap",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/pop_culture/mario"
+          }
+        },
+        {
+          "when": "give:cosmetic_megumin_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/carved_pumpkin/megumin_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_megumin_hat_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/megumin"
+          }
+        },
+        {
+          "when": "give:cosmetic_melon_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/crops/melon_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_meow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/meowhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_miku",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/miku"
+          }
+        },
+        {
+          "when": "give:cosmetic_miku_hair",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/carved_pumpkin/miku_hair"
+          }
+        },
+        {
+          "when": "give:cosmetic_miner_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/miner_hat/miner_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_mita_cap",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/mita"
+          }
+        },
+        {
+          "when": "give:cosmetic_molly",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/mollyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/manemo"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mcryo"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mdendro"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/melectro"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mgeo"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mhydro"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mempty"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadt_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mpyro"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtanemoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/manemoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtanemob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/manemob"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtanemoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/manemol"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtanemod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/manemor"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtcryoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mcryoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtcryob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mcryob"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtcryoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mcryol"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtcryod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mcryor"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtdendroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mdendroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtdendrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mdendrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtdendroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mdendrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtdendrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mdendror"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtelectroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/melectroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtelectrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/melectrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtelectroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/melectrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtelectrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/melectror"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtgeoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mgeoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtgeob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mgeob"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtgeoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mgeol"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtgeod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mgeor"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadthydroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mhydroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadthydrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mhydrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadthydroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mhydrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadthydrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mhydror"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtpyroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mpyroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtpyrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mpyrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtpyroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mpyrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_mondstadtpyrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mpyror"
+          }
+        },
+        {
+          "when": "give:cosmetic_mr_resetti",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/mrresettihat"
+          }
+        },
+        {
+          "when": "give:cosmetic_murphy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/murphyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_mushroom_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/crops/mushroom_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_mushroom_hat_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/mushroom"
+          }
+        },
+        {
+          "when": "give:cosmetic_nanachi_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/nanachi"
+          }
+        },
+        {
+          "when": "give:cosmetic_nature_witch_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/witch_hats/nature_witch_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_neko",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/neko"
+          }
+        },
+        {
+          "when": "give:cosmetic_niko_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/niko"
+          }
+        },
+        {
+          "when": "give:cosmetic_ocean_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/ocean_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_octavian",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/octavianhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_orville",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/orvillehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_panama_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/panama_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_panda_beret",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/berets/panda_beret"
+          }
+        },
+        {
+          "when": "give:cosmetic_panda_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/bucket_hats/panda_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_party_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/holidays/party_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_pave",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/pavehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_phoenix_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/phoenix_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_pink_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/pink_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_pink_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/pink_wing_pocalypse"
+          }
+        },
+        {
+          "when": "give:cosmetic_pirate_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/pirate"
+          }
+        },
+        {
+          "when": "give:cosmetic_plumbbob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/pop_culture/plumbbob"
+          }
+        },
+        {
+          "when": "give:cosmetic_polar_bear_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/bucket_hats/polar_bear_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_pompom_buns",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/pompom_buns"
+          }
+        },
+        {
+          "when": "give:cosmetic_portal_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/portal_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_premium_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/premium_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_present_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/holidays/present_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_pumpkin_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/crops/pumpkin_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_purple_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/purple_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_raymond",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/raymondhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_redd",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/reddhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_repo",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/repo"
+          }
+        },
+        {
+          "when": "give:cosmetic_rover",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/roverhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_roxy_s_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/roxhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_sable",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/sablehat"
+          }
+        },
+        {
+          "when": "give:cosmetic_sad_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/sad_hat/sad_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_safety_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/safety_hat/safety_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_saiko_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/saiko_hat/saiko_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_samurai_helmet_blue",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/samurai_blue"
+          }
+        },
+        {
+          "when": "give:cosmetic_samurai_helmet_red",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/samurai_red"
+          }
+        },
+        {
+          "when": "give:cosmetic_santa_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/holidays/santa_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_sasha",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/sashahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_scarf_type_1",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/holidays/scarf_type_1"
+          }
+        },
+        {
+          "when": "give:cosmetic_scarf_type_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/holidays/scarf_type_2"
+          }
+        },
+        {
+          "when": "give:cosmetic_scoot",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/scoothat"
+          }
+        },
+        {
+          "when": "give:cosmetic_scuba_divers_helmet",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/diver"
+          }
+        },
+        {
+          "when": "give:cosmetic_shemag",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/shemag/shemag"
+          }
+        },
+        {
+          "when": "give:cosmetic_shino",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/shinohat"
+          }
+        },
+        {
+          "when": "give:cosmetic_simple_fez",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/simple_fez"
+          }
+        },
+        {
+          "when": "give:cosmetic_skeleton_dragon_wing",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/wings/skeleton_wing"
+          }
+        },
+        {
+          "when": "give:cosmetic_small_demon_horns",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/small_demon_horns"
+          }
+        },
+        {
+          "when": "give:cosmetic_smol",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/smolmarinahat"
+          }
+        },
+        {
+          "when": "give:cosmetic_stitches",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/stitcheshat"
+          }
+        },
+        {
+          "when": "give:cosmetic_straw_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/straw_hat/straw_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_straw_hat_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/luffy"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sanemo"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/scryo"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sdendro"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/selectro"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sgeo"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/shydro"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sempty"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeru_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/spyro"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruanemoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sanemoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruanemob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sanemob"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruanemoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sanemol"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruanemod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sanemor"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerucryoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/scryoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerucryob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/scryob"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerucryoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/scryol"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerucryod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/scryor"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerudendroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sdendroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerudendrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sdendrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerudendroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sdendrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerudendrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sdendror"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruelectroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/selectroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruelectrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/selectrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruelectroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/selectrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruelectrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/selectror"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerugeoa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sgeoc"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerugeob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sgeob"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerugeoc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sgeol"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerugeod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sgeor"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruhydroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/shydroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruhydrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/shydrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruhydroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/shydrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumeruhydrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/shydror"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerupyroa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/spyroc"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerupyrob",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/spyrob"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerupyroc",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/spyrol"
+          }
+        },
+        {
+          "when": "give:cosmetic_sumerupyrod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/spyror"
+          }
+        },
+        {
+          "when": "give:cosmetic_swimming_goggles",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/swimming_goggles/swimming_goggles"
+          }
+        },
+        {
+          "when": "give:cosmetic_tangy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/tangyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_tiara_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/tiara"
+          }
+        },
+        {
+          "when": "give:cosmetic_tiffany",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/tiffanyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_timmy_tommy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/timmytommyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_toad",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/pop_culture/toad"
+          }
+        },
+        {
+          "when": "give:cosmetic_toilet_paper",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/toilet_paper/toilet_paper"
+          }
+        },
+        {
+          "when": "give:cosmetic_tom_nook",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/tomnookhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_toothless",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/pop_culture/toothless"
+          }
+        },
+        {
+          "when": "give:cosmetic_top_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/top_hat/top_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_top_hat_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/speedwagon"
+          }
+        },
+        {
+          "when": "give:cosmetic_torch_holder",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/torch_holder_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_traffic_cone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/traffic_cone"
+          }
+        },
+        {
+          "when": "give:cosmetic_unblocker",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/unblocker/unblocker"
+          }
+        },
+        {
+          "when": "give:cosmetic_unicorn_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/other/unicorn_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_blue",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_blue"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_brown",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_brown"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_grey",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_grey"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_indigo",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_indigo"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_lime",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_lime"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_orange",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_orange"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_pink",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_pink"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_purple",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_purple"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_red",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_red"
+          }
+        },
+        {
+          "when": "give:cosmetic_ushanka_yellow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/ushankas/ushanka_yellow"
+          }
+        },
+        {
+          "when": "give:cosmetic_venti",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/venti"
+          }
+        },
+        {
+          "when": "give:cosmetic_western_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/western_hat/western_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_wilbur",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/wilburhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_witch_hat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/witch_hat/witch_hat"
+          }
+        },
+        {
+          "when": "give:cosmetic_witch_hat_2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/witch"
+          }
+        },
+        {
+          "when": "give:cosmetic_wreath",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/wreath"
+          }
+        },
+        {
+          "when": "give:cosmetic_xiao",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/xiao"
+          }
+        },
+        {
+          "when": "give:cosmetic_yaoyao",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/yaoyao"
+          }
+        },
+        {
+          "when": "give:cosmetic_yazawa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/yazawa"
+          }
+        },
+        {
+          "when": "give:cosmetic_zero_two",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/cosmetic_hats/02"
+          }
+        },
+        {
+          "when": "give:cosmetic_zipper_t_bunny",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/zippertbunnyhat"
+          }
+        },
+        {
+          "when": "give:cosmetic_zucker",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/animal_crossing_hats/zuckerhat"
+          }
+        },
+        {
+          "when": "give:crucible",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/crucible"
+          }
+        },
+        {
+          "when": "give:cursed_sea_blade",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/cursed_sea_blade"
+          }
+        },
+        {
+          "when": "give:dagger",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/dagger"
+          }
+        },
+        {
+          "when": "give:dagger_diamond",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/dagger_diamond"
+          }
+        },
+        {
+          "when": "give:dormis_dormis_maze1",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:dormis_dormis_maze2",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:dormis_thralls_crown",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/golden_helmet"
+          }
+        },
+        {
+          "when": "give:electric_staff",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/electric_staff"
+          }
+        },
+        {
+          "when": "give:empty_staff",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/empty_staff"
+          }
+        },
+        {
+          "when": "give:end_city_vault_normal_common",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:end_excalibur",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/end_excalibur"
+          }
+        },
+        {
+          "when": "give:endlight",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/endlight_resting"
+          }
+        },
+        {
+          "when": "give:endonomicon_book",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/endonomicon"
+          }
+        },
+        {
+          "when": "give:entity_boss_bygone_viceroy_bottom",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/white_banner"
+          }
+        },
+        {
+          "when": "give:entity_boss_solatium_thrall",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/golden_leggings"
+          }
+        },
+        {
+          "when": "give:entity_dormis_markskin",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:entity_fish_curse",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/prismarine_shard"
+          }
+        },
+        {
+          "when": "give:entity_pixie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/structure_void"
+          }
+        },
+        {
+          "when": "give:everlasting_moonglow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/everlastingmoonglow"
+          }
+        },
+        {
+          "when": "give:evokers_wrath",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/evokers_wrath_v2"
+          }
+        },
+        {
+          "when": "give:explorer_map_chapel_of_light",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/map"
+          }
+        },
+        {
+          "when": "give:explorer_map_end_city",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/map"
+          }
+        },
+        {
+          "when": "give:explorer_map_floating_treasure",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/map"
+          }
+        },
+        {
+          "when": "give:explorer_map_village",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/map"
+          }
+        },
+        {
+          "when": "give:fire_staff",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/fire_staff_ready"
+          }
+        },
+        {
+          "when": "give:flying_boat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/tools/flying_boat"
+          }
+        },
+        {
+          "when": "give:food_candied_chorus_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/candied_chorus_fruit"
+          }
+        },
+        {
+          "when": "give:food_chorus_juice",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:food_chorus_pie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/chorus_pie"
+          }
+        },
+        {
+          "when": "give:food_chorus_stew",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/chorus_stew"
+          }
+        },
+        {
+          "when": "give:food_enderman_flesh",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/enderman_flesh"
+          }
+        },
+        {
+          "when": "give:food_fish_amethyst_budfish",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/amethyst_budfish"
+          }
+        },
+        {
+          "when": "give:food_fish_bubblefish",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/bubblefish"
+          }
+        },
+        {
+          "when": "give:food_fish_crimson_tigerfish",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/crimson_tigerfish"
+          }
+        },
+        {
+          "when": "give:food_fish_crystal_heartfish",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/crystal_heartfish"
+          }
+        },
+        {
+          "when": "give:food_fish_ender_koi",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/ender_koi"
+          }
+        },
+        {
+          "when": "give:food_fish_flarefin_koi",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/flarefin_koi"
+          }
+        },
+        {
+          "when": "give:food_fish_fleshy_piranha",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/fleshy_piranha"
+          }
+        },
+        {
+          "when": "give:food_fish_frost_minnow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/frost_minnow"
+          }
+        },
+        {
+          "when": "give:food_fish_goosh",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/goosh"
+          }
+        },
+        {
+          "when": "give:food_fish_overgrown_cod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/overgrown_cod"
+          }
+        },
+        {
+          "when": "give:food_fish_prismite",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fish/prismite"
+          }
+        },
+        {
+          "when": "give:food_fish_pufferfish",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/pufferfish"
+          }
+        },
+        {
+          "when": "give:food_fried_chorus_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/fried_chorus_fruit"
+          }
+        },
+        {
+          "when": "give:food_frozen_carpaccio",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/frozen_carpaccio"
+          }
+        },
+        {
+          "when": "give:food_golden_chorus_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/golden_chorus_fruit"
+          }
+        },
+        {
+          "when": "give:food_grilled_enderman_flesh",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/grilled_enderman_flesh"
+          }
+        },
+        {
+          "when": "give:food_loaf_of_plenty",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/bread"
+          }
+        },
+        {
+          "when": "give:food_pho",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/pho"
+          }
+        },
+        {
+          "when": "give:food_prismatic_sushi",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/prismatic_sushi"
+          }
+        },
+        {
+          "when": "give:food_shepherds_pie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/shepherds_pie"
+          }
+        },
+        {
+          "when": "give:food_shulker_body",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/shulker_body"
+          }
+        },
+        {
+          "when": "give:food_sushi",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/food/sushi"
+          }
+        },
+        {
+          "when": "give:freedom_sworn",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/freedomsworn"
+          }
+        },
+        {
+          "when": "give:frost_spite",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/frost_spite"
+          }
+        },
+        {
+          "when": "give:ghastling",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/ghast_spawn_egg"
+          }
+        },
+        {
+          "when": "give:glacium_cryolith",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/cryolith"
+          }
+        },
+        {
+          "when": "give:glacium_cryolith_upgrade_smithing_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/cryolith_upgrade_smithing_template"
+          }
+        },
+        {
+          "when": "give:glacium_glacium_tower1",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:golden_ocean_edge",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/wave_caster"
+          }
+        },
+        {
+          "when": "give:ice_staff",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/ice_staff_ready"
+          }
+        },
+        {
+          "when": "give:ingredients_ender_egg",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/ender_egg"
+          }
+        },
+        {
+          "when": "give:keyblade",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/keyblade"
+          }
+        },
+        {
+          "when": "give:keys_gilded_purpur_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/gilded_purpur_key"
+          }
+        },
+        {
+          "when": "give:keys_purpur_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/purpur_key"
+          }
+        },
+        {
+          "when": "give:keys_winged_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/winged_key"
+          }
+        },
+        {
+          "when": "give:magmus_charger",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/magmus_resting"
+          }
+        },
+        {
+          "when": "give:material_chorus_petal",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/chorus_petal"
+          }
+        },
+        {
+          "when": "give:material_chorus_plating",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/chorus_plating"
+          }
+        },
+        {
+          "when": "give:material_empty_enchanted_book",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/enchanted_book"
+          }
+        },
+        {
+          "when": "give:material_enderite_shard",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/enderite_shard"
+          }
+        },
+        {
+          "when": "give:material_enderite_smithing_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/enderite_smithing_template"
+          }
+        },
+        {
+          "when": "give:material_hallowed_ingot",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/hallowed_ingot"
+          }
+        },
+        {
+          "when": "give:material_sand_rune",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/sand_rune"
+          }
+        },
+        {
+          "when": "give:material_starlight_soot",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/pixie_dust"
+          }
+        },
+        {
+          "when": "give:mega_hammer",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/hammer"
+          }
+        },
+        {
+          "when": "give:metal_apples_bejeweled_apple",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/metal_apples/bejeweled_apple"
+          }
+        },
+        {
+          "when": "give:metal_apples_carbon_apple",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/metal_apples/carbon_apple"
+          }
+        },
+        {
+          "when": "give:metal_apples_copper_apple",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/metal_apples/copper_apple"
+          }
+        },
+        {
+          "when": "give:metal_apples_iron_apple",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/metal_apples/iron_apple"
+          }
+        },
+        {
+          "when": "give:mimic",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/shadows/mimic3"
+          }
+        },
+        {
+          "when": "give:moonlight_edge",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/moonlight_edge"
+          }
+        },
+        {
+          "when": "give:music_disc_deviants_light_music_box",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/music_disc/deviants_light_music_box"
+          }
+        },
+        {
+          "when": "give:music_disc_fires_of_hokkai",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/music_disc/fires_of_hokkai"
+          }
+        },
+        {
+          "when": "give:music_disc_precipice_stereo",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/music_disc/precipice_stereo"
+          }
+        },
+        {
+          "when": "give:music_discs_brine",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/brine"
+          }
+        },
+        {
+          "when": "give:music_discs_faewild",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/faewild"
+          }
+        },
+        {
+          "when": "give:music_discs_glacium",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/glacium"
+          }
+        },
+        {
+          "when": "give:music_discs_omnidrome",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/omnidrome"
+          }
+        },
+        {
+          "when": "give:music_discs_pax",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/pax"
+          }
+        },
+        {
+          "when": "give:music_discs_underdark",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/underdark"
+          }
+        },
+        {
+          "when": "give:music_discs_varskspace",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/varskspace"
+          }
+        },
+        {
+          "when": "give:music_discs_viceroy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/music_discs/viceroy"
+          }
+        },
+        {
+          "when": "give:nether_fortress_notch",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/nether_fortress_notch"
+          }
+        },
+        {
+          "when": "give:overloading_pulse",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/thunderingpulsepyro"
+          }
+        },
+        {
+          "when": "give:panacea_gothrum_fang",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/gothrum_fang"
+          }
+        },
+        {
+          "when": "give:panacea_lembas_breadfruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/lembas_breadfruit"
+          }
+        },
+        {
+          "when": "give:panacea_panaspore",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/panaspore"
+          }
+        },
+        {
+          "when": "give:panacea_perrterror_gastor",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/perrterror_gastor"
+          }
+        },
+        {
+          "when": "give:panacea_yakitubba_hide",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/yakitubba_hide"
+          }
+        },
+        {
+          "when": "give:portal_keys_brine_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/brine_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_dormis_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/dormis_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_end_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/end_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_faewild_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/faewild_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_glacium_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/glacium_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_nether_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/nether_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_omnidrome_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/omnidrome_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_overworld_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/overworld_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_panacea_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/panacea_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_pax_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/pax_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_sanctum_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/sanctum_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_underdark_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/underdark_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_varskspace_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/varskspace_key"
+          }
+        },
+        {
+          "when": "give:portal_keys_void_key",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/portal_keys/void_key"
+          }
+        },
+        {
+          "when": "give:potion_amarene",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_blind_rage_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_blind_rage_potion_ext",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_endurance_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_endurance_potion_ext",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_endurance_potion_ii",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_entanglement_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/splash_potion"
+          }
+        },
+        {
+          "when": "give:potion_entanglement_potion_ext",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/splash_potion"
+          }
+        },
+        {
+          "when": "give:potion_entanglement_potion_ii",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/splash_potion"
+          }
+        },
+        {
+          "when": "give:potion_frost_cloud_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/lingering_potion"
+          }
+        },
+        {
+          "when": "give:potion_hellfire_treader_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_hellfire_treader_potion_ext",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_hellfire_treader_potion_ii",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_lifeforce_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_lifeforce_potion_ext",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_lifeforce_potion_ii",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_poseidons_nectar",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_red_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_regeneraga",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_regeneraga_ext",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_regeneraga_ii",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_royal_jelly",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/honey_bottle"
+          }
+        },
+        {
+          "when": "give:potion_royal_jelly_ii",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/honey_bottle"
+          }
+        },
+        {
+          "when": "give:potion_spelunker_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_spelunker_potion_ext",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potion_spelunker_potion_ii",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:potions_beverage_apple",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_apple"
+          }
+        },
+        {
+          "when": "give:potions_beverage_beetroot",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_beetroot"
+          }
+        },
+        {
+          "when": "give:potions_beverage_chorus_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_chorus_fruit"
+          }
+        },
+        {
+          "when": "give:potions_beverage_cocoa_beans",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_cocoa_beans"
+          }
+        },
+        {
+          "when": "give:potions_beverage_glow_berries",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_glow_berries"
+          }
+        },
+        {
+          "when": "give:potions_beverage_honey",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_honey"
+          }
+        },
+        {
+          "when": "give:potions_beverage_kelp",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_kelp"
+          }
+        },
+        {
+          "when": "give:potions_beverage_melon",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_melon"
+          }
+        },
+        {
+          "when": "give:potions_beverage_potato",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_potato"
+          }
+        },
+        {
+          "when": "give:potions_beverage_sugar_cane",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_sugar_cane"
+          }
+        },
+        {
+          "when": "give:potions_beverage_sweet_berries",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_sweet_berries"
+          }
+        },
+        {
+          "when": "give:potions_beverage_wheat",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/potions/beverage_wheat"
+          }
+        },
+        {
+          "when": "give:potions_saturation_potion",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:reactor_waste",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/leather_boots"
+          }
+        },
+        {
+          "when": "give:sanctum_potions",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:seelie_curcuma",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/seeliecurcuma"
+          }
+        },
+        {
+          "when": "give:seelie_dayflower",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/seeliedayflower"
+          }
+        },
+        {
+          "when": "give:seelie_moss",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/seeliemoss"
+          }
+        },
+        {
+          "when": "give:seelie_rose",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/seelierose"
+          }
+        },
+        {
+          "when": "give:seelie_viola",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/seelieviola"
+          }
+        },
+        {
+          "when": "give:skyward_blade",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/skywardblade"
+          }
+        },
+        {
+          "when": "give:spawn_egg_flesh_piglin",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/hoglin_spawn_egg"
+          }
+        },
+        {
+          "when": "give:spawn_egg_voided_skeleton",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/ender_dragon_spawn_egg"
+          }
+        },
+        {
+          "when": "give:spawn_egg_voided_slime",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/ender_dragon_spawn_egg"
+          }
+        },
+        {
+          "when": "give:spawn_egg_voided_zombie",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/ender_dragon_spawn_egg"
+          }
+        },
+        {
+          "when": "give:species_beginner_book",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_beginner_book"
+          }
+        },
+        {
+          "when": "give:species_book",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_book"
+          }
+        },
+        {
+          "when": "give:species_fruits_automech_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/automech"
+          }
+        },
+        {
+          "when": "give:species_fruits_bad_bread",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:bread"
+          }
+        },
+        {
+          "when": "give:species_fruits_banana",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/banana"
+          }
+        },
+        {
+          "when": "give:species_fruits_cherry",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/cherry"
+          }
+        },
+        {
+          "when": "give:species_fruits_coconut",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/coconut"
+          }
+        },
+        {
+          "when": "give:species_fruits_dweller_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/dweller"
+          }
+        },
+        {
+          "when": "give:species_fruits_enderling_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/enderling"
+          }
+        },
+        {
+          "when": "give:species_fruits_faefolk_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/faefolk"
+          }
+        },
+        {
+          "when": "give:species_fruits_frostkin_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/frostkin"
+          }
+        },
+        {
+          "when": "give:species_fruits_grapes",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/grapes"
+          }
+        },
+        {
+          "when": "give:species_fruits_human_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/human"
+          }
+        },
+        {
+          "when": "give:species_fruits_hunter_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/hunter"
+          }
+        },
+        {
+          "when": "give:species_fruits_lemon",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/lemon"
+          }
+        },
+        {
+          "when": "give:species_fruits_nereid_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/nereid"
+          }
+        },
+        {
+          "when": "give:species_fruits_netherkin_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/netherkin"
+          }
+        },
+        {
+          "when": "give:species_fruits_olive",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/olive"
+          }
+        },
+        {
+          "when": "give:species_fruits_orange",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/orange"
+          }
+        },
+        {
+          "when": "give:species_fruits_outlander_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/outlander"
+          }
+        },
+        {
+          "when": "give:species_fruits_pear",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/pear"
+          }
+        },
+        {
+          "when": "give:species_fruits_realmkeeper_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/realmkeeper"
+          }
+        },
+        {
+          "when": "give:species_fruits_villain_fruit",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/species_fruit/villain"
+          }
+        },
+        {
+          "when": "give:spellbook_book_of_conveyance",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/book_of_conveyance"
+          }
+        },
+        {
+          "when": "give:spellbook_book_of_jinx",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/book_of_jinx"
+          }
+        },
+        {
+          "when": "give:spellbook_book_of_light",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/book_of_light"
+          }
+        },
+        {
+          "when": "give:spellbook_book_of_obstruct",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/book_of_obstruct"
+          }
+        },
+        {
+          "when": "give:spellbook_book_of_return",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/book_of_return"
+          }
+        },
+        {
+          "when": "give:spellbook_book_of_updraft",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/book_of_updraft"
+          }
+        },
+        {
+          "when": "give:tcg_ayaka",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/tcgayaka"
+          }
+        },
+        {
+          "when": "give:tcg_tartaglia",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/tcgchilde"
+          }
+        },
+        {
+          "when": "give:tcg_yoimiya",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/tcgyoimiya"
+          }
+        },
+        {
+          "when": "give:the_brine_brine_foam",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/brine_foam"
+          }
+        },
+        {
+          "when": "give:the_brine_brine_rod",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/brine_rod"
+          }
+        },
+        {
+          "when": "give:the_brine_cordyceps_powder",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/cordyceps_powder"
+          }
+        },
+        {
+          "when": "give:the_brine_essence_of_eternity",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/essence_of_eternity"
+          }
+        },
+        {
+          "when": "give:the_brine_essence_of_infinity",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/essence_of_infinity"
+          }
+        },
+        {
+          "when": "give:the_brine_jellyfish_stinger",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/jellyfish_stinger"
+          }
+        },
+        {
+          "when": "give:the_brine_lustra_pearl",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/lustra_pearl"
+          }
+        },
+        {
+          "when": "give:the_brine_lustra_upgrade_smithing_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/lustra_upgrade_smithing_template"
+          }
+        },
+        {
+          "when": "give:the_brine_nautilus_chamber",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/nautilus_chamber"
+          }
+        },
+        {
+          "when": "give:the_brine_sentinel_rings",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/sentinel_rings"
+          }
+        },
+        {
+          "when": "give:the_brine_shark_tooth",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/shark_tooth"
+          }
+        },
+        {
+          "when": "give:the_brine_tempest_nectar",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/tempest_nectar"
+          }
+        },
+        {
+          "when": "give:the_brine_void_petal",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/void_petal"
+          }
+        },
+        {
+          "when": "give:the_brine_voidfish_venom",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/voidfish_venom"
+          }
+        },
+        {
+          "when": "give:the_brine_wither_fin",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/wither_fin"
+          }
+        },
+        {
+          "when": "give:the_brine_worm_mandible",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_brine/worm_mandible"
+          }
+        },
+        {
+          "when": "give:the_faewild_castle_castle",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:the_faewild_castle_prison",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/potion"
+          }
+        },
+        {
+          "when": "give:the_faewild_castle_troop",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:the_faewild_inscribed_mim_silk_patch",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_faewild/inscribed_mim_silk_patch"
+          }
+        },
+        {
+          "when": "give:the_faewild_mim_silk_patch",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_faewild/mim_silk_patch"
+          }
+        },
+        {
+          "when": "give:the_faewild_mim_silk_strand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/the_faewild/mim_silk_strand"
+          }
+        },
+        {
+          "when": "give:the_underdark_underdark_web4",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/tipped_arrow"
+          }
+        },
+        {
+          "when": "give:thorn_blossom",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/thorn_blossom"
+          }
+        },
+        {
+          "when": "give:thorn_blossom_diamond",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/thorn_blossom_diamond"
+          }
+        },
+        {
+          "when": "give:tool_fisher_of_voids",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/fisher_of_voids"
+          }
+        },
+        {
+          "when": "give:tool_shulker_axe",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_axe"
+          }
+        },
+        {
+          "when": "give:tool_shulker_hoe",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_hoe"
+          }
+        },
+        {
+          "when": "give:tool_shulker_pickaxe",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_pickaxe"
+          }
+        },
+        {
+          "when": "give:tool_shulker_shovel",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_shovel"
+          }
+        },
+        {
+          "when": "give:tool_shulker_sword",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/shulker_sword"
+          }
+        },
+        {
+          "when": "give:tools_bagpipe",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/tools/bagpipe"
+          }
+        },
+        {
+          "when": "give:tools_broken_compass",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/tools/broken_compass"
+          }
+        },
+        {
+          "when": "give:tools_golden_horn",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/tools/golden_horn"
+          }
+        },
+        {
+          "when": "give:tools_unruly_compass",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/tools/unruly_compass"
+          }
+        },
+        {
+          "when": "give:trinket_bell_flower",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/bell_flower"
+          }
+        },
+        {
+          "when": "give:trinket_copper_elektra_shield",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield"
+          }
+        },
+        {
+          "when": "give:trinket_crest_of_the_end",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield"
+          }
+        },
+        {
+          "when": "give:trinket_decayed_clover",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/decayed_clover"
+          }
+        },
+        {
+          "when": "give:trinket_duskberry",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/duskberry"
+          }
+        },
+        {
+          "when": "give:trinket_endermans_hand",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/endermans_hand"
+          }
+        },
+        {
+          "when": "give:trinket_life_crystal",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/ender_insignia"
+          }
+        },
+        {
+          "when": "give:trinket_prismatic_pearl",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/prismatic_pearl"
+          }
+        },
+        {
+          "when": "give:trinket_satchel_of_voids",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/satchel_of_voids"
+          }
+        },
+        {
+          "when": "give:trinket_soaring_insignia",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/soaring_insignia"
+          }
+        },
+        {
+          "when": "give:trinket_starstruck_shield",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shield"
+          }
+        },
+        {
+          "when": "give:trinket_void_locket",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/void_locket"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fanemo"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fcryo"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fdendro"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/felectro"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fgeo"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fhydro"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fempty"
+          }
+        },
+        {
+          "when": "give:visions_fontaine_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/fpyro"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ianemo"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/icryo"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/idendro"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ielectro"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/igeo"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ihydro"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/iempty"
+          }
+        },
+        {
+          "when": "give:visions_inazuma_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ipyro"
+          }
+        },
+        {
+          "when": "give:visions_liyue_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lanemo"
+          }
+        },
+        {
+          "when": "give:visions_liyue_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lcryo"
+          }
+        },
+        {
+          "when": "give:visions_liyue_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/ldendro"
+          }
+        },
+        {
+          "when": "give:visions_liyue_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lelectro"
+          }
+        },
+        {
+          "when": "give:visions_liyue_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lgeo"
+          }
+        },
+        {
+          "when": "give:visions_liyue_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lhydro"
+          }
+        },
+        {
+          "when": "give:visions_liyue_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lempty"
+          }
+        },
+        {
+          "when": "give:visions_liyue_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/lpyro"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/manemo"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mcryo"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mdendro"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/melectro"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mgeo"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mhydro"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mempty"
+          }
+        },
+        {
+          "when": "give:visions_mondstadt_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/mpyro"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_anemo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sanemo"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_cryo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/scryo"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_dendro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sdendro"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_electro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/selectro"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_geo_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sgeo"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_hydro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/shydro"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_masterless_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/sempty"
+          }
+        },
+        {
+          "when": "give:visions_sumeru_pyro_vision",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/spyro"
+          }
+        },
+        {
+          "when": "give:void_fishing_junk",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/firework_star"
+          }
+        },
+        {
+          "when": "give:weapon_ancient_wooden_sword",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/ancient_wooden_sword"
+          }
+        },
+        {
+          "when": "give:weapon_call_of_the_void",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/call_of_the_void"
+          }
+        },
+        {
+          "when": "give:weapon_dragonblade",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/dragonblade"
+          }
+        },
+        {
+          "when": "give:weapon_fluffy_hammer",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/fluffy_hammer"
+          }
+        },
+        {
+          "when": "give:weapon_harvester",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/harvester/tier_0"
+          }
+        },
+        {
+          "when": "give:weapon_kaleidoscope",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/kaleidoscope"
+          }
+        },
+        {
+          "when": "give:weapon_prismatic_punch",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/prismatic_punch"
+          }
+        },
+        {
+          "when": "give:weapon_prismember",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/prismember"
+          }
+        },
+        {
+          "when": "give:weapon_sandstorm_trident",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/sandstorm_trident"
+          }
+        },
+        {
+          "when": "give:weapon_sharanga",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/sharanga"
+          }
+        },
+        {
+          "when": "give:weapon_slayer_crossbow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/slayer_crossbow"
+          }
+        },
+        {
+          "when": "give:weapon_spectral_fury",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/spectral_fury"
+          }
+        },
+        {
+          "when": "give:weapon_starless_scythe",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/starless_scythe"
+          }
+        },
+        {
+          "when": "give:weapon_stellar_striker",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/stellar_striker"
+          }
+        },
+        {
+          "when": "give:weapon_tamaris",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/tamaris"
+          }
+        },
+        {
+          "when": "give:weapon_templates_bludgeon_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/bludgeon"
+          }
+        },
+        {
+          "when": "give:weapon_templates_buckler_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/buckler"
+          }
+        },
+        {
+          "when": "give:weapon_templates_cutlass_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/cutlass"
+          }
+        },
+        {
+          "when": "give:weapon_templates_dagger_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/dagger"
+          }
+        },
+        {
+          "when": "give:weapon_templates_greatsword_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/greatsword"
+          }
+        },
+        {
+          "when": "give:weapon_templates_katana_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/katana"
+          }
+        },
+        {
+          "when": "give:weapon_templates_rapier_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/rapier"
+          }
+        },
+        {
+          "when": "give:weapon_templates_sabre_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/saber"
+          }
+        },
+        {
+          "when": "give:weapon_templates_sickle_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/sickle"
+          }
+        },
+        {
+          "when": "give:weapon_templates_warhammer_weapon_template",
+          "model": {
+            "type": "minecraft:model",
+            "model": "bracken:item/weapon_templates/warhammer"
+          }
+        },
+        {
+          "when": "give:weapon_the_beginning_and_the_end",
+          "model": {
+            "type": "minecraft:model",
+            "model": "stellarity:item/the_end"
+          }
+        },
+        {
+          "when": "give:weapons_absolution",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/sword/absolution/absolution"
+          }
+        },
+        {
+          "when": "give:weapons_amos_bow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/bow/amos_bow/amos_bow_standby"
+          }
+        },
+        {
+          "when": "give:weapons_ballad_of_the_fjords",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/ballad_of_the_fjords/ballad_of_the_fjords"
+          }
+        },
+        {
+          "when": "give:weapons_beacon_of_the_reed_sea",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/claymore/beacon_of_the_reed_sea/beacon_of_the_reed_sea"
+          }
+        },
+        {
+          "when": "give:weapons_cranes_echoing_call",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/catalyst/cranes_echoing_call/cranes_echoing_call"
+          }
+        },
+        {
+          "when": "give:weapons_crimson_moons_semblance",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/crimson_moons_semblance/crimson_moons_semblance"
+          }
+        },
+        {
+          "when": "give:weapons_dragons_bane",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/dragons_bane/dragons_bane"
+          }
+        },
+        {
+          "when": "give:weapons_electric_pulse",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/thunderingpulseelectro"
+          }
+        },
+        {
+          "when": "give:weapons_end_of_the_line",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/bow/end_of_the_line/end_of_the_line_standby"
+          }
+        },
+        {
+          "when": "give:weapons_engulfing_lightning",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/engulfing_lightning/engulfing_lightning"
+          }
+        },
+        {
+          "when": "give:weapons_favonius_greatsword",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/claymore/favonius_greatsword/favonius_greatsword"
+          }
+        },
+        {
+          "when": "give:weapons_fleuve_cendre_ferryman",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/sword/fleuve_cendre_ferryman/fleuve_cendre_ferryman"
+          }
+        },
+        {
+          "when": "give:weapons_freedom_sworn",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/sword/freedom_sworn/freedom_sworn"
+          }
+        },
+        {
+          "when": "give:weapons_hamayumi",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/bow/hamayumi/hamayumi_standby"
+          }
+        },
+        {
+          "when": "give:weapons_jadefalls_splendor",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/catalyst/jadefalls_splendor/jadefalls_splendor"
+          }
+        },
+        {
+          "when": "give:weapons_kaguras_verity",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/catalyst/kaguras_verity/kaguras_verity"
+          }
+        },
+        {
+          "when": "give:weapons_key_of_khaj_nisut",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/sword/key_of_khaj_nisut/key_of_khaj_nisut"
+          }
+        },
+        {
+          "when": "give:weapons_lithic_spear",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/lithic_spear/lithic_spear"
+          }
+        },
+        {
+          "when": "give:weapons_lumidouce_elegy",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/lumidouce_elegy/lumidouce_elegy"
+          }
+        },
+        {
+          "when": "give:weapons_memory_of_dust",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/catalyst/memory_of_dust/memory_of_dust"
+          }
+        },
+        {
+          "when": "give:weapons_mistsplitter_reforged",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/sword/mistsplitter_reforged/mistsplitter_reforged"
+          }
+        },
+        {
+          "when": "give:weapons_primordial_jade_cutter",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/sword/primordial_jade_cutter/primordial_jade_cutter"
+          }
+        },
+        {
+          "when": "give:weapons_primordial_jade_winged_spear",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/primordial_jade_winged_spear/primordial_jade_winged_spear"
+          }
+        },
+        {
+          "when": "give:weapons_redhorn_stonethresher",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/claymore/redhorn_stonethresher/redhorn_stonethresher"
+          }
+        },
+        {
+          "when": "give:weapons_skyward_atlas",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/catalyst/skyward_atlas/skyward_atlas"
+          }
+        },
+        {
+          "when": "give:weapons_skyward_harp",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/bow/skyward_harp/skyward_harp_standby"
+          }
+        },
+        {
+          "when": "give:weapons_skyward_spine",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/skyward_spine/skyward_spine"
+          }
+        },
+        {
+          "when": "give:weapons_staff_of_homa",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/staff_of_homa/staff_of_homa"
+          }
+        },
+        {
+          "when": "give:weapons_staff_of_the_scarlet_sands",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/staff_of_the_scarlet_sands/staff_of_the_scarlet_sands"
+          }
+        },
+        {
+          "when": "give:weapons_surfs_up",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/catalyst/surfs_up/surfs_up"
+          }
+        },
+        {
+          "when": "give:weapons_the_catch",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/the_catch/the_catch"
+          }
+        },
+        {
+          "when": "give:weapons_thousand_emerging_dreams",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/thousandfloatingdreamsdendro"
+          }
+        },
+        {
+          "when": "give:weapons_thousand_floating_dreams",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/thousandfloatingdreams"
+          }
+        },
+        {
+          "when": "give:weapons_thousand_swirling_dreams",
+          "model": {
+            "type": "minecraft:model",
+            "model": "item/genshin/thousandfloatingdreamsanemo"
+          }
+        },
+        {
+          "when": "give:weapons_thundering_pulse",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/bow/thundering_pulse/thundering_pulse_standby"
+          }
+        },
+        {
+          "when": "give:weapons_toukabou_shigure",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/sword/toukabou_shigure/toukabou_shigure"
+          }
+        },
+        {
+          "when": "give:weapons_tulaytullahs_remembrance",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/catalyst/tulaytullas_remembrance/tulaytullahs_remembrance"
+          }
+        },
+        {
+          "when": "give:weapons_verdict",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/claymore/verdict/verdict"
+          }
+        },
+        {
+          "when": "give:weapons_vortex_vanquisher",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/polearm/vortex_vanquisher/vortex_vanquisher"
+          }
+        },
+        {
+          "when": "give:weapons_wolfs_gravestone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "genshin_weapons/claymore/wolfs_gravestone/wolfs_gravestone"
+          }
+        },
+        {
+          "when": "give:windsweeper",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/windsweeper"
+          }
+        },
+        {
+          "when": "give:withering_sword",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/withering_sword_v2"
+          }
+        },
+        {
+          "when": "give:z_secret_delete",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/unused/delete"
+          }
+        },
+        {
+          "when": "give:z_secret_spellbound_sword",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/unused/spellbound_sword"
+          }
+        },
+        {
+          "when": "give:zg_crossbow",
+          "model": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/warped_resting"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/painting"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/painting"
+    }
+  }
+}

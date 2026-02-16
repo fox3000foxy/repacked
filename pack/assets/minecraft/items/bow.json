@@ -1,293 +1,417 @@
 {
-    "model": {
-      "type": "minecraft:range_dispatch",
-      "property": "minecraft:custom_model_data",
-      "entries": [
-        
-    {
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
         "threshold": 47031,
         "model": {
-    
-    "type": "minecraft:condition",
-    "property": "minecraft:using_item",
-    "on_true": {
-      "type": "minecraft:range_dispatch",
-      "property": "minecraft:use_duration",
-      "scale": 0.05,
-      
-      "fallback": {
-        "type": "minecraft:model",
-        "model": "1_splatus:item/endlight_pulling_0"
-      },
-      "entries": [
-        {
-          "threshold": 0.65,
-          "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "scale": 0.05,
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "1_splatus:item/endlight_pulling_0"
+            },
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "1_splatus:item/endlight_pulling_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "1_splatus:item/endlight_pulling_2"
+                }
+              }
+            ]
+          },
+          "on_false": {
             "type": "minecraft:model",
-            "model": "1_splatus:item/endlight_pulling_1"
-          }
-        },
-        {
-          "threshold": 0.9,
-          "model": {
-            "type": "minecraft:model",
-            "model": "1_splatus:item/endlight_pulling_2"
+            "model": "1_splatus:item/endlight_resting"
           }
         }
-      ]
-    },
-    "on_false": {
-      "type": "minecraft:model",
-      "model": "1_splatus:item/endlight_resting"
-    }
-  }
-},
-    {
+      },
+      {
         "threshold": 47032,
         "model": {
-    
-    "type": "minecraft:condition",
-    "property": "minecraft:using_item",
-    "on_true": {
-      "type": "minecraft:range_dispatch",
-      "property": "minecraft:use_duration",
-      "scale": 0.05,
-      
-      "fallback": {
-        "type": "minecraft:model",
-        "model": "1_splatus:item/blowgun_charged"
-      },
-      "entries": [
-       
-      ]
-    },
-    "on_false": {
-      "type": "minecraft:model",
-      "model": "1_splatus:item/blowgun_normalts"
-    }
-    }
-    },
-      
-    
-{
-    "threshold": 47040,
-    "model": {
-
-"type": "minecraft:condition",
-"property": "minecraft:using_item",
-"on_false": {
-  "type": "minecraft:model",
-  "model": "1_splatus:item/magmus_resting"
-},
-"on_true": {
-  "type": "minecraft:range_dispatch",
-  "property": "minecraft:use_duration",
-  "scale": 0.05,
-  
-  "fallback": {
-    "type": "minecraft:model",
-    "model": "1_splatus:item/magmus_pulling_0"
-  },
-  "entries": [
-    {
-      "threshold": 0.65,
-      "model": {
-        "type": "minecraft:model",
-        "model": "1_splatus:item/magmus_pulling_1"
-      }
-    },
-    {
-      "threshold": 0.9,
-      "model": {
-        "type": "minecraft:model",
-        "model": "1_splatus:item/magmus_pulling_2"
-      }
-    }
-  ]
-}
-
-}
-
-},
-    {
-        "threshold": 47041,
-        "model": {"type": "minecraft:model",
-        "model": "1_splatus:item/magmus_fire"}
-    },
-    {
-        "threshold": 47042,
-        "model": {"type": "minecraft:model",
-        "model": "1_splatus:item/magmus_fire1"}
-    },
-{
-    "threshold": 87002,
-    "model": {
-
-"type": "minecraft:condition",
-"property": "minecraft:using_item",
-"on_true": {
-  "type": "minecraft:range_dispatch",
-  "property": "minecraft:use_duration",
-  "scale": 0.05,
-  
-  "fallback": {
-    "type": "minecraft:model",
-    "model": "1_splatus:item/spirit_bow0"
-  },
-  "entries": [
-    {
-      "threshold": 0.65,
-      "model": {
-        "type": "minecraft:model",
-        "model": "1_splatus:item/spirit_bow1"
-      }
-    },
-    {
-      "threshold": 0.9,
-      "model": {
-        "type": "minecraft:model",
-        "model": "1_splatus:item/spirit_bow2"
-      }
-    }
-  ]
-},
-"on_false": {
-  "type": "minecraft:model",
-  "model": "1_splatus:item/spirit_bow"
-}
-}
-},
-    
-        {
-          "threshold": 1450105,
-          "model": {
-            "type": "minecraft:condition",
-            "property": "minecraft:using_item",
-            "on_true": {
-              "type": "minecraft:range_dispatch",
-              "property": "minecraft:use_duration",
-              "scale": 0.05,
-              "entries": [
-                {
-                  "threshold": 0.65,
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "incendium:item/ragnarok/bow_pulling_1"
-                  }
-                },
-                {
-                  "threshold": 0.9,
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "incendium:item/ragnarok/bow_pulling_2"
-                  }
-                },
-                {
-                  "threshold": 4,
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "incendium:item/ragnarok/bow_pulling_3"
-                  }
-                },
-                {
-                  "threshold": 6,
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "incendium:item/ragnarok/bow_pulling_4"
-                  }
-                },
-                {
-                  "threshold": 8,
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "incendium:item/ragnarok/bow_pulling_5"
-                  }
-                },
-                {
-                  "threshold": 10,
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "incendium:item/ragnarok/bow_pulling_6"
-                  }
-                }
-              ],
-              "fallback": {
-                "type": "minecraft:model",
-                "model": "incendium:item/ragnarok/bow_pulling_0"
-              }
-            },
-            "on_false": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "scale": 0.05,
+            "fallback": {
               "type": "minecraft:model",
-              "model": "incendium:item/ragnarok/ragnarok"
-            }
-          }
-        },
-        {
-          "threshold": 1450104,
-          "model": {
-            "type": "minecraft:condition",
-            "property": "minecraft:using_item",
-            "on_true": {
-              "type": "minecraft:range_dispatch",
-              "property": "minecraft:use_duration",
-              "scale": 0.05,
-              "entries": [
-                {
-                    "threshold": 0.65,
-                    "model": {
-                      "type": "minecraft:model",
-                      "model": "incendium:item/trailblazer/bow_pulling_1"
-                    }
-                  },
-                  {
-                    "threshold": 0.9,
-                    "model": {
-                      "type": "minecraft:model",
-                      "model": "incendium:item/trailblazer/bow_pulling_2"
-                    }
-                  },
-                  {
-                    "threshold": 1,
-                    "model": {
-                      "type": "minecraft:model",
-                      "model": "incendium:item/trailblazer/bow_pulling_3"
-                    }
-                  },
-                  {
-                    "threshold": 2,
-                    "model": {
-                      "type": "minecraft:model",
-                      "model": "incendium:item/trailblazer/bow_pulling_4"
-                    }
-                  },
-                  {
-                    "threshold": 3,
-                    "model": {
-                      "type": "minecraft:model",
-                      "model": "incendium:item/trailblazer/bow_pulling_5"
-                    }
-                  },
-                  {
-                    "threshold": 4,
-                    "model": {
-                      "type": "minecraft:model",
-                      "model": "incendium:item/trailblazer/bow_pulling_6"
-                    }
-                  }
-              ],
-              "fallback": {
-                "type": "minecraft:model",
-                "model": "incendium:item/trailblazer/bow_pulling_0"
-              }
+              "model": "1_splatus:item/blowgun_charged"
             },
-            "on_false": {
-              "type": "minecraft:model",
-              "model": "incendium:item/trailblazer/trailblazer"
-            }
+            "entries": []
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/blowgun_normalts"
           }
         }
-      ],
-      "fallback": {
+      },
+      {
+        "threshold": 47040,
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/magmus_resting"
+          },
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "scale": 0.05,
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "1_splatus:item/magmus_pulling_0"
+            },
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "1_splatus:item/magmus_pulling_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "1_splatus:item/magmus_pulling_2"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "threshold": 47041,
+        "model": {
+          "type": "minecraft:model",
+          "model": "1_splatus:item/magmus_fire"
+        }
+      },
+      {
+        "threshold": 47042,
+        "model": {
+          "type": "minecraft:model",
+          "model": "1_splatus:item/magmus_fire1"
+        }
+      },
+      {
+        "threshold": 87002,
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "scale": 0.05,
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "1_splatus:item/spirit_bow0"
+            },
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "1_splatus:item/spirit_bow1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "1_splatus:item/spirit_bow2"
+                }
+              }
+            ]
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "1_splatus:item/spirit_bow"
+          }
+        }
+      },
+      {
+        "threshold": 1450105,
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/ragnarok/bow_pulling_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/ragnarok/bow_pulling_2"
+                }
+              },
+              {
+                "threshold": 4,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/ragnarok/bow_pulling_3"
+                }
+              },
+              {
+                "threshold": 6,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/ragnarok/bow_pulling_4"
+                }
+              },
+              {
+                "threshold": 8,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/ragnarok/bow_pulling_5"
+                }
+              },
+              {
+                "threshold": 10,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/ragnarok/bow_pulling_6"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "incendium:item/ragnarok/bow_pulling_0"
+            }
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "incendium:item/ragnarok/ragnarok"
+          }
+        }
+      },
+      {
+        "threshold": 1450104,
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/trailblazer/bow_pulling_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/trailblazer/bow_pulling_2"
+                }
+              },
+              {
+                "threshold": 1,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/trailblazer/bow_pulling_3"
+                }
+              },
+              {
+                "threshold": 2,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/trailblazer/bow_pulling_4"
+                }
+              },
+              {
+                "threshold": 3,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/trailblazer/bow_pulling_5"
+                }
+              },
+              {
+                "threshold": 4,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "incendium:item/trailblazer/bow_pulling_6"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "incendium:item/trailblazer/bow_pulling_0"
+            }
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "incendium:item/trailblazer/trailblazer"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:has_component",
+      "component": "minecraft:item_name",
+      "on_true": {
+        "type": "minecraft:select",
+        "property": "minecraft:component",
+        "component": "minecraft:item_name",
+        "cases": [
+          { "when": {"text":"Electric Pulse","color":"#FFD700","italic":false}, "model": { "type": "minecraft:model", "model": "item/genshin/thunderingpulseelectro" } },
+          { "when": {"text":"Overloading Pulse","color":"#EF7938","italic":false}, "model": { "type": "minecraft:model", "model": "item/genshin/thunderingpulsepyro" } },
+          { 
+            "when": {"text":"Thundering Pulse","color":"#AF8EC1","italic":false}, 
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:use_duration",
+                "scale": 0.05,
+                "entries": [
+                  {"threshold": 0.65, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/thundering_pulse/thundering_pulse_pulling_1"}},
+                  {"threshold": 0.9, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/thundering_pulse/thundering_pulse_pulling_2"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/bow/thundering_pulse/thundering_pulse_pulling_0"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/bow/thundering_pulse/thundering_pulse_standby"}
+            }
+          },
+          { 
+            "when": {"text":"Amos' Bow","color":"#4A9FF5","italic":false}, 
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:use_duration",
+                "scale": 0.05,
+                "entries": [
+                  {"threshold": 0.65, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/amos_bow/amos_bow_pulling_1"}},
+                  {"threshold": 0.9, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/amos_bow/amos_bow_pulling_2"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/bow/amos_bow/amos_bow_pulling_0"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/bow/amos_bow/amos_bow_standby"}
+            }
+          },
+          { 
+            "when": {"text":"End of the Line","color":"#F5A442","italic":false}, 
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:use_duration",
+                "scale": 0.05,
+                "entries": [
+                  {"threshold": 0.65, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/end_of_the_line/end_of_the_line_pulling_1"}},
+                  {"threshold": 0.9, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/end_of_the_line/end_of_the_line_pulling_2"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/bow/end_of_the_line/end_of_the_line_pulling_0"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/bow/end_of_the_line/end_of_the_line_standby"}
+            }
+          },
+          { 
+            "when": {"text":"Hamayumi","color":"#E91E63","italic":false}, 
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:use_duration",
+                "scale": 0.05,
+                "entries": [
+                  {"threshold": 0.65, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/hamayumi/hamayumi_pulling_1"}},
+                  {"threshold": 0.9, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/hamayumi/hamayumi_pulling_2"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/bow/hamayumi/hamayumi_pulling_0"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/bow/hamayumi/hamayumi_standby"}
+            }
+          },
+          { 
+            "when": {"text":"Skyward Harp","color":"#00BCD4","italic":false}, 
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:use_duration",
+                "scale": 0.05,
+                "entries": [
+                  {"threshold": 0.65, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/skyward_harp/skyward_harp_pulling_1"}},
+                  {"threshold": 0.9, "model": {"type": "minecraft:model", "model": "genshin_weapons/bow/skyward_harp/skyward_harp_pulling_2"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/bow/skyward_harp/skyward_harp_pulling_0"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/bow/skyward_harp/skyward_harp_standby"}
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:use_duration",
+            "scale": 0.05,
+            "entries": [
+              {
+                "threshold": 0.65,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/bow_pulling_1"
+                }
+              },
+              {
+                "threshold": 0.9,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/bow_pulling_2"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/bow_pulling_0"
+            }
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/bow"
+          }
+        }
+      },
+      "on_false": {
         "type": "minecraft:condition",
         "property": "minecraft:using_item",
         "on_true": {
@@ -322,4 +446,4 @@
       }
     }
   }
-  
+}

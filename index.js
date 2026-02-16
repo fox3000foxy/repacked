@@ -1,7 +1,7 @@
 // index.js
 const fs = require('fs-extra');
 const path = require('path');
-const sharp = require('sharp');
+// const sharp = require('sharp');
 const glob = require('glob');
 const crypto = require('crypto');
 const ffmpeg = require('fluent-ffmpeg');
@@ -340,22 +340,22 @@ async function compressAudio(baseFolder) {
 
 // 🔹 Main
 (async () => {
-  console.log('🔎 Collecte des textures et déduplication...');
-  const { textures, hashMap } = await collectTextures(inputFolder);
+  // console.log('🔎 Collecte des textures et déduplication...');
+  // const { textures, hashMap } = await collectTextures(inputFolder);
 
-  if (Object.keys(hashMap).length === 0) {
-    console.log('⚠️ Aucune texture unique à traiter. Vérifie le dossier ou les fichiers _portal.png.');
-    return;
-  }
+  // if (Object.keys(hashMap).length === 0) {
+  //   console.log('⚠️ Aucune texture unique à traiter. Vérifie le dossier ou les fichiers _portal.png.');
+  //   return;
+  // }
 
-  console.log('🖼️ Génération des atlas...');
-  const atlases = await generateAtlases(hashMap, outputFolder);
+  // console.log('🖼️ Génération des atlas...');
+  // const atlases = await generateAtlases(hashMap, outputFolder);
 
-  console.log('✏️ Réécriture des modèles JSON...');
-  await rewriteModels(inputFolder, atlases);
+  // console.log('✏️ Réécriture des modèles JSON...');
+  // await rewriteModels(inputFolder, atlases);
 
-  // console.log("🔊 Compression audio (backup FLAC lossless + OGG optimisé)...");
-  // await compressAudio(inputFolder);
+  console.log("🔊 Compression audio (backup FLAC lossless + OGG optimisé)...");
+  await compressAudio(inputFolder);
 
   console.log('🎉 Optimisation terminée !');
 })();

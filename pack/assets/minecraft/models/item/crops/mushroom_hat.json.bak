@@ -1,0 +1,67 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "carved_pumpkin",
+	"textures": {
+		"0": "block/mushroom_hat_outside",
+		"2": "block/mushroom_hat_inside",
+		"particle": "block/mushroom_hat_outside"
+	},
+	"elements": [
+		{
+			"from": [1, 15, 1],
+			"to": [15, 16, 15],
+			"faces": {
+				"north": {"uv": [1, 0, 15, 1], "texture": "#0"},
+				"east": {"uv": [1, 0, 15, 1], "texture": "#0"},
+				"south": {"uv": [1, 0, 15, 1], "texture": "#0"},
+				"west": {"uv": [1, 0, 15, 1], "texture": "#0"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#0"},
+				"down": {"uv": [0, 0, 14, 14], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 8, 0],
+			"to": [16, 15, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 7], "texture": "#0"},
+				"east": {"uv": [0, 3, 16, 10], "texture": "#0"},
+				"south": {"uv": [0, 9, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 5, 16, 12], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"ground": {
+			"rotation": [50.85, -85.05, 40.16],
+			"translation": [0, -2.25, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [-172.5, 17.78, -175.16],
+			"translation": [0, -3.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"head": {
+			"rotation": [7, 0, 0],
+			"translation": [0, -0.25, -0.25],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"translation": [0, -4.75, 0]
+		}
+	}
+}

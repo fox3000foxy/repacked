@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:item_name",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:item_name",
+      "cases": [
+        { "when": {"text":"A Thousand Emerging Dreams","color":"#A0D911","italic":false}, "model": { "type": "minecraft:model", "model": "item/genshin/thousandfloatingdreamsdendro" } },
+        { "when": {"text":"A Thousand Floating Dreams","color":"#7BE6C1","italic":false}, "model": { "type": "minecraft:model", "model": "item/genshin/thousandfloatingdreams" } },
+        { "when": {"text":"A Thousand Swirling Dreams","color":"#7BE6C1","italic":false}, "model": { "type": "minecraft:model", "model": "item/genshin/thousandfloatingdreamsanemo" } },
+        { "when": {"text":"Baptism of Song","color":"#4FC3F7","italic":false}, "model": { "type": "minecraft:model", "model": "item/genshin/barbara" } },
+        { "when": {"text":"Everlasting Moonglow","color":"#9FD6FF","italic":false}, "model": { "type": "minecraft:model", "model": "item/genshin/everlastingmoonglow" } }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/book"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/book"
+    }
+  }
+}

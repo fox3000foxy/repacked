@@ -89,8 +89,100 @@
       }
     ], 
     "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:has_component",
+      "component": "minecraft:item_name",
+      "on_true": {
+        "type": "minecraft:select",
+        "property": "minecraft:component",
+        "component": "minecraft:item_name",
+        "cases": [
+          {
+            "when": {"text":"A Thousand Emerging Dreams","color":"#A0D911","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/genshin/thousandfloatingdreamsdendro"
+            }
+          },
+          {
+            "when": {"text":"A Thousand Floating Dreams","color":"#7BE6C1","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/genshin/thousandfloatingdreams"
+            }
+          },
+          {
+            "when": {"text":"A Thousand Swirling Dreams","color":"#7BE6C1","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/genshin/thousandfloatingdreamsanemo"
+            }
+          },
+          {
+            "when": {"text":"Baptism of Song","color":"#4FC3F7","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/genshin/barbara"
+            }
+          },
+          {
+            "when": {"text":"Everlasting Moonglow","color":"#9FD6FF","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/genshin/everlastingmoonglow"
+            }
+          },
+          {
+            "when": {"text":"Freedom Sworn","color":"#7BE6C1","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/genshin/freedomsworn"
+            }
+          },
+          {
+            "when": {"text":"Skyward Blade","color":"#4FC3F7","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/genshin/skywardblade"
+            }
+          },
+          {
+            "when": {"text":"Keyblade","color":"#4FC3F7","italic":false},
+            "model": {
+              "type": "minecraft:model",
+              "model": "item/keyblade"
+            }
+          },
+          {
+            "when": {"text":"Beacon of the Reed Sea","color":"#FF6F00","italic":false},
+            "model": {"type": "minecraft:model", "model": "genshin_weapons/claymore/beacon_of_the_reed_sea/beacon_of_the_reed_sea"}
+          },
+          {
+            "when": {"text":"Favonius Greatsword","color":"#00BCD4","italic":false},
+            "model": {"type": "minecraft:model", "model": "genshin_weapons/claymore/favonius_greatsword/favonius_greatsword"}
+          },
+          {
+            "when": {"text":"Redhorn Stonethresher","color":"#E65100","italic":false},
+            "model": {"type": "minecraft:model", "model": "genshin_weapons/claymore/redhorn_stonethresher/redhorn_stonethresher"}
+          },
+          {
+            "when": {"text":"Verdict","color":"#4A148C","italic":false},
+            "model": {"type": "minecraft:model", "model": "genshin_weapons/claymore/verdict/verdict"}
+          },
+          {
+            "when": {"text":"Wolf's Gravestone","color":"#90A4AE","italic":false},
+            "model": {"type": "minecraft:model", "model": "genshin_weapons/claymore/wolfs_gravestone/wolfs_gravestone"}
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/netherite_sword"
+        }
+      },
+      "on_false": {
         "type": "minecraft:model",
         "model": "minecraft:item/netherite_sword"
       }
+    }
   }
 }

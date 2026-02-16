@@ -96,8 +96,130 @@
       }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:item/carrot_on_a_stick"
+      "type": "minecraft:condition",
+      "property": "minecraft:has_component",
+      "component": "minecraft:item_name",
+      "on_true": {
+        "type": "minecraft:select",
+        "property": "minecraft:component",
+        "component": "minecraft:item_name",
+        "cases": [
+          {
+            "when": {"text":"Crane's Echoing Call","color":"#4FC3F7","italic":false},
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "minecraft:charge_type",
+                "cases": [
+                  {"when": "arrow", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/cranes_echoing_call/cranes_echoing_call_loaded"}},
+                  {"when": "rocket", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/cranes_echoing_call/cranes_echoing_call_loaded"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/cranes_echoing_call/cranes_echoing_call_loading"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/cranes_echoing_call/cranes_echoing_call"}
+            }
+          },
+          {
+            "when": {"text":"Jadefall's Splendor","color":"#00E676","italic":false},
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "minecraft:charge_type",
+                "cases": [
+                  {"when": "arrow", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/jadefalls_splendor/jadefalls_splendor_loaded"}},
+                  {"when": "rocket", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/jadefalls_splendor/jadefalls_splendor_loaded"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/jadefalls_splendor/jadefalls_splendor_loading"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/jadefalls_splendor/jadefalls_splendor"}
+            }
+          },
+          {
+            "when": {"text":"Kagura's Verity","color":"#E91E63","italic":false},
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "minecraft:charge_type",
+                "cases": [
+                  {"when": "arrow", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/kaguras_verity/kaguras_verity_loaded"}},
+                  {"when": "rocket", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/kaguras_verity/kaguras_verity_loaded"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/kaguras_verity/kaguras_verity_loading"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/kaguras_verity/kaguras_verity"}
+            }
+          },
+          {
+            "when": {"text":"Memory of Dust","color":"#FFB300","italic":false},
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "minecraft:charge_type",
+                "cases": [
+                  {"when": "arrow", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/memory_of_dust/memory_of_dust_loaded"}},
+                  {"when": "rocket", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/memory_of_dust/memory_of_dust_loaded"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/memory_of_dust/memory_of_dust_loading"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/memory_of_dust/memory_of_dust"}
+            }
+          },
+          {
+            "when": {"text":"Skyward Atlas","color":"#00BCD4","italic":false},
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "minecraft:charge_type",
+                "cases": [
+                  {"when": "arrow", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/skyward_atlas/skyward_atlas_loaded"}},
+                  {"when": "rocket", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/skyward_atlas/skyward_atlas_loaded"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/skyward_atlas/skyward_atlas_loading"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/skyward_atlas/skyward_atlas"}
+            }
+          },
+          {
+            "when": {"text":"Surf's Up","color":"#29B6F6","italic":false},
+            "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/surfs_up/surfs_up"}
+          },
+          {
+            "when": {"text":"Tulaytullah's Remembrance","color":"#AB47BC","italic":false},
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:using_item",
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "minecraft:charge_type",
+                "cases": [
+                  {"when": "arrow", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/tulaytullas_remembrance/tulaytullahs_remembrance_loaded"}},
+                  {"when": "rocket", "model": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/tulaytullas_remembrance/tulaytullahs_remembrance_loaded"}}
+                ],
+                "fallback": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/tulaytullas_remembrance/tulaytullahs_remembrance_loading"}
+              },
+              "on_false": {"type": "minecraft:model", "model": "genshin_weapons/catalyst/tulaytullas_remembrance/tulaytullahs_remembrance"}
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/carrot_on_a_stick"
+        }
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/carrot_on_a_stick"
+      }
     }
   }
 }

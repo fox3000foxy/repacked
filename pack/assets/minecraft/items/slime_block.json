@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:item_name",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:item_name",
+      "cases": [
+        { "when": "Curcuma", "model": { "type": "minecraft:model", "model": "item/genshin/seeliecurcuma" } },
+        { "when": "Dayflower", "model": { "type": "minecraft:model", "model": "item/genshin/seeliedayflower" } },
+        { "when": "Moss", "model": { "type": "minecraft:model", "model": "item/genshin/seeliemoss" } },
+        { "when": "Rose", "model": { "type": "minecraft:model", "model": "item/genshin/seelierose" } },
+        { "when": "Viola", "model": { "type": "minecraft:model", "model": "item/genshin/seelieviola" } }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:block/slime_block"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/slime_block"
+    }
+  }
+}
